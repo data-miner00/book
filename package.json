@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt -p 8888",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -23,9 +23,14 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.0.5",
     "eslint-config-prettier": "^8.3.0",
+    "fibers": "^5.0.0",
     "jest": "^27.0.5",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.42.1",
+    "sass-loader": "10",
     "ts-jest": "^27.0.3",
     "vue-jest": "^3.0.4"
   }
