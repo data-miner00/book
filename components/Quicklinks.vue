@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5 w-1/2 mt-12">
+  <div class="fixed top-0 mt-12 w-full">
     <div
       class="
         px-8
@@ -32,12 +32,15 @@
           px-8
           py-2
           border-l border-solid border-gray-200
+          box-border
         "
-        :class="{ 'border-purple-400': i.active }"
+        :class="{ 'border-purple-400 border-l-4': i.active }"
         v-for="i in texts"
         :key="i.text"
       >
-        <span class="pl-3">{{ i.text }}</span>
+        <span class="pl-3" :class="{ 'text-purple-600 font-bold': i.active }">{{
+          i.text
+        }}</span>
       </div>
     </div>
   </div>
