@@ -42,8 +42,10 @@ export default Vue.extend({
   @apply absolute -left-5 top-0 hidden;
 }
 
-.nuxt-content p {
-  @apply mb-4;
+.nuxt-content p,
+.nuxt-content > ul,
+.nuxt-content > ol {
+  @apply my-4;
 }
 
 .icon.icon-link {
@@ -77,7 +79,7 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote p {
-  @apply mb-0;
+  @apply my-0;
 }
 
 .nuxt-content ul {
