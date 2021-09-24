@@ -99,7 +99,18 @@
         <Previous />
         <Next />
       </div>
-      <div class="mt-12 pt-12 border-solid border-gray-200 border-t">hello</div>
+      <div
+        class="
+          mt-12
+          pt-12
+          border-solid border-gray-200 border-t
+          flex
+          align-middle
+        "
+      >
+        <div class="w-7 h-7 bg-pink-400 rounded-full mr-4"></div>
+        <div class="text-gray-400 text-xs pt-1">Last updated 1 years ago</div>
+      </div>
     </footer>
   </div>
 </template>
