@@ -120,4 +120,12 @@
   @apply text-blue-600;
   @apply hover:underline;
 }
+
+.code {
+  @apply font-mono;
+  @apply bg-gray-100;
+  @apply px-2;
+  @apply py-1;
+  @apply rounded;
+}
 </style>

@@ -8,13 +8,3 @@
     <div class="flex-1"><nuxt /></div>
   </div>
 </template>
-
-<style lang="postcss">
-.code {
-  @apply font-mono;
-  @apply bg-gray-100;
-  @apply px-2;
-  @apply py-1;
-  @apply rounded;
-}
-</style>
