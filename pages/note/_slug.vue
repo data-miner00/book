@@ -1,5 +1,5 @@
 <template>
-  <ArticleSlot>
+  <ArticleSlot :quicklinks="note.toc">
     <nuxt-content :document="note"></nuxt-content>
   </ArticleSlot>
 </template>
@@ -19,21 +19,27 @@ export default Vue.extend({
 
 <style lang="postcss">
 .nuxt-content h1 {
-  @apply text-2xl font-semibold mt-10 mb-4 relative;
+  @apply text-2xl font-semibold mt-10 mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
 .nuxt-content h2 {
-  @apply text-xl font-semibold mt-5 mb-4 relative;
+  @apply text-xl font-semibold mt-5 mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
 .nuxt-content h3 {
-  @apply text-lg font-semibold mt-4 mb-4 relative;
+  @apply text-lg font-semibold mt-4 mb-4 relative cursor-pointer hover:text-gray-500;
+}
+
+.nuxt-content h1:hover a,
+.nuxt-content h2:hover a,
+.nuxt-content h3:hover a {
+  @apply block;
 }
 
 .nuxt-content h1 a,
 .nuxt-content h2 a,
 .nuxt-content h3 a {
-  @apply absolute -left-5 top-0;
+  @apply absolute -left-5 top-0 hidden;
 }
 
 .nuxt-content p {
@@ -62,7 +68,16 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote {
-  @apply border-l-8 border-solid border-purple-700 pl-4;
+  @apply border-l-8 border-solid border-purple-400 pl-4;
+  @apply hover:bg-gray-50 cursor-default py-3;
+}
+
+.nuxt-content-highlight {
+  @apply max-w-full overflow-x-auto;
+}
+
+.nuxt-content blockquote p {
+  @apply mb-0;
 }
 
 .nuxt-content ul {
