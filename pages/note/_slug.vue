@@ -85,8 +85,4 @@ export default Vue.extend({
 .nuxt-content ul {
   @apply list-disc list-inside pl-6;
 }
-
-/* .nuxt-content ol {
-  @apply 
-} */
 </style>
