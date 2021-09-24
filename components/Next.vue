@@ -1,17 +1,21 @@
 <template>
-  <div
+  <nuxt-link
+    :to="link"
     class="
+      this
       flex
       justify-between
       flex-1
       p-5
       border border-solid border-blue-300
       rounded
+      hover:border-purple-400
+      shadow-md
     "
   >
     <div class="my-auto">
       <div class="text-xs text-gray-400">Next</div>
-      <div class="font-semibold">Cool stuffs</div>
+      <div class="nxtitle font-semibold">Cool stuffs</div>
     </div>
     <div class="flex pl-4">
       <svg
@@ -28,7 +32,7 @@
         />
       </svg>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script lang="ts">
@@ -36,7 +40,17 @@ import Vue from 'vue'
 export default Vue.extend({
   props: {
     title: String,
-    link: String,
+    link: {
+      type: String,
+      default: '/',
+    },
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+.this:hover .nxtitle,
+.this:hover .bi {
+  @apply text-purple-400;
+}
+</style>

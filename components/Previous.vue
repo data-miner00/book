@@ -1,6 +1,8 @@
 <template>
-  <div
+  <nuxt-link
+    :to="link"
     class="
+      this
       flex
       justify-between
       flex-1
@@ -8,11 +10,13 @@
       flex-row-reverse
       border border-solid border-blue-300
       rounded
+      hover:border-purple-400
+      shadow-md
     "
   >
     <div class="my-auto max-w-xs">
       <div class="text-xs text-gray-400 text-right">Previous</div>
-      <div class="font-semibold text-right">
+      <div class="nxtitle font-semibold text-right">
         Cache database with Redis where interop is possible with Flutter
       </div>
     </div>
@@ -31,7 +35,7 @@
         />
       </svg>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script lang="ts">
@@ -39,7 +43,17 @@ import Vue from 'vue'
 export default Vue.extend({
   props: {
     title: String,
-    link: String,
+    link: {
+      type: String,
+      default: '/',
+    },
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+.this:hover .nxtitle,
+.this:hover .bi {
+  @apply text-purple-400;
+}
+</style>
