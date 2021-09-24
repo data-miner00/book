@@ -16,6 +16,28 @@
         <article style="color: rgb(59, 69, 78)" class="leading-7 font-medium">
           <slot />
         </article>
+
+        <!-- article footer -->
+        <footer class="mt-12">
+          <div class="flex gap-1">
+            <Previous />
+            <Next />
+          </div>
+          <div
+            class="
+              mt-12
+              pt-12
+              border-solid border-gray-200 border-t
+              flex
+              align-middle
+            "
+          >
+            <div class="w-7 h-7 bg-pink-400 rounded-full mr-4"></div>
+            <div class="text-gray-400 text-xs pt-1">
+              Last updated 1 years ago
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
     <div class="flex justify-start" style="width: 448px">
@@ -40,6 +62,15 @@ export default Vue.extend({
     },
     quicklinks: {
       type: Array,
+    },
+    lastUpdated: {
+      type: Date,
+    },
+    authorName: {
+      type: String,
+    },
+    authorImg: {
+      type: String,
     },
   },
   methods: {
