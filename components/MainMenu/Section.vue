@@ -12,9 +12,9 @@
       "
     >
       <span>Introduction</span>
-      <span class="text-right">v</span>
+      <span class="text-right" @click="toggleExpansion">v</span>
     </div>
-    <div class="pl-8">
+    <div class="pl-8" v-if="isExpanded">
       <div class="border-l border-gray-200 border-solid">
         <div class="font-semibold py-3 px-5 text-gray-400 text-sm">
           Cheatsheet: Option(in Rust) vs Maybe (in Haskell)
@@ -26,3 +26,21 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  props: {
+    topic: Object,
+    linkItems: Array,
+  },
+  data: () => ({
+    isExpanded: false,
+  }),
+  methods: {
+    toggleExpansion() {
+      this.isExpanded = !this.isExpanded
+    },
+  },
+})
+</script>
