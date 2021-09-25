@@ -3,7 +3,6 @@
     <div
       class="
         px-3
-        py-2
         text-gray-700
         hover:bg-opacity-10
         cursor-pointer
@@ -14,13 +13,13 @@
         items-center
       "
     >
-      <div>Introduction</div>
+      <nuxt-link to="" class="flex-1 py-2">Introduction</nuxt-link>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
         fill="currentColor"
-        class="bi bi-chevron-right"
+        class="bi bi-chevron-right block"
         viewBox="0 0 16 16"
         @click="toggleExpansion"
         v-if="!isExpanded"
@@ -48,12 +47,24 @@
     </div>
     <div class="pl-8" v-if="isExpanded">
       <div class="border-l border-gray-200 border-solid">
-        <div class="font-semibold py-3 px-5 text-gray-400 text-sm">
-          Cheatsheet: Option(in Rust) vs Maybe (in Haskell)
-        </div>
-        <div class="font-semibold py-3 px-5 text-gray-400 text-sm">
-          The commands used in Windows and Unix systems
-        </div>
+        <nuxt-link
+          v-for="(note, i) in notes"
+          :key="i"
+          :to="note.link"
+          class="
+            font-semibold
+            py-3
+            px-5
+            text-gray-400 text-sm
+            block
+            hover:bg-gray-200
+          "
+          :class="{
+            'bg-white hover:bg-white bg-opacity-70 text-purple-600': note.link,
+          }"
+        >
+          {{ note.title }}
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -68,6 +79,17 @@ export default Vue.extend({
   },
   data: () => ({
     isExpanded: false,
+    notes: [
+      {
+        title: 'Cheatsheet: Option(in Rust) vs Maybe (in Haskell)',
+        link: 'he',
+      },
+      {
+        title:
+          'The commands used in Windows and Unix systems lets make this a little longer',
+        link: '',
+      },
+    ],
   }),
   methods: {
     toggleExpansion() {
