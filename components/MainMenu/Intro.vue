@@ -20,6 +20,6 @@
     </div>
 
     <!-- section 3: search-icon -->
-    <div class="ml-auto">x</div>
+    <div class="ml-auto">✨</div>
   </div>
 </template>
