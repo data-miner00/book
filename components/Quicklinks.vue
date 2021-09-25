@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 mt-12 w-full">
+  <nav class="fixed top-0 mt-12 w-full">
     <div
       class="
         px-8
@@ -31,10 +31,10 @@
           uppercase
           px-8
           py-2
-          border-l border-solid border-gray-200
+          border-solid border-gray-200
           box-border
         "
-        :class="{ 'border-purple-400 border-l-4': i.active }"
+        :class="[i.active ? 'border-purple-400 border-l-4' : 'border-l']"
         v-for="i in texts"
         :key="i.text"
       >
@@ -43,12 +43,15 @@
         }}</span>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
+  props: {
+    toc: Array,
+  },
   data: () => ({
     texts: [
       {
