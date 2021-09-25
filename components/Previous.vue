@@ -17,7 +17,7 @@
     <div class="my-auto max-w-xs">
       <div class="text-xs text-gray-400 text-right">Previous</div>
       <div class="nxtitle font-semibold text-right">
-        Cache database with Redis where interop is possible with Flutter
+        {{ title }}
       </div>
     </div>
     <div class="pr-4 flex">
@@ -42,10 +42,19 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
-    title: String,
-    link: {
+    title: {
       type: String,
-      default: '/',
+      default:
+        'Cache database with Redis where interop is possible with Flutter',
+    },
+    slug: {
+      type: String,
+      default: '',
+    },
+  },
+  computed: {
+    link(): string {
+      return this.slug || '/'
     },
   },
 })

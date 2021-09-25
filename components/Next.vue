@@ -15,7 +15,7 @@
   >
     <div class="my-auto">
       <div class="text-xs text-gray-400">Next</div>
-      <div class="nxtitle font-semibold">Cool stuffs</div>
+      <div class="nxtitle font-semibold">{{ title }}</div>
     </div>
     <div class="flex pl-4">
       <svg
@@ -39,10 +39,19 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
-    title: String,
-    link: {
+    title: {
       type: String,
-      default: '/',
+      default:
+        'Cache database with Redis where interop is possible with Flutter',
+    },
+    slug: {
+      type: String,
+      default: '',
+    },
+  },
+  computed: {
+    link(): string {
+      return this.slug || '/'
     },
   },
 })
