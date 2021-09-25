@@ -12,7 +12,13 @@ export default Vue.extend({
   async asyncData({ $content, params }) {
     const note = await $content('notes', params.slug).fetch()
 
-    return { note }
+    const [prev, next] = await $content('notes')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .surround(params.slug)
+      .fetch()
+
+    return { note, prev, next }
   },
 })
 </script>
