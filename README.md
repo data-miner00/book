@@ -1,69 +1,19 @@
-# book
+# Cookbook
 
-## Build Setup
+A HTML-format book written with Nuxt.js and TailwindCSS, where the UI are referenced directly from [Gitbook](https://www.gitbook.com/) for better experience in terms of user interface, as designing can be arduous and intimidating as it requires collective effort from multiple individuals with the corresponding expertise in UI/UX.
 
-```bash
-# install dependencies
-$ yarn install
+## Intentions
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+The decision to develop such book is rather coincidental, whereby I am studying some online articles and books about Rust and came across [this note](https://notes.iveselov.info/programming/cheatsheet-rust-option-vs-haskell-maybe) by Ivan Veselov and his teams on Gitbook, which immediately caught my attention and sparked the idea of developing an online book website that serves as the knowledge repository about some quick but important topics for me and my friends.
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+## Todos
 
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
-
-## Special Directories
-
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
-
-### `assets`
-
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
-
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+- [ ] Add dynamic table of content
+- [x] Add menu footer
+- [ ] Update article footer
+- [ ] Add i18n
+- [ ] Add serach function
+- [ ] Add user ??
+- [ ] Add try catch to asyncData
+- [x] Add image component
+- [ ] ...
