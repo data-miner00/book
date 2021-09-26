@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="px-20">
+    <div class="px-20" :class="[isMain ? 'flex-1' : '']">
       <div class="max-w-screen-md pb-12">
         <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
           <!-- title  -->
@@ -20,8 +20,8 @@
         <!-- article footer -->
         <footer class="mt-12">
           <div class="flex gap-1">
-            <Previous />
-            <Next />
+            <Previous v-if="prev" />
+            <Next v-if="next" />
           </div>
           <div
             class="
@@ -34,14 +34,14 @@
           >
             <div class="w-7 h-7 bg-pink-400 rounded-full mr-4"></div>
             <div class="text-gray-400 text-xs pt-1">
-              Last updated 1 years ago
+              Last updated on {{ lastUpdated | formatDate }}
             </div>
           </div>
         </footer>
       </div>
     </div>
     <div class="flex justify-start" style="width: 448px">
-      <div class="px-5 w-1/2 relative">
+      <div class="px-5 w-1/2 relative" v-if="!isMain">
         <Quicklinks :quicklinks="quicklinks" />
       </div>
     </div>
@@ -64,17 +64,28 @@ export default Vue.extend({
       type: Array,
     },
     lastUpdated: {
-      type: Date,
-    },
-    authorName: {
       type: String,
+      default: '2020-06-22T10:59:27.863Z',
     },
-    authorImg: {
-      type: String,
+    author: {
+      type: Object,
+      default: () => null,
+    },
+    prev: {
+      type: Object,
+      default: () => null,
+    },
+    next: {
+      type: Object,
+      default: () => null,
+    },
+    isMain: {
+      type: Boolean,
+      default: false,
     },
   },
-  methods: {
-    formatDate(date: Date) {
+  filters: {
+    formatDate(date: string) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       //@ts-ignore
       return new Date(date).toLocaleDateString('en', options)
