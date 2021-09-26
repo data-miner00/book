@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="link"
+    :to="{ name: 'note-slug', params: { slug: slug } }"
     class="
       this
       flex
@@ -47,11 +47,6 @@ export default Vue.extend({
     slug: {
       type: String,
       default: '',
-    },
-  },
-  computed: {
-    link(): string {
-      return this.slug || '/'
     },
   },
 })
