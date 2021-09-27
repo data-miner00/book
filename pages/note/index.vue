@@ -26,29 +26,39 @@ export default Vue.extend({
   props: {},
   data: () => {
     return {
-      articles: [
-        {
-          title: 'Microservice in Go and Multithreading',
-          subtitle: 'A through dive into the technicals',
-        },
-        {
-          title:
-            'Microservice in Go and MultithreadingMicroservice in Go and Multithreading',
-          subtitle: 'A through dive into the technicals',
-        },
-        {
-          title: 'Microservice in Go and Multithreading',
-          subtitle: 'A through dive into the technicals',
-        },
-        {
-          title: 'Microservice in Go and Multithreading',
-          subtitle: 'A through dive into the technicals',
-        },
-        {
-          title: 'Microservice in Go and Multithreading',
-          subtitle: 'A through dive into the technicals',
-        },
-      ],
+      // articles: [
+      //   {
+      //     title: 'Microservice in Go and Multithreading',
+      //     subtitle: 'A through dive into the technicals',
+      //   },
+      //   {
+      //     title:
+      //       'Microservice in Go and MultithreadingMicroservice in Go and Multithreading',
+      //     subtitle: 'A through dive into the technicals',
+      //   },
+      //   {
+      //     title: 'Microservice in Go and Multithreading',
+      //     subtitle: 'A through dive into the technicals',
+      //   },
+      //   {
+      //     title: 'Microservice in Go and Multithreading',
+      //     subtitle: 'A through dive into the technicals',
+      //   },
+      //   {
+      //     title: 'Microservice in Go and Multithreading',
+      //     subtitle: 'A through dive into the technicals',
+      //   },
+      // ],
+    }
+  },
+  //@ts-ignore
+  async asyncData({ $content, params }) {
+    const articles = await $content('programming')
+      .only(['title', 'subtitle', 'slug'])
+      .fetch()
+
+    return {
+      articles,
     }
   },
 })
