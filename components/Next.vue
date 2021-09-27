@@ -20,7 +20,7 @@
       </div>
       <div class="nxtitle font-semibold">{{ title }}</div>
     </div>
-    <div class="flex pl-4">
+    <div class="flex" :class="[isPrev ? 'pr-4' : 'pl-4']">
       <svg
         v-if="isPrev"
         xmlns="http://www.w3.org/2000/svg"
