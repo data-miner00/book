@@ -54,11 +54,11 @@ export default Vue.extend({
   props: {
     title: {
       type: String,
-      default: 'Programming',
+      default: 'Title for this section is not specified',
     },
     subtitle: {
       type: String,
-      default: 'Ode to monads and functors',
+      default: 'Although important, the subtitle is not specified',
     },
     quicklinks: {
       type: Array,
