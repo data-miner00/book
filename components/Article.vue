@@ -96,7 +96,7 @@
     <!-- article footer -->
     <footer class="mt-12">
       <div class="flex gap-1">
-        <Previous />
+        <Next :isPrev="true" />
         <Next />
       </div>
       <div

@@ -20,8 +20,13 @@
         <!-- article footer -->
         <footer class="mt-12">
           <div class="flex gap-1">
-            <Previous v-if="prev" />
-            <Next v-if="next" />
+            <Next
+              :isPrev="true"
+              v-if="prev"
+              :title="prev.title"
+              :slug="prev.slug"
+            />
+            <Next v-if="next" :title="next.title" :slug="next.slug" />
           </div>
           <div
             class="
