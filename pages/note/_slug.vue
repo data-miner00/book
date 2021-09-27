@@ -84,6 +84,10 @@ export default Vue.extend({
   @apply max-w-full overflow-x-auto;
 }
 
+.nuxt-content-highlight pre {
+  @apply rounded-md;
+}
+
 .nuxt-content blockquote p {
   @apply my-0;
 }
