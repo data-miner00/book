@@ -28,6 +28,14 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-duotone-dark.css',
+      },
+    },
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
