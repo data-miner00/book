@@ -10,15 +10,16 @@
 </template>
 
 <style lang="postcss">
-.nuxt-content h1 {
+.nuxt-content h1,
+.nuxt-content h2 {
   @apply text-2xl font-semibold mt-10 mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
-.nuxt-content h2 {
+.nuxt-content h3 {
   @apply text-xl font-semibold mt-5 mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
-.nuxt-content h3 {
+.nuxt-content h4 {
   @apply text-lg font-semibold mt-4 mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
