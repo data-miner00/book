@@ -26,11 +26,10 @@
     <div>
       <nuxt-link
         class="
-          text-xs text-gray-500
-          font-bold
-          uppercase
+          text-sm text-gray-500
+          font-semibold
           px-8
-          py-2
+          py-1
           border-solid border-gray-200
           box-border
           block
