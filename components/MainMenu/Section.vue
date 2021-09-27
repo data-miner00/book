@@ -13,7 +13,11 @@
         items-center
       "
     >
-      <nuxt-link to="" class="flex-1 py-2">Introduction</nuxt-link>
+      <nuxt-link :to="{ name: componentName }" class="flex-1 py-2">{{
+        title
+      }}</nuxt-link>
+
+      <!-- arrow right icon '>' -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -29,6 +33,8 @@
           d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
         />
       </svg>
+
+      <!-- arrow down icon 'v' -->
       <svg
         v-else
         xmlns="http://www.w3.org/2000/svg"
@@ -48,9 +54,9 @@
     <div class="pl-8" v-if="isExpanded">
       <div class="border-l border-gray-200 border-solid">
         <nuxt-link
-          v-for="(note, i) in notes"
+          v-for="(entry, i) in entries"
           :key="i"
-          :to="note.link"
+          :to="{ name: `${componentName}-slug`, params: { slug: entry.slug } }"
           class="
             font-semibold
             py-3
@@ -59,11 +65,9 @@
             block
             hover:bg-gray-200
           "
-          :class="{
-            'bg-white hover:bg-white bg-opacity-70 text-purple-600': note.link,
-          }"
+          exact-active-class="active"
         >
-          {{ note.title }}
+          {{ entry.title }}
         </nuxt-link>
       </div>
     </div>
@@ -74,22 +78,16 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
-    topic: Object,
-    linkItems: Array,
+    category: String,
+    title: String,
+    componentName: String,
+    entries: {
+      type: Array,
+      default: () => [],
+    },
   },
   data: () => ({
     isExpanded: false,
-    notes: [
-      {
-        title: 'Cheatsheet: Option(in Rust) vs Maybe (in Haskell)',
-        link: 'he',
-      },
-      {
-        title:
-          'The commands used in Windows and Unix systems lets make this a little longer',
-        link: '',
-      },
-    ],
   }),
   methods: {
     toggleExpansion() {
@@ -102,5 +100,9 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .bi {
   @apply hover:text-purple-500;
+}
+
+.active {
+  @apply bg-white hover:bg-white bg-opacity-70 text-purple-600;
 }
 </style>
