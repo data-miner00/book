@@ -1,8 +1,22 @@
 <template>
   <div class="flex-1 overflow-auto">
     <div class="h-screen mt-8">
-      <MainMenuSection />
-      <MainMenuSection />
+      <MainMenuSection title="Introduction" componentName="index" />
+      <MainMenuSection
+        title="Finance"
+        componentName="finance"
+        :entries="finance"
+      />
+      <MainMenuSection
+        title="Minecraft"
+        componentName="minecraft"
+        :entries="minecraft"
+      />
+      <MainMenuSection
+        title="Programming"
+        componentName="programming"
+        :entries="programming"
+      />
     </div>
   </div>
 </template>
@@ -10,10 +24,22 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  methods: {
-    toggleSubtopic(evt: Event): void {
-      //
-    },
+  data: () => ({
+    finance: [],
+    minecraft: [],
+    programming: [],
+  }),
+  async fetch() {
+    //@ts-ignore
+    this.finance = await this.$axios.$get(
+      '_content/finance?only=title&only=slug'
+    )
+    this.minecraft = await this.$axios.$get(
+      '_content/minecraft?only=title&only=slug'
+    )
+    this.programming = await this.$axios.$get(
+      '_content/programming?only=title&only=slug'
+    )
   },
 })
 </script>
