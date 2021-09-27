@@ -24,7 +24,7 @@
       <span class="ml-1">Quicklinks</span>
     </div>
     <div>
-      <div
+      <nuxt-link
         class="
           text-xs text-gray-500
           font-bold
@@ -33,15 +33,17 @@
           py-2
           border-solid border-gray-200
           box-border
+          block
         "
-        :class="[i.active ? 'border-purple-400 border-l-4' : 'border-l']"
-        v-for="i in texts"
-        :key="i.text"
+        :class="[false ? 'border-purple-400 border-l-4' : 'border-l']"
+        v-for="link in quicklinks"
+        :key="link.id"
+        :to="`#${link.id}`"
       >
-        <span class="pl-3" :class="{ 'text-purple-600 font-bold': i.active }">{{
-          i.text
+        <span class="pl-3" :class="{ 'text-purple-600 font-bold': false }">{{
+          link.text
         }}</span>
-      </div>
+      </nuxt-link>
     </div>
   </nav>
 </template>
@@ -50,23 +52,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
-    toc: Array,
+    quicklinks: Array,
   },
-  data: () => ({
-    texts: [
-      {
-        text: 'text 1',
-        active: false,
-      },
-      {
-        text: 'text 2',
-        active: true,
-      },
-      {
-        text: 'text 3',
-        active: false,
-      },
-    ],
-  }),
 })
 </script>
