@@ -1,5 +1,12 @@
 <template>
-  <ArticleSlot :quicklinks="note.toc">
+  <ArticleSlot
+    title="Randome notes and Probablity"
+    subtitle="A very cool subtitle isn't it hehe"
+    :quicklinks="note.toc"
+    :lastUpdated="note.updatedAt"
+    :prev="prev"
+    :next="next"
+  >
     <nuxt-content :document="note"></nuxt-content>
   </ArticleSlot>
 </template>
