@@ -2,6 +2,7 @@
   <Overview
     title="Finance"
     subtitle="Here contains all topics that are monetary related"
+    topic="finance"
     :articles="articles"
   />
 </template>

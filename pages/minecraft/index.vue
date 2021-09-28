@@ -2,6 +2,7 @@
   <Overview
     title="Minecraft"
     subtitle="A sandbox game purpotedly only for kids"
+    topic="minecraft"
     :articles="articles"
   />
 </template>

@@ -2,6 +2,7 @@
   <Overview
     title="Programming"
     subtitle="The only way to future technological advancement"
+    topic="programming"
     :articles="articles"
   />
 </template>
