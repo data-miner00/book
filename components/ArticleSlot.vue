@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="px-20" :class="[isMain ? 'flex-1' : '']">
+    <div class="px-20">
       <div class="max-w-screen-md pb-12">
         <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
           <!-- title  -->
@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="flex justify-start" style="width: 448px">
-      <div class="px-5 w-1/2 relative" v-if="!isMain">
+      <div class="px-5 w-1/2 relative">
         <Quicklinks :quicklinks="quicklinks" />
       </div>
     </div>
@@ -83,10 +83,6 @@ export default Vue.extend({
     next: {
       type: Object,
       default: () => null,
-    },
-    isMain: {
-      type: Boolean,
-      default: false,
     },
   },
   filters: {

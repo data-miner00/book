@@ -1,32 +1,20 @@
 <template>
-  <ArticleSlot :isMain="true">
-    <div class="max-w-full grid grid-cols-2 gap-4">
-      <div
-        v-for="(a, index) in articles"
-        :key="index"
-        class="
-          this
-          border border-solid border-gray-300
-          p-4
-          shadow-md
-          hover:border-blue-600
-          rounded
-        "
-      >
-        <div class="xmtitle font-semibold">{{ a.title }}</div>
-        <div class="text-sm text-gray-500">{{ a.subtitle }}</div>
-      </div>
-    </div>
-  </ArticleSlot>
+  <Overview
+    title="Notes"
+    subtitle="Notes or articles of any kind"
+    :articles="articles"
+  />
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  props: {},
+  head: () => ({
+    title: 'Notes | Bookelm',
+  }),
   //@ts-ignore
   async asyncData({ $content, params }) {
-    const articles = await $content('programming')
+    const articles = await $content('notes')
       .only(['title', 'subtitle', 'slug'])
       .fetch()
 
@@ -36,9 +24,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.this:hover .xmtitle {
-  @apply text-blue-600;
-}
-</style>
