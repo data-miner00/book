@@ -23,10 +23,16 @@
             <Next
               :isPrev="true"
               v-if="prev"
+              :componentName="componentName"
               :title="prev.title"
               :slug="prev.slug"
             />
-            <Next v-if="next" :title="next.title" :slug="next.slug" />
+            <Next
+              v-if="next"
+              :componentName="componentName"
+              :title="next.title"
+              :slug="next.slug"
+            />
           </div>
           <div
             class="
@@ -64,6 +70,10 @@ export default Vue.extend({
     subtitle: {
       type: String,
       default: 'Although important, the subtitle is not specified',
+    },
+    componentName: {
+      type: String,
+      required: true,
     },
     quicklinks: {
       type: Array,

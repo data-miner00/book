@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="{ name: 'note-slug', params: { slug: slug } }"
+    :to="{ name: `${componentName}-slug`, params: { slug: slug } }"
     class="
       this
       flex
@@ -65,6 +65,10 @@ export default Vue.extend({
       type: String,
       default:
         'Cache database with Redis where interop is possible with Flutter',
+    },
+    componentName: {
+      type: String,
+      required: true,
     },
     slug: {
       type: String,
