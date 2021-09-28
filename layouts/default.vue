@@ -5,7 +5,7 @@
         <div class="w-3/5"><MainMenu /></div>
       </div>
     </div>
-    <div class="flex-1"><nuxt /></div>
+    <div class="flex-1 flex"><nuxt /></div>
   </div>
 </template>
 
