@@ -11,7 +11,7 @@
         flex
       "
       :class="{
-        'border border-indigo-200 border-solid border-r-0': isExactActive,
+        'border border-indigo-200 border-solid border-r-0': false,
       }"
     >
       <div
