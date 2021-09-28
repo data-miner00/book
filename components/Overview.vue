@@ -13,9 +13,10 @@
 
       <div style="color: rgb(59, 69, 78)" class="leading-7 font-medium">
         <div class="max-w-full grid grid-cols-2 gap-4">
-          <div
+          <nuxt-link
             v-for="(a, index) in articles"
             :key="index"
+            :to="{ name: `${topic}-slug`, params: { slug: a.slug } }"
             class="
               this
               border border-solid border-gray-300
@@ -27,7 +28,7 @@
           >
             <div class="xmtitle font-semibold">{{ a.title }}</div>
             <div class="text-sm text-gray-500">{{ a.subtitle }}</div>
-          </div>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -45,6 +46,10 @@ export default Vue.extend({
     subtitle: {
       type: String,
       default: 'Lorem ipsum dolor sit amet',
+    },
+    topic: {
+      type: String,
+      required: true,
     },
     articles: {
       type: Array,
