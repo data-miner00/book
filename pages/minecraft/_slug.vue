@@ -1,11 +1,12 @@
 <template>
   <ArticleSlot
-    title="Minecraft"
-    subtitle="A source of information for this block sandbox game"
+    :title="note.title"
+    :subtitle="note.subtitle"
     :quicklinks="note.toc"
     :lastUpdated="note.updatedAt"
     :prev="prev"
     :next="next"
+    componentName="minecraft"
   >
     <nuxt-content :document="note"></nuxt-content>
   </ArticleSlot>

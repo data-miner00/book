@@ -1,11 +1,12 @@
 <template>
   <ArticleSlot
-    title="Randome notes and Probablity"
-    subtitle="A very cool subtitle isn't it hehe"
+    :title="note.title"
+    :subtitle="note.subtitle"
     :quicklinks="note.toc"
     :lastUpdated="note.updatedAt"
     :prev="prev"
     :next="next"
+    componentName="notes"
   >
     <nuxt-content :document="note"></nuxt-content>
   </ArticleSlot>

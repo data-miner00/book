@@ -6,6 +6,7 @@
     :lastUpdated="note.updatedAt"
     :prev="prev"
     :next="next"
+    componentName="finance"
   >
     <nuxt-content :document="note"></nuxt-content>
   </ArticleSlot>
