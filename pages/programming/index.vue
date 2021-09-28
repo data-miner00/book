@@ -1,3 +1,26 @@
 <template>
-  <div>Hello from programming</div>
+  <Overview
+    title="Programming"
+    subtitle="The only way to future technological advancement"
+    :articles="articles"
+  />
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  head: () => ({
+    title: 'Programming | Bookelm',
+  }),
+  //@ts-ignore
+  async asyncData({ $content, params }) {
+    const articles = await $content('programming')
+      .only(['title', 'subtitle', 'slug'])
+      .fetch()
+
+    return {
+      articles,
+    }
+  },
+})
+</script>
