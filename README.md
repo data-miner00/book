@@ -8,7 +8,7 @@ The decision to develop such book is rather coincidental, whereby I am studying 
 
 ## Todos
 
-- [ ] Add dynamic table of content
+- [x] Add dynamic table of content
 - [x] Add menu footer
 - [ ] Update article footer
 - [ ] Add i18n
@@ -16,4 +16,5 @@ The decision to develop such book is rather coincidental, whereby I am studying 
 - [ ] Add user ??
 - [ ] Add try catch to asyncData
 - [x] Add image component
+- [x] Extract Main page and Article page into different component that can be customized
 - [ ] ...
