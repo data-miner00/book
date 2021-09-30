@@ -11,7 +11,11 @@
   >
     <div class="flex">
       <!-- secion 1: image -->
-      <div class="h-12 w-12 bg-green-100 mr-4 rounded"></div>
+      <div
+        class="h-12 w-12 bg-green-100 mr-4 rounded object-cover overflow-hidden"
+      >
+        <img :src="require('~/assets/images/aes.jpg')" alt="demo image" />
+      </div>
       <!-- section 2: texts -->
       <div class="">
         <div class="text-lg font-bold">Notes</div>
