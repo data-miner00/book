@@ -2,7 +2,7 @@
   <Overview
     title="Notes"
     subtitle="Notes or articles of any kind"
-    topic="notes"
+    topic="note"
     :articles="articles"
   />
 </template>
