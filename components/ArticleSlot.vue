@@ -102,5 +102,10 @@ export default Vue.extend({
       return new Date(date).toLocaleDateString('en', options)
     },
   },
+  head() {
+    return {
+      title: this.title,
+    }
+  },
 })
 </script>
