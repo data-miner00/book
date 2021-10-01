@@ -1,6 +1,9 @@
 <template>
   <div>
     <img :src="fullpath" :alt="alt" />
+    <div v-if="caption" class="text-center font-semibold text-sm my-2">
+      {{ caption }}
+    </div>
   </div>
 </template>
 
