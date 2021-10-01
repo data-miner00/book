@@ -82,4 +82,22 @@
 .nuxt-content ul {
   @apply list-disc list-inside pl-6;
 }
+
+.nuxt-content table {
+  @apply w-full;
+}
+
+.nuxt-content thead {
+  @apply text-left border-b-2 border-gray-100 text-gray-400;
+}
+
+.nuxt-content th,
+.nuxt-content td {
+  /* @apply p-1\.5; */
+  padding: 0.375rem;
+}
+
+.nuxt-content tbody tr {
+  @apply border-b border-solid border-gray-100;
+}
 </style>
