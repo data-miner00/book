@@ -24,6 +24,8 @@
     </div>
 
     <!-- section 3: search-icon -->
-    <div class="ml-auto">✨</div>
+    <div class="ml-auto flex items-center">
+      <div>✨</div>
+    </div>
   </div>
 </template>
