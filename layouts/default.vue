@@ -1,8 +1,15 @@
 <template>
-  <div class="flex flex-row" style="color: #0f1419">
-    <div class="w-1/4 flex-none bg-gray-100">
-      <div class="flex flex-row w-auto justify-end sticky top-0">
-        <div class="w-3/5"><MainMenu /></div>
+  <div class="relative lg:flex lg:flex-row" style="color: #0f1419">
+    <div
+      class="
+        absolute
+        -left-full
+        lg:relative lg:left-0 lg:w-1/4 lg:flex-none
+        bg-gray-100
+      "
+    >
+      <div class="lg:flex lg:flex-row w-auto lg:justify-end sticky top-0">
+        <div class="lg:w-4/5 2xl:w-3/5"><MainMenu /></div>
       </div>
     </div>
     <div class="flex-1 flex"><nuxt /></div>

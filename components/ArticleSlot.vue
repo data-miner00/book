@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="px-20">
+    <div class="px-10 md:px-20">
       <div class="max-w-screen-md pb-12">
         <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
           <!-- title  -->
@@ -13,7 +13,7 @@
         </div>
 
         <!-- article will be injected inside here  -->
-        <article style="color: rgb(59, 69, 78)" class="leading-7 font-medium">
+        <article style="color: rgb(59, 69, 78)" class="leading-7">
           <slot />
         </article>
 
@@ -51,7 +51,7 @@
         </footer>
       </div>
     </div>
-    <div class="flex justify-start" style="width: 448px">
+    <div class="hidden md:flex md:justify-start" style="width: 448px">
       <div class="px-5 w-1/2 relative">
         <Quicklinks :quicklinks="quicklinks" />
       </div>
