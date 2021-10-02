@@ -28,6 +28,7 @@
           cursor-pointer
           hover:bg-blue-100 hover:text-blue-600
         "
+        :class="{ 'bg-blue-100 text-blue-600': thisSection }"
       >
         <nuxt-link :to="{ name: componentName }" class="flex-1 py-2">{{
           title
@@ -75,7 +76,7 @@
         <nuxt-link
           v-for="(entry, i) in entries"
           :key="i"
-          :to="{ name: `${componentName}-slug`, params: { slug: entry.slug } }"
+          :to="{ name: fullComponentName, params: { slug: entry.slug } }"
           class="
             font-semibold
             py-3
@@ -108,9 +109,20 @@ export default Vue.extend({
   data: () => ({
     isExpanded: false,
   }),
+  mounted() {
+    console.log(this.$route)
+  },
   methods: {
     toggleExpansion() {
       this.isExpanded = !this.isExpanded
+    },
+  },
+  computed: {
+    fullComponentName(): string {
+      return `${this.componentName}-slug`
+    },
+    thisSection(): boolean {
+      return this.$route.name == this.fullComponentName
     },
   },
 })
