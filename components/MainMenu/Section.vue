@@ -109,9 +109,6 @@ export default Vue.extend({
   data: () => ({
     isExpanded: false,
   }),
-  mounted() {
-    console.log(this.$route)
-  },
   methods: {
     toggleExpansion() {
       this.isExpanded = !this.isExpanded
