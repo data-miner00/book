@@ -18,4 +18,6 @@ The decision to develop such book is rather coincidental, whereby I am studying 
 - [x] Add image component
 - [x] Extract Main page and Article page into different component that can be customized
 - [ ] Add mobile responsiveness
+- [ ] Add custom 404 page
+- [ ] Perform TESTS
 - [ ] ...
