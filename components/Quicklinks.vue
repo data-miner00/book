@@ -33,9 +33,10 @@
           border-solid border-gray-200
           box-border
           block
+          hover:text-purple-600
         "
-        :class="[false ? 'border-purple-400 border-l-4' : 'border-l']"
         v-for="link in quicklinks"
+        :class="[false ? 'border-purple-400 border-l-4' : 'border-l']"
         :key="link.id"
         :to="`#${link.id}`"
       >
