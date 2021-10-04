@@ -40,9 +40,14 @@
         :key="link.id"
         :to="`#${link.id}`"
       >
-        <span class="pl-3" :class="{ 'text-purple-600 font-bold': false }">{{
-          link.text
-        }}</span>
+        <span
+          class="pl-3"
+          :class="[
+            { 'text-purple-600 font-bold': false },
+            { 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 },
+          ]"
+          >{{ link.text }}</span
+        >
       </nuxt-link>
     </div>
   </nav>
