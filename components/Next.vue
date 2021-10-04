@@ -64,7 +64,7 @@ export default Vue.extend({
     title: {
       type: String,
       default:
-        'Cache database with Redis where interop is possible with Flutter',
+        "This is a somewhat long title of some random article that didn't exist",
     },
     componentName: {
       type: String,
