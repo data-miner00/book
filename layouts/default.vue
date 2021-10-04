@@ -70,7 +70,7 @@
 }
 
 .nuxt-content blockquote {
-  @apply border-l-8 border-solid border-purple-400 pl-4;
+  @apply border-l-8 border-solid border-purple-400 pl-4 my-10;
   @apply bg-purple-50 hover:bg-purple-200 cursor-default py-3;
 }
 
