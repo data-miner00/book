@@ -11,7 +11,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   head: () => ({
-    title: 'Finance | Bookelm',
+    title: 'Finance | Book',
   }),
   //@ts-ignore
   async asyncData({ $content, params }) {

@@ -17,7 +17,7 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'index',
   head: () => ({
-    title: 'Bookelm',
+    title: 'Just an ordinary book - Book',
   }),
 })
 </script>

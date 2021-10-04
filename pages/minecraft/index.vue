@@ -11,7 +11,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   head: () => ({
-    title: 'Minecraft | Bookelm',
+    title: 'Minecraft | Book',
   }),
   //@ts-ignore
   async asyncData({ $content, params }) {
