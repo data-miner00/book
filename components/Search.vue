@@ -5,7 +5,7 @@
         type="text"
         class="px-3 py-2 w-full"
         v-model="searchQuery"
-        placeholder="Search the articles"
+        placeholder="Search by title or keyword"
       />
     </div>
     <div class="py-4">
@@ -57,7 +57,10 @@ export default Vue.extend({
         return
       }
       //@ts-ignore
-      this.articles = await this.$content('notes').search(searchQuery).fetch()
+      this.articles = await this.$content('notes')
+        .search(searchQuery)
+        .only(['title', 'subtitle', 'slug'])
+        .fetch()
     },
   },
 })
