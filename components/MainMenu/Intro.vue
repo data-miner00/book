@@ -25,7 +25,7 @@
 
     <!-- section 3: search-icon -->
     <div class="ml-auto flex items-center text-gray-500">
-      <div class="search-wrapper">
+      <div class="search-wrapper" @click="toggleSearchPanel">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -42,6 +42,17 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import { mapMutations } from 'vuex'
+
+export default Vue.extend({
+  methods: {
+    ...mapMutations(['toggleSearchPanel']),
+  },
+})
+</script>
 
 <style lang="sass" scoped>
 .search-wrapper
