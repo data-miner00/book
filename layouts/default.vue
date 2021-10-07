@@ -12,7 +12,22 @@
         <div class="lg:w-4/5 2xl:w-3/5"><MainMenu /></div>
       </div>
     </div>
-    <div class="flex-1 flex"><nuxt /></div>
+    <div class="flex-1 flex">
+      <nuxt />
+      <div
+        class="
+          fixed
+          top-0
+          h-full
+          right-0
+          w-1/5
+          bg-gray-100
+          border-l border-solid border-gray-200
+        "
+      >
+        <Search />
+      </div>
+    </div>
   </div>
 </template>
 
