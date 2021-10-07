@@ -30,6 +30,7 @@
             my-2
             block
           "
+          @click.native="toggleSearchPanel"
         >
           <div class="text-xl font-bold">
             {{ article.title }}
@@ -45,11 +46,16 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapMutations } from 'vuex'
+
 export default Vue.extend({
   data: () => ({
     searchQuery: '',
     articles: [],
   }),
+  methods: {
+    ...mapMutations(['toggleSearchPanel']),
+  },
   watch: {
     async searchQuery(searchQuery: string) {
       if (!searchQuery) {
