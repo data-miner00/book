@@ -16,6 +16,9 @@
       <nuxt />
       <div
         class="
+          this
+          duration-500
+          ease-in-out
           fixed
           top-0
           h-full
@@ -24,12 +27,23 @@
           bg-gray-100
           border-l border-solid border-gray-200
         "
+        :class="[getSearchPanelState ? 'right-0' : '-right-full']"
       >
         <Search />
       </div>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import { mapGetters } from 'vuex'
+export default Vue.extend({
+  computed: {
+    ...mapGetters(['getSearchPanelState']),
+  },
+})
+</script>
 
 <style lang="postcss">
 .nuxt-content h1,
@@ -86,7 +100,7 @@
 
 .nuxt-content blockquote {
   @apply border-l-8 border-solid border-purple-400 pl-4 my-10;
-  @apply bg-purple-50 hover:bg-purple-200 cursor-default py-3;
+  @apply bg-purple-50 hover:bg-purple-100 cursor-default py-3;
 }
 
 .nuxt-content-highlight {
@@ -121,5 +135,9 @@
 
 .nuxt-content tbody tr {
   @apply border-b border-solid border-gray-100;
+}
+
+.this {
+  transition-property: left, right;
 }
 </style>
