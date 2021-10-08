@@ -2,10 +2,11 @@
   <div class="max-h-screen overflow-auto p-5">
     <div class="rounded overflow-hidden">
       <input
-        type="text"
+        type="search"
         class="px-3 py-2 w-full"
         v-model="searchQuery"
         placeholder="Search by title or keyword"
+        ref="searchInput"
       />
     </div>
     <div class="py-4">
@@ -49,7 +50,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { mapMutations } from 'vuex'
+import { mapMutations, mapGetters } from 'vuex'
 
 export default Vue.extend({
   data: () => ({
@@ -74,6 +75,14 @@ export default Vue.extend({
         .only(['title', 'subtitle', 'slug'])
         .fetch()
     },
+    getSearchPanelState(newState: boolean) {
+      if (process.browser && this.$refs.searchInput && newState) {
+        ;(this.$refs.searchInput as HTMLInputElement).focus()
+      }
+    },
+  },
+  computed: {
+    ...mapGetters(['getSearchPanelState']),
   },
 })
 </script>
