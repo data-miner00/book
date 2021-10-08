@@ -43,9 +43,17 @@
               align-middle
             "
           >
-            <div class="w-7 h-7 bg-pink-400 rounded-full mr-4"></div>
+            <div class="w-7 h-7 bg-gray-400 rounded-full mr-4 overflow-hidden">
+              <img
+                v-if="!!author.avatar && !!author.name"
+                :src="require(`../assets/images/${author.avatar}`)"
+                :alt="author.name"
+                class="w-7"
+              />
+            </div>
             <div class="text-gray-400 text-xs pt-1">
-              Last updated on {{ lastUpdated | formatDate }}
+              Last updated on {{ lastUpdated | formatDate }} by
+              {{ author.name }}
             </div>
           </div>
         </footer>
