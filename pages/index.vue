@@ -15,15 +15,27 @@
         <!-- actual content -->
         <article style="color: rgb(59, 69, 78)" class="this leading-7">
           <p>
-            Hi. This is Shaun from <strong>Malaysia</strong>. Currently learning
-            English and Japanese and this notebook consists of various articles
-            and tutorials that I've documented over the years which might be
-            handy for numerous occasions that you might be going though as well.
-            The book is currently under construction so it is expected to have
-            some bugs and misalignement here and there. If you have found an
-            issue, kindly report the issues through the
-            <strong>issues</strong> tab in the [Github
-            Repo](https://github.com/data-miner/book)
+            Hi. This is Shaun and this site was developed for me to document the
+            knowledge that I've came across on various topics in the form of a
+            note or memo for my future reference. This site is open to the
+            public to benefit those who might need it.
+          </p>
+
+          <p>
+            If you have found an issue, kindly report the issues through the
+            <strong>issues</strong> tab in the
+            <a href="https://github.com/data-miner/book">Github Repo</a>.
+          </p>
+
+          <h1>More about the author</h1>
+
+          <p>
+            I am a freshgraduate software engineer based in
+            <strong>Malaysia</strong>. I am passionate about learning foreign
+            languages and currently learning English and Japanese. I like to
+            develop software applications on my own to learn and experiment
+            different technologies on different type of projects on my free
+            time.
           </p>
 
           <p>
@@ -34,9 +46,40 @@
             together instead of working as a lone wolf.
           </p>
 
+          <h1>Contacts</h1>
+
+          <p>
+            These are an extensive list of social media accounts of mine. I use
+            Facebook and Instagram sparingly as I don't see any useful gains for
+            binging it. I do however, use Twitter more frequent than I expected,
+            mainly to scout the trending topics that people talks about in my
+            country, particularly regarding to politics.
+          </p>
+
           <h1>Developed with</h1>
 
-          <div></div>
+          <div class="flex my-4 items-center">
+            <img
+              class="block w-8 mx-1"
+              :src="require('../assets/images/vue.png')"
+              alt="vuejs"
+            />
+            <img
+              class="block w-8 mx-1"
+              :src="require('../assets/images/nuxt.svg')"
+              alt="nuxtjs"
+            />
+            <img
+              class="block w-8 mx-1"
+              :src="require('../assets/images/typescript.png')"
+              alt="typescript"
+            />
+            <img
+              class="block w-10 mx-1"
+              :src="require('../assets/images/tailwind.jpg')"
+              alt="tailwindcss"
+            />
+          </div>
 
           <h1>Rule of thumb</h1>
 
@@ -85,7 +128,13 @@
               align-middle
             "
           >
-            <div class="w-7 h-7 bg-pink-400 rounded-full mr-4"></div>
+            <div class="w-7 h-7 bg-gray-300 rounded-full overflow-hidden mr-4">
+              <img
+                :src="require('../assets/images/mumk.jpg')"
+                alt="mumk"
+                class="w-7"
+              />
+            </div>
             <div class="text-gray-400 text-xs pt-1">
               Last updated October 4, 2021
             </div>
@@ -136,5 +185,10 @@ export default Vue.extend({
 
 .this ul {
   @apply list-disc list-inside pl-6;
+}
+
+.this a {
+  @apply text-blue-600;
+  @apply hover:underline;
 }
 </style>
