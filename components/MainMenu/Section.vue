@@ -85,7 +85,7 @@
             block
             hover:bg-gray-200
           "
-          exact-active-class="active"
+          active-class="active"
         >
           {{ entry.title }}
         </nuxt-link>
