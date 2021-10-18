@@ -15,7 +15,8 @@ export default Vue.extend({
   }),
   //@ts-ignore
   async asyncData({ $content, params }) {
-    const articles = await $content('finance')
+    const articles = await $content('articles')
+      .where({ displayTopic: { $eq: 'Finance' } })
       .only(['title', 'subtitle', 'slug'])
       .fetch()
 

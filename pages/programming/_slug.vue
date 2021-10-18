@@ -1,14 +1,16 @@
 <template>
   <ArticleSlot
-    :title="note.title"
-    :subtitle="note.subtitle"
-    :quicklinks="note.toc"
-    :lastUpdated="note.updatedAt"
+    :title="article.title"
+    :subtitle="article.subtitle"
+    :quicklinks="article.toc"
+    :lastUpdated="article.updatedAt"
     :prev="prev"
     :next="next"
     componentName="programming"
+    :author="article.author"
+    :tags="article.tags"
   >
-    <nuxt-content :document="note"></nuxt-content>
+    <nuxt-content :document="article"></nuxt-content>
   </ArticleSlot>
 </template>
 
@@ -18,15 +20,16 @@ import Vue from 'vue'
 export default Vue.extend({
   //@ts-ignore
   async asyncData({ $content, params }) {
-    const note = await $content('programming', params.slug).fetch()
+    const article = await $content('articles', params.slug).fetch()
 
-    const [prev, next] = await $content('programming')
+    const [prev, next] = await $content('articles')
+      .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
       .fetch()
 
-    return { note, prev, next }
+    return { article, prev, next }
   },
 })
 </script>

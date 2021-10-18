@@ -32,13 +32,13 @@ export default Vue.extend({
   async fetch() {
     //@ts-ignore
     this.finance = await this.$axios.$get(
-      '_content/finance?only=title&only=slug'
+      '_content/articles?displayTopic=Finance&only=title&only=slug'
     )
     this.minecraft = await this.$axios.$get(
-      '_content/minecraft?only=title&only=slug'
+      '_content/articles?displayTopic=Minecraft&only=title&only=slug'
     )
     this.programming = await this.$axios.$get(
-      '_content/programming?only=title&only=slug'
+      '_content/articles?displayTopic=Programming&only=title&only=slug'
     )
   },
 })
