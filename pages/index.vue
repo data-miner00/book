@@ -51,14 +51,18 @@
           <p>
             These are an extensive list of social media accounts of mine. I use
             Facebook and Instagram sparingly as I don't see any useful gains for
-            binging it. I do however, use Twitter more frequent than I expected,
-            mainly to scout the trending topics that people talks about in my
-            country, particularly regarding to politics.
+            binging them. I do however, use Twitter more frequent than I
+            expected, mainly to scout the trending topics that people talks
+            about in my country, particularly regarding to politics.
           </p>
 
           <!-- Refactor into individual component and image file -->
           <div class="my-2 flex gap-1">
-            <div class="flex rounded-md overflow-hidden">
+            <a
+              href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/"
+              target="_blank"
+              class="flex rounded-md overflow-hidden"
+            >
               <div
                 class="w-9 flex items-center justify-center"
                 style="background: #4875b4"
@@ -100,8 +104,12 @@
               >
                 Linked In
               </div>
-            </div>
-            <div class="flex rounded-md overflow-hidden">
+            </a>
+            <a
+              class="flex rounded-md overflow-hidden no-underline"
+              target="_blank"
+              href="https://twitter.com/Has66771004"
+            >
               <div
                 class="w-9 flex items-center justify-center"
                 style="background: #1a799e"
@@ -131,8 +139,12 @@
               >
                 Twitter
               </div>
-            </div>
-            <div class="flex rounded-md overflow-hidden">
+            </a>
+            <a
+              class="flex rounded-md overflow-hidden no-underline"
+              href="https://github.com/data-miner00"
+              target="_blank"
+            >
               <div
                 class="w-9 flex items-center justify-center"
                 style="background: #24292f"
@@ -169,13 +181,16 @@
               >
                 Github
               </div>
-            </div>
-            <div
+            </a>
+            <a
+              href="https://portfolio-six-ecru-52.vercel.app/"
+              target="_blank"
               class="
                 flex
                 rounded-md
                 overflow-hidden
                 border border-gray-400 border-solid
+                no-underline
               "
             >
               <div class="w-9 flex items-center justify-center">
@@ -222,7 +237,7 @@
               >
                 Website
               </div>
-            </div>
+            </a>
           </div>
 
           <h1>Developed with</h1>
