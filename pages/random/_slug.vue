@@ -6,7 +6,7 @@
     :lastUpdated="article.updatedAt"
     :prev="prev"
     :next="next"
-    componentName="finance"
+    componentName="random"
     :author="article.author"
     :tags="article.tags"
   >
@@ -23,7 +23,7 @@ export default Vue.extend({
     const article = await $content('articles', params.slug).fetch()
 
     const [prev, next] = await $content('articles')
-      .where({ displayTopic: { $eq: 'Finance' } })
+      .where({ displayTopic: { $eq: 'Random' } })
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
