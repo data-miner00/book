@@ -18,7 +18,10 @@
       </div>
       <div v-else class="overflow-auto">
         <nuxt-link
-          :to="{ name: 'note-slug', params: { slug: article.slug } }"
+          :to="{
+            name: `${article.displayTopic.toLowerCase()}-slug`,
+            params: { slug: article.slug },
+          }"
           v-for="article in articles"
           :key="article.slug"
           class="
@@ -70,9 +73,9 @@ export default Vue.extend({
         return
       }
       //@ts-ignore
-      this.articles = await this.$content('notes')
+      this.articles = await this.$content('articles')
         .search(searchQuery)
-        .only(['title', 'subtitle', 'slug'])
+        .only(['title', 'subtitle', 'slug', 'displayTopic'])
         .fetch()
     },
     getSearchPanelState(newState: boolean) {
