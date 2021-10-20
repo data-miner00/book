@@ -3,9 +3,9 @@
     <div class="h-screen mt-8">
       <MainMenuSection title="Introduction" componentName="index" />
       <MainMenuSection
-        title="Finance"
-        componentName="finance"
-        :entries="finance"
+        title="Random"
+        componentName="random"
+        :entries="random"
       />
       <MainMenuSection
         title="Minecraft"
@@ -25,14 +25,14 @@
 import Vue from 'vue'
 export default Vue.extend({
   data: () => ({
-    finance: [],
+    random: [],
     minecraft: [],
     programming: [],
   }),
   async fetch() {
     //@ts-ignore
-    this.finance = await this.$axios.$get(
-      '_content/articles?displayTopic=Finance&only=title&only=slug'
+    this.random = await this.$axios.$get(
+      '_content/articles?displayTopic=Random&only=title&only=slug'
     )
     this.minecraft = await this.$axios.$get(
       '_content/articles?displayTopic=Minecraft&only=title&only=slug'
