@@ -315,13 +315,13 @@
           >
             <div class="w-7 h-7 bg-gray-300 rounded-full overflow-hidden mr-4">
               <img
-                :src="require('../assets/images/mumk.jpg')"
+                :src="require('../assets/images/levi.png')"
                 alt="mumk"
                 class="w-7"
               />
             </div>
             <div class="text-gray-400 text-xs pt-1">
-              Last updated October 4, 2021
+              Last updated on October 20, 2021 by Shaun Chong
             </div>
           </div>
         </footer>

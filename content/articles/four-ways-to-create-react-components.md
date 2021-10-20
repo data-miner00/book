@@ -2,7 +2,7 @@
 title: Four ways to create React components
 subtitle: Get to know the best ways to create React components for your project
 topic: React
-displayTopic: Technology
+displayTopic: Programming
 author:
   name: Shaun Chong
   avatar: mumk.jpg
