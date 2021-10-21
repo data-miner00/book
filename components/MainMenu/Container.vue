@@ -29,17 +29,27 @@ export default Vue.extend({
     minecraft: [],
     programming: [],
   }),
-  async fetch() {
+  async mounted() {
     //@ts-ignore
-    this.random = await this.$axios.$get(
-      '_content/articles?displayTopic=Random&only=title&only=slug'
-    )
-    this.minecraft = await this.$axios.$get(
-      '_content/articles?displayTopic=Minecraft&only=title&only=slug'
-    )
-    this.programming = await this.$axios.$get(
-      '_content/articles?displayTopic=Programming&only=title&only=slug'
-    )
+    this.random = await this.$content('articles')
+      .where({ displayTopic: { $eq: 'Random' } })
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+    //@ts-ignore
+    this.minecraft = await this.$content('articles')
+      .where({ displayTopic: { $eq: 'Minecraft' } })
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
+
+    //@ts-ignore
+    this.programming = await this.$content('articles')
+      .where({ displayTopic: { $eq: 'Programming' } })
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .fetch()
   },
 })
 </script>
