@@ -10,9 +10,9 @@ The decision to develop such book is rather coincidental, whereby I am studying 
 
 - [x] Add dynamic table of content
 - [x] Add menu footer
-- [ ] Update article footer
+- [x] Update article footer
 - [ ] Add i18n
-- [ ] Add serach function
+- [x] Add serach function
 - [ ] Add user ??
 - [ ] Add try catch to asyncData
 - [x] Add image component
@@ -20,4 +20,6 @@ The decision to develop such book is rather coincidental, whereby I am studying 
 - [ ] Add mobile responsiveness
 - [ ] Add custom 404 page
 - [ ] Perform TESTS
+- [ ] Add "To top" button
+- [ ] Add tags
 - [ ] ...
