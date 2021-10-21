@@ -85,8 +85,9 @@ export default Vue.extend({
   background-size: 20px 20px;
 }
 
-.nuxt-content code:not(.nuxt-content pre code) {
+.nuxt-content code:not(.nuxt-content-highlight pre code) {
   @apply font-mono;
+  @apply bg-gray-100;
   @apply px-2;
   @apply py-1;
   @apply rounded;
