@@ -5,14 +5,16 @@ topic: React
 displayTopic: Programming
 author:
   name: Shaun Chong
-  avatar: mumk.jpg
+  avatar: levi.png
 tags:
   - react
+	- web development
 ---
 
 When working with React applications, there are a number of ways to create reusable components that can be applied throughout the application. 
 
-## createClass
+## Ways to create React Component
+### createClass
 
 This is an older approach to create a component. I personally didn't know about this way of creating a component until I came across the [React and Redux course](https://app.pluralsight.com/library/courses/react-redux-react-router-es6/table-of-contents) on [Pluralsight](https://www.pluralsight.com/) by Cory House and this article was inspired by it as well. 
 
@@ -26,7 +28,7 @@ var RandomComponent = React.createClass({
 });
 ```
 
-## Class
+### Class
 
 A slightly advance approach than `createClass` but is still considered old. 
 
@@ -44,7 +46,7 @@ class RandomComponent extends React.Component {
 }
 ```
 
-## Function
+### Function
 
 A better approach than the class counterpart
 
@@ -56,7 +58,7 @@ function RandomComponent(props) {
 }
 ```
 
-## Arrow function
+### Arrow function
 
 Arrow function has becoming the de facto standard for creating a component in newer versions of React compared to the pure function component. As arrow function is considered a statement, we(for semicolon users in JavaScript) need to append semicolon as well at the end of the expression.
 
@@ -98,5 +100,6 @@ To conclude, use Functional component whenever possible while developing a moder
 
 However, you still can use Class component if thats your personal preference, and thats totally fine. Just has to beware of some pitholes and performance issues it might introduce to the application. 
 
+## Reference
 
 https://ultimatecourses.com/blog/react-create-class-versus-component

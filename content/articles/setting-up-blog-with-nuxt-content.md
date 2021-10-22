@@ -150,7 +150,7 @@ In the `script` section we are using the `asyncData` hook to fetch the data that
 
 Inside the template, `<nuxt-content>` component is used to translate the markdown into HTML that is readable by the browser. We need to pass in the `article` returned by `asyncData` into the `document` props of the `nuxt-content` component.
 
-> **Note:** The `asyncData` hook is only available for components inside the `/pages` folder. If you are using this inside a custom component or layouts, it will not work. Instead, you will have to use the [API](#working-with-api).
+> **Note:** The `asyncData` hook is only available for components inside the `/pages` folder. If you are using this inside a custom component or layouts, it will not work. Instead, you will have to use the [API](#working-with-api) or `this.$content` directly in the `mounted` hook to fetch the article data.
 
 On your browser, key-in your local host and port, followed by `/mymod/my-first-article` which has the same name for the Markdown file that you created. Now you should be able to see all your contents from your md file rendered successfully within the page.
 
@@ -175,13 +175,13 @@ All of the metadata can be accessed with `article.<metadata>`. E.g. `article.cre
 All your article's content in the markdown that is rendered into the webpage are encompassed by a `div` element that have a class called `nuxt-content`. So, to style the element inside the `nuxt-content`, you will have to prefix your element with `.nuxt content `, just like below to style it according to your desire.
 
 ```css
-// Tailwind CSS
+/* Tailwind CSS */
 .nuxt-content h1,
 .nuxt-content h2 {
   @apply text-2xl font-semibold mt-10 mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
-// Normal CSS
+/* Normal CSS */
 .nuxt-content h3 {
   font-size: 30px;
   color: #0f141e;
@@ -214,7 +214,7 @@ However, there are some tricky elements that you will need to take notice of whe
 
 There are 2 scenario which Nuxt Content will translate into a `<code>` tag, **inline code** and **block code**.
 
-You will notice that there is a small code that is within a single sentence and a code block that takes up all the width of the article just as shown above. If you tries to style the inline code only with `.nuxt-content code` selector, both the big and small code block will apply the same styling as specified, and generally we don't want that. In fact, the big code block are being styled nicely by Nuxt Content for you already using [Prism]() syntax highlighter. We'll talk about how to customize the theme for that later. So for now, we only need to style the small code block and we can select it by using `.nuxt-content code:not(.nuxt-content pre code)`.
+You will notice that there is a small code that is within a single sentence and a code block that takes up all the width of the article just as shown above. If you tries to style the inline code only with `.nuxt-content code` selector, both the big and small code block will apply the same styling as specified, and generally we don't want that. In fact, the big code block are being styled nicely by Nuxt Content for you already using [Prism](https://prismjs.com/) syntax highlighter. We'll talk about how to customize the theme for that later. So for now, we only need to style the small code block and we can select it by using `.nuxt-content code:not(.nuxt-content pre code)`.
 
 ```css
 .nuxt-content code:not(.nuxt-content pre code)  {
@@ -225,6 +225,8 @@ You will notice that there is a small code that is within a single sentence and 
   @apply rounded;
 }
 ```
+
+> Note: Using `nuxt generate` on this will cause the output to be rendered as `.nuxt-content code:not(.nuxt-contentprecode)` instead that just render the latter part of the selector useless. This will work fine in local development server nonetheless. A simple workaround is to seperate the into `.nuxt-content code` and `.nuxt-content-highlight pre code` for different styles.
 
 Usually, we will leave margin for every element on top and bottom for better visual hierarchy. For the `<ul>` tag, there might be instance in which there are another list nested inside a list, so by selecting them like `.nuxt-content ul` is not recommended. Instead, we can select only the parent `<ul>` by using `.nuxt-content > ul` and this will not affect the inner list.
 
@@ -284,7 +286,7 @@ yarn add prism-themes
 
 In the `nuxt.config.js`, paste the following code inside the `export default` object.
 
-```
+```js
 content: {
   markdown: {
   	prism: {
@@ -357,6 +359,48 @@ The components cannot be self-closed and using it will not work. Using `image` H
 // not working
 <image src="link-to-image.jpg" alt="alt-text">
 ```
+
+## Generating static page issues
+
+If you are planning to ship your blog as a SSG or a static website, you should not use the async `fetch` method in any of the components. This is because that statically generated html does not **"technically"** handled by client-side JavaScript anymore hence unable to call the API.
+
+When running `nuxt generate`, you will see warnings such as
+
+```
+WARN  Cannot stringify a function data
+
+WARN  Cannot stringify a function render
+
+WARN  Cannot stringify a function created
+
+WARN  Cannot stringify a function VueComponent
+```
+
+and errors like
+
+```
+RangeError
+Maximum call stack size exceeded
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:207:20
+stringifyPrimitive
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:92:20
+stringify
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:98
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:49
+stringify
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:98
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:49
+stringify
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:98
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:49
+stringify
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:98
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:49
+stringify
+node_modules/@nuxt/devalue/dist/devalue.cjs.js:129:98
+```
+
+if you are using `fetch` in any of your component which ultimately leads to failure to generate the pages of the project.
 
 ## Conclusion
 
