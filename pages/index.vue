@@ -29,6 +29,11 @@
             >.
           </p>
 
+          <p>
+            Please note that this book is <strong>NOT</strong>(yet) mobile
+            responsive and it's best to view with desktop-sized screens.
+          </p>
+
           <h1>More about the author</h1>
 
           <p>
