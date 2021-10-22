@@ -1,6 +1,6 @@
-# Cookbook
+# book
 
-A HTML-format book written with Nuxt.js and TailwindCSS, where the UI are referenced directly from [Gitbook](https://www.gitbook.com/) for better experience in terms of user interface, as designing can be arduous and intimidating as it requires collective effort from multiple individuals with the corresponding expertise in UI/UX.
+A simple cookbook written with Nuxt.js and TailwindCSS, where the UI are referenced directly from [Gitbook](https://www.gitbook.com/). Here, I will write articles that I found useful and may be useful for others too.
 
 ## Intentions
 
