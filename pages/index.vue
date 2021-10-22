@@ -24,7 +24,14 @@
           <p>
             If you have found an issue, kindly report the issues through the
             <strong>issues</strong> tab in the
-            <a href="https://github.com/data-miner/book">Github Repo</a>.
+            <a href="https://github.com/data-miner00/book" target="_blank"
+              >Github Repo</a
+            >.
+          </p>
+
+          <p>
+            Please note that this book is <strong>NOT</strong>(yet) mobile
+            responsive and it's best to view with desktop-sized screens.
           </p>
 
           <h1>More about the author</h1>
