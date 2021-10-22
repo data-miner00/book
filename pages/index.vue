@@ -24,7 +24,9 @@
           <p>
             If you have found an issue, kindly report the issues through the
             <strong>issues</strong> tab in the
-            <a href="https://github.com/data-miner/book">Github Repo</a>.
+            <a href="https://github.com/data-miner00/book" target="_blank"
+              >Github Repo</a
+            >.
           </p>
 
           <h1>More about the author</h1>
