@@ -17,7 +17,7 @@
         <img :src="require('~/assets/images/aes.jpg')" alt="demo image" />
       </div>
       <!-- section 2: texts -->
-      <div class="w-3/5 xl:4/5">
+      <div class="w-3/5 xl:w-4/5">
         <div class="text-lg font-bold">Notes</div>
         <div class="text-xs text-gray-500">My personal take to everything</div>
       </div>
