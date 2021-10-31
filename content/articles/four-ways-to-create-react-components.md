@@ -8,7 +8,7 @@ author:
   avatar: levi.png
 tags:
   - react
-	- web development
+  - web development
 ---
 
 When working with React applications, there are a number of ways to create reusable components that can be applied throughout the application. 

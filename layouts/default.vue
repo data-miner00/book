@@ -9,7 +9,7 @@
       "
     >
       <div class="lg:flex lg:flex-row w-auto lg:justify-end sticky top-0">
-        <div class="xl:w-4/5 2xl:w-3/5 lg:w-full"><MainMenu /></div>
+        <div class="w-full lg:w-60 xl:w-72"><MainMenu /></div>
       </div>
     </div>
     <div class="flex-1 flex">

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 flex px-20">
+  <div class="flex-1 flex px-5 lg:px-20">
     <div class="max-w-screen-md flex-1">
       <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
         <!-- title  -->
@@ -12,7 +12,7 @@
       </div>
 
       <div style="color: rgb(59, 69, 78)" class="leading-7 font-medium">
-        <div class="max-w-full grid grid-cols-2 gap-4">
+        <div class="max-w-full grid grid-cols-1 md:grid-cols-2 gap-4">
           <nuxt-link
             v-for="(a, index) in articles"
             :key="index"
