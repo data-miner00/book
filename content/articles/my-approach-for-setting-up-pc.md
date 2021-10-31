@@ -62,7 +62,6 @@ The software that aids in the development of projects, predominantly in software
 - [GitHub Desktop](https://desktop.github.com/)
 - [Oracle Virtualbox](https://www.virtualbox.org/)
 - Enterprise Architect
-- [Wampserver](https://www.wampserver.com/en/)
 - [Postman](https://www.postman.com/)
 - [TeamViewer](https://www.teamviewer.com/en/)
 - [Mendeley Desktop](https://www.mendeley.com/download-reference-manager/)
@@ -112,7 +111,7 @@ My personal favourite internet browsers for surfing the internet.
 
 - [TLauncher](https://tlauncher.org/en/)
 - [Garena](https://www.garena.my/gpc)
-- [Unreal Launcher]()
+- [Unreal Launcher](https://www.epicgames.com/store/en-US/)
 
 ## Core
 
@@ -148,7 +147,7 @@ Everything involving core of development, such as programming language compilers
 
 | Type              | Technology                                                         | via Command             |
 | ----------------- | ------------------------------------------------------------------ | ----------------------- |
-| Framework/Runtime | Dotnet                                                             | -                       |
+| Framework/Runtime | [Dotnet](https://docs.microsoft.com/en-us/dotnet/core/tools/)      | -                       |
 | Framework         | Angular                                                            | `npm i -g @angular/cli` |
 | Framework         | Vue                                                                | `npm i -g @vue/cli`     |
 | Utility           | Jupyter Notebook                                                   | `pip install notebook`  |
@@ -173,6 +172,7 @@ Local database for data persistence for development projects.
 - [MongoDB](https://www.mongodb.com/try/download/community)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - [XAMPP](https://www.apachefriends.org/download.html)
+- [Wampserver](https://www.wampserver.com/en/)
 
 ### Firefox Extensions
 
