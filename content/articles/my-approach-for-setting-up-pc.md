@@ -71,6 +71,7 @@ The software that aids in the development of projects, predominantly in software
 - Adobe Illustrator
 - Adobe Photoshop
 - [Blender](https://www.blender.org/download/)
+- [Lightshot](https://app.prntscr.com/en/index.html)
 
 ### VMs
 
@@ -97,6 +98,7 @@ Application that is meant for entertainment purpose, non-work related.
 
 - [Spotify](https://www.spotify.com/my-en/)
 - [Discord](https://discord.com/)
+- [VLC Media player](https://www.videolan.org/)
 
 ### Browsers
 
