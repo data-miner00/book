@@ -183,3 +183,4 @@ Selected developer tools extension for Firefox browser.
 - [Vue devtools](https://devtools.vuejs.org/guide/installation.html)
 - [React devtools](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
 - [Preact devtools](https://addons.mozilla.org/en-US/firefox/addon/preact-devtools/)
+- [Metamask](https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/)

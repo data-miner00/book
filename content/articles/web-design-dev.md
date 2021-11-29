@@ -21,6 +21,7 @@ Here are some of my personal list of resources in which I can quickly get access
 **CSS** is the technology that is powering the entire browser to provide better interface and experience for the user that is viewing it. Its the heart and soul of every piece of web projects. Without CSS, the entire website in the internet will be dull, confusing and error-inducing to a certain extent.
 
 - [CSS-Tricks](https://css-tricks.com/): CSS tips and tricks, blogs and articles.
+- [CSS Scripts](https://www.cssscript.com/): Loads of sample CSS components ready to be used in any projects.
 
 ## Design
 
@@ -78,6 +79,7 @@ Previously was using [Font Awesome](https://fontawesome.com/) extensively for al
 - [Heroicons](https://heroicons.com/)
 - [Heroicons UI](https://github.com/sschoger/heroicons-ui)
 - [SVG Repo](https://www.svgrepo.com/)
+- [HTML Arrows](https://www.toptal.com/designers/htmlarrows/)
 
 ## Web Gallery
 
@@ -86,6 +88,8 @@ Design is boundless. There are countless creative and well-crafted website out t
 - [SiteInspire](https://www.siteinspire.com/)
 - [CSS Nectar](https://cssnectar.com/)
 - [Awwwards](https://www.awwwards.com/)
+- [Dribbble](https://dribbble.com/)
+- [Behance](https://www.behance.net/)
 
 ## Utility
 
@@ -111,3 +115,11 @@ Useful websites that provides decent amount of knowledges for learning for a par
 | Category | Materials                                                 |
 | -------- | --------------------------------------------------------- |
 | UI/UX    | [Interaction Design](https://www.interaction-design.org/) |
+
+## Images/Photos
+
+Media repositories that consists thousands of free images or other media that can be used in projects.
+
+- [iStock](https://www.istockphoto.com/)
+- [Pexels](https://www.pexels.com/)
+- [Unsplash](https://unsplash.com/)
