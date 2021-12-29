@@ -66,6 +66,7 @@ The official documentation sites for various programming languages.
 - [Elm](https://elm-lang.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [ReScript](https://rescript-lang.org/)
+- [Apl](https://xpqz.github.io/learnapl/intro.html)
 
 ## Screencast
 
@@ -121,3 +122,10 @@ Amazing blog by seasoned developers that shares their wisdom and experience in s
 - [Flavio Copes](https://flaviocopes.com/)
 - [Newbedev](https://newbedev.com/)
 - [Jino Antony](https://jinoantony.com/)
+- [Meyerweb](https://meyerweb.com/)
+- [Codethug](http://codethug.com/) C#
+
+## Mini Course
+
+- [Code craft](https://codecraft.tv/)
+- [Teks tutorial hub](https://www.tektutorialshub.com/)

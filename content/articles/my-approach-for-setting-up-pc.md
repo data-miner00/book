@@ -72,6 +72,8 @@ The software that aids in the development of projects, predominantly in software
 - Adobe Photoshop
 - [Blender](https://www.blender.org/download/)
 - [Lightshot](https://app.prntscr.com/en/index.html)
+- [ffmpeg](http://www.ffmpeg.org/)
+- [emscripten](https://emscripten.org/)
 
 ### VMs
 
