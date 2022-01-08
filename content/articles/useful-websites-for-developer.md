@@ -124,6 +124,9 @@ Amazing blog by seasoned developers that shares their wisdom and experience in s
 - [Jino Antony](https://jinoantony.com/)
 - [Meyerweb](https://meyerweb.com/)
 - [Codethug](http://codethug.com/) C#
+- [SteveGordon](https://www.stevejgordon.co.uk/) .NET
+- [Philippe](https://pvlerick.github.io/) .NET
+- [Codopia](https://codopia.wordpress.com/)
 
 ## Mini Course
 
