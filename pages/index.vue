@@ -1,7 +1,8 @@
 <template>
   <div class="flex">
     <div class="px-20">
-      <div class="max-w-screen-md pb-12">
+      <div class="lg:max-w-screen-md pb-12">
+        <!-- heading -->
         <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
           <!-- title  -->
           <div class="text-4xl font-semibold">Preface</div>
