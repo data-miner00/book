@@ -134,6 +134,10 @@ export default Vue.extend({
   @apply list-disc list-inside pl-6;
 }
 
+.nuxt-content ol {
+  @apply list-decimal list-inside pl-6;
+}
+
 .nuxt-content table {
   @apply w-full;
 }
