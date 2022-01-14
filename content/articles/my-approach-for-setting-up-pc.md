@@ -74,6 +74,7 @@ The software that aids in the development of projects, predominantly in software
 - [Lightshot](https://app.prntscr.com/en/index.html)
 - [ffmpeg](http://www.ffmpeg.org/)
 - [emscripten](https://emscripten.org/)
+- [Github Desktop](https://desktop.github.com/)
 
 ### VMs
 
@@ -84,6 +85,7 @@ The virtual machine images that would be used for different development environm
 - [Ubuntu](https://ubuntu.com/)
 - [Nox](https://www.bignox.com/)
 - [Bluestacks](https://www.bluestacks.com/ms/index.html)
+- [Docker](https://www.docker.com/products/docker-desktop)
 
 ### Cloud Storage
 
@@ -142,6 +144,8 @@ Everything involving core of development, such as programming language compilers
 | Raku       | [Raku intepreter](https://raku.org/downloads/)                       | -                     |
 | R          | [R intepreter](https://cran.r-project.org/bin/windows/base/)         | -                     |
 | Lua        | [Lua intepreter](https://www.lua.org/download.html)                  | -                     |
+| Elixir     | [Elixir interpreter](https://elixir-lang.org/install.html)           | -                     |
+| Erlang     | [Erlang compiler](https://www.erlang.org/downloads)                  | -                     |
 
 > Not manually installed: **C#**, **F#** and **VB** comes with Visual Studio 2019
 
