@@ -18,7 +18,7 @@ Here are some of my personal list of resources in which I can quickly get access
 
 ## CSS
 
-**CSS** is the technology that is powering the entire browser to provide better interface and experience for the user that is viewing it. Its the heart and soul of every piece of web projects. Without CSS, the entire website in the internet will be dull, confusing and error-inducing to a certain extent.
+CSS is the technology that is powering the entire browser to provide better interface and experience for the user that is viewing it. Its the heart and soul of every piece of web projects. Without CSS, the entire website in the internet will be dull, confusing and error-inducing to a certain extent.
 
 - [CSS-Tricks](https://css-tricks.com/): CSS tips and tricks, blogs and articles.
 - [CSS Scripts](https://www.cssscript.com/): Loads of sample CSS components ready to be used in any projects.

@@ -1,6 +1,6 @@
 ---
 title: List of essential farms in Minecraft
-subtitle: Minecraft automation that you'll definitely need to ease your playthrough in the game
+subtitle: Minecraft automation that you'll definitely need
 topic: Gaming
 displayTopic: Minecraft
 author:

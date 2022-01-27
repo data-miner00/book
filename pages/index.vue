@@ -42,8 +42,8 @@
             <strong>Malaysia</strong>. I am passionate about learning foreign
             languages and currently learning English and Japanese. I like to
             develop software applications on my own to learn and experiment
-            different technologies on different type of projects on my free
-            time.
+            different technologies on different type of projects during my
+            leisure time.
           </p>
 
           <p>
@@ -57,11 +57,11 @@
           <h1>Contacts</h1>
 
           <p>
-            These are an extensive list of social media accounts of mine. I use
-            Facebook and Instagram sparingly as I don't see any useful gains for
-            binging them. I do however, use Twitter more frequent than I
-            expected, mainly to scout the trending topics that people talks
-            about in my country, particularly regarding to politics.
+            These are a list of social media accounts of mine. I use Facebook
+            and Instagram sparingly as I don't see any useful gains for binging
+            them. I do however, use Twitter more frequent than I expected,
+            mainly to scout the trending topics that people talks about in my
+            country, particularly regarding to politics.
           </p>
 
           <!-- Refactor into individual component and image file -->
@@ -251,26 +251,38 @@
           <h1>Developed with</h1>
 
           <div class="flex my-4 items-center">
-            <img
-              class="block w-8 mx-1"
-              :src="require('../assets/images/vue.png')"
-              alt="vuejs"
-            />
-            <img
-              class="block w-8 mx-1"
-              :src="require('../assets/images/nuxt.svg')"
-              alt="nuxtjs"
-            />
-            <img
-              class="block w-8 mx-1"
-              :src="require('../assets/images/typescript.png')"
-              alt="typescript"
-            />
-            <img
-              class="block w-10 mx-1"
-              :src="require('../assets/images/tailwind.jpg')"
-              alt="tailwindcss"
-            />
+            <a href="https://vuejs.org/" class="mx-1" target="_blank">
+              <img
+                class="block w-8"
+                :src="require('../assets/images/vue.png')"
+                alt="vuejs"
+              />
+            </a>
+            <a href="https://nuxtjs.org" class="mx-1" target="_blank">
+              <img
+                class="block w-8"
+                :src="require('../assets/images/nuxt.svg')"
+                alt="nuxtjs"
+              />
+            </a>
+            <a
+              href="https://www.typescriptlang.org/"
+              class="mx-1"
+              target="_blank"
+            >
+              <img
+                class="block w-8"
+                :src="require('../assets/images/typescript.png')"
+                alt="typescript"
+              />
+            </a>
+            <a href="https://tailwindcss.com/" class="mx-1" target="_blank">
+              <img
+                class="block w-10"
+                :src="require('../assets/images/tailwind.jpg')"
+                alt="tailwindcss"
+              />
+            </a>
           </div>
 
           <h1>Rule of thumb</h1>
@@ -305,7 +317,6 @@
 
           <ul>
             <li>Add more articles</li>
-            <li>Add search function</li>
             <li>Add more responsiveness</li>
           </ul>
         </article>

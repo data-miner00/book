@@ -31,10 +31,11 @@ Websites that must be visited daily to get the latest info and knowledges shared
 - [DZone](https://dzone.com/)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 - [Cnblogs](https://www.cnblogs.com/)
+- [简书](https://www.jianshu.com/)
 
 ## Tutorials & Guides
 
-Websites that contains loads of written tutorial in multiple technologies that can be extremely useful for beginners to learn from scratch.
+Websites that contains loads of written tutorial in multiple technologies that can be extremely useful for beginners to learn anything from scratch.
 
 - [Programiz](https://www.programiz.com/)
 - [Tutorial Teacher](https://www.tutorialsteacher.com/)
@@ -76,6 +77,7 @@ Website that provides invaluable tutorials or insights for others to pick up reg
 - [Laracasts](https://laracasts.com/)
 - [Pluralsight](https://www.pluralsight.com/)
 - [Coursera](https://www.coursera.org/)
+- [Elixircasts](https://elixircasts.io/)
 
 ## Web Framework Docs
 
@@ -113,6 +115,7 @@ Documentation sites for the renowned testing frameworks in various technologies.
 - [Jasmine](https://jasmine.github.io/pages/getting_started.html)
 - [xUnit](https://xunit.net/)
 - [Laravel Dusk](https://laravel.com/docs/8.x/dusk)
+- [Pytest](https://docs.pytest.org)
 
 ## People's blog
 
