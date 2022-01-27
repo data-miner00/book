@@ -13,7 +13,7 @@ tags:
 
 A quine is a piece of code that upon executing will produce itself as the output. A quine is **idempotent**. The result will remain exactly the same no matter how much time you execute it.
 
-## Gallery
+## Gallery of Quines
 
 Here are a collection of quines with different programming languages that I've collected through the internet.
 

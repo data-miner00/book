@@ -12,13 +12,13 @@ tags:
   - cheatsheet
 ---
 
-In Minecraft, empowering tools and gears is one of the most important aspect of the game. Without enchantment, you will be facing a very hugh bottleneck in the game that **impedes further progression** at some point and **reduces your productivity** as well. Asides, without stacked armor that actually give much much more protection compared to the raw, unenchanted armor, you are extremely **vulnerable to dangers** poses by the game. There are a thousands way that you could die in game and it's definitely not a good experience to go through expecially in a hardcore world.
+In Minecraft, empowering tools and gears is one of the most important aspect of the game. Without enchantment, you will be facing a very huge bottleneck in the game that **impedes further progression** at some point and **reduces your productivity** as well. This also means that you are actually wasting your time and effort. Asides, without stacked armor that actually give much much more protection compared to the raw, unenchanted armor, you are extremely **vulnerable to dangers** poses by the game. There are a thousands way that you could die in game and it's definitely not a good experience to go through especially in a hardcore world.
 
 ## Tools
 
 <v-img src="tools.jpg" alt="minecraft tools"></v-img>
 
-In this section, will cover [Pickaxe](#pickaxe), [Axe](#axe), [Sword](#sword), [Shovel](#shovel), [Trident](#trident), [Crossbow](#crossbow), [Bow](#bow), [Hoe](#hoe), [Fishing Rod](#fishing-rod), [Shears](#shears), [Shield](#shield) and [Flint and Steel](#flint-and-steel).
+In this section, we will cover [Pickaxe](#pickaxe), [Axe](#axe), [Sword](#sword), [Shovel](#shovel), [Trident](#trident), [Crossbow](#crossbow), [Bow](#bow), [Hoe](#hoe), [Fishing Rod](#fishing-rod), [Shears](#shears), [Shield](#shield) and [Flint and Steel](#flint-and-steel).
 
 ### Axe
 
@@ -270,7 +270,7 @@ In this section, we will cover [Helmet](#helmet), [Chestplate](#chestplate), [El
 
 ## Farming EXP
 
-Without EXP, all of the ultimate enchantments is unobtainable. In fact, even with a exp farm at your disposal, farming the full set of gears is also going to take quite a while of grinding.
+Without EXP, all of the ultimate enchantments is just a joke. You can't possibly get a fully enchanted set of tools without a sophisticated EXP farm and even if you do, it is going to take you forever to get that. In fact, even with an exp farm at your disposal, farming the full set of gears is also going to take quite a while of grinding.
 
 However, there is an EXP farm that is extremely effective and efficient that my friend recommended it to me that was found on Youtube in a [tutorial](https://www.youtube.com/watch?v=twL1dt1gOP0) by [Shulkercraft](https://www.youtube.com/c/Shulkercraft) With this farm you will get unlimited EXP without killing any mobs by yourself, everything is AFK-able. The best part is, it comes with free gold for the loot.
 

@@ -14,11 +14,11 @@ tags:
   - webdev
 ---
 
-Having a personal blog is pretty much a standard and fundamental as a developer to express themself and sharing their knowledge to the world. There are countless tools and technologies out there for anyone to create their own blog, whether by paid or free of charge.
+Having a **personal blog** is pretty much a standard and fundamental as a developer to _express themself_ and _sharing their knowledge_ to the world. There are countless tools and technologies out there for anyone to create their own blog, whether by paid or free of charge.
 
-For developers like us, we might be interested to build our blog with technologies ourselves such as vanilla HTML, CSS and JavaScript, or even leverage the powerful frameworks out there such as Next.js and Gatsby.js to quickly kickstart the development that scales very well.
+For developers like us, we might be interested to build our blog with technologies ourselves such as vanilla HTML, CSS and JavaScript, or even leverage the powerful frameworks out there such as [Next.js](https://nextjs.org/) and [Gatsby.js](https://www.gatsbyjs.com/) to quickly kickstart the development that scales very well.
 
-Nuxt.js is a pretty good candidate for creating a decent blog with minimal learning curve. It has a library plugin called Nuxt Content that allows your Nuxt project to become a git-based headless CMS that the contents are managed alongside with the source code of the project repository.
+[Nuxt.js](nuxtjs.org/) is a pretty good candidate for creating a decent blog with minimal learning curve. It has a library plugin called [Nuxt Content](https://content.nuxtjs.org/) that allows your Nuxt project to become a git-based headless CMS that the contents are managed alongside with the source code of the project repository.
 
 ## Setting up the project
 
@@ -102,7 +102,7 @@ my-blog(root)
 
 This time, `my-first-article` inside `/content/mymod` is a folder instead of a markdown file. It consists of a folder named images that will stores all of the images used by the content.
 
-We are going to follow the first approach in which it is a teeny-tiny bit simpler than latter approach. If you are interested in the second approach, this [article](https://gilberttanner.com/blog/creating-a-blog-with-nuxt-content) by Gillbert Tanner will show you how exactly to do that.
+We are going to follow the first approach in which it is a teeny-tiny bit simpler than latter approach. If you are interested in the second approach, this [article](https://gilberttanner.com/blog/creating-a-blog-with-nuxt-content) by Gillbert Tanner will show you exactly how to do that.
 
 ### Simple content
 
@@ -417,3 +417,4 @@ In this article, we have covered a lot and it would be enough to kickstart your 
 [Nuxt Content](https://content.nuxtjs.org/)
 [Creating a blog with Nuxt Content](https://gilberttanner.com/blog/creating-a-blog-with-nuxt-content)
 [Creating a blog with Nuxt Content](https://nuxtjs.org/tutorials/creating-blog-with-nuxt-content)
+[Create blog with Nuxt Content and i18n](https://studioterabyte.nl/en/blog/nuxt-content-i18n)

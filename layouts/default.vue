@@ -1,19 +1,28 @@
 <template>
+  <!-- container -->
   <div class="relative lg:flex lg:flex-row" style="color: #0f1419">
+    <!-- left menu sidebar -->
     <div
       class="
         absolute
         -left-full
-        lg:relative lg:left-0 lg:w-1/4 lg:flex-none
         bg-gray-100
+        lg:relative lg:left-0 lg:w-1/4 lg:flex-none
       "
     >
       <div class="lg:flex lg:flex-row w-auto lg:justify-end sticky top-0">
-        <div class="w-full lg:w-60 xl:w-72"><MainMenu /></div>
+        <div class="w-full lg:w-60 xl:w-72">
+          <MainMenu />
+        </div>
       </div>
     </div>
+
+    <!-- right content section -->
     <div class="flex-1 flex">
+      <!-- content  -->
       <nuxt />
+
+      <!-- search section, hidden by default -->
       <div
         class="
           this
@@ -38,6 +47,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapGetters } from 'vuex'
+
 export default Vue.extend({
   computed: {
     ...mapGetters(['getSearchPanelState']),
@@ -122,6 +132,10 @@ export default Vue.extend({
 
 .nuxt-content ul {
   @apply list-disc list-inside pl-6;
+}
+
+.nuxt-content ol {
+  @apply list-decimal list-inside pl-6;
 }
 
 .nuxt-content table {
