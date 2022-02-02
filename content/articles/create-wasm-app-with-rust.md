@@ -191,3 +191,12 @@ There you have it, a basic barebone structure of a Rust-WASM project ready to ki
 ## Reference
 
 This guide was originally referenced from Rodion Chachura, creator of increaser.org on [Skillshare](https://www.skillshare.com/classes/Snake-Game-With-Rust-JavaScript-and-WebAssembly).
+
+More resources to read on:
+
+1. [Rust WASM official docs](https://rustwasm.github.io/docs/book/game-of-life/hello-world.html)
+2. [Rust-WASM template on Github](https://github.com/rustwasm/wasm-pack-template)
+3. [Rust WASM unofficial docs](https://rustwasm.github.io/wasm-pack/book/)
+4. [Build a Webassembly App with Rust](https://thenewstack.io/build-a-webassembly-app-with-rust/)
+5. [WebAssembly/Rust Tutorial: Pitch-perfect Audio Processing](https://www.toptal.com/webassembly/webassembly-rust-tutorial-web-audio)
+6. [Yew.rs](https://yew.rs/)
