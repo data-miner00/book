@@ -32,11 +32,12 @@
           top-0
           h-full
           right-0
-          w-1/5
-          bg-gray-100
+          w-full
+          bg-gray-500 bg-opacity-30
           border-l border-solid border-gray-200
         "
-        :class="[getSearchPanelState ? 'right-0' : '-right-full']"
+        @click="toggleSearchPanel"
+        v-show="getSearchPanelState"
       >
         <Search />
       </div>
@@ -46,9 +47,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { mapGetters } from 'vuex'
+import { mapGetters, mapMutations } from 'vuex'
 
 export default Vue.extend({
+  methods: {
+    ...mapMutations(['toggleSearchPanel']),
+  },
   computed: {
     ...mapGetters(['getSearchPanelState']),
   },
