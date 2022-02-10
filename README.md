@@ -22,4 +22,8 @@ The decision to develop such book is rather coincidental, whereby I am studying 
 - [ ] Perform TESTS
 - [ ] Add "To top" button
 - [ ] Add tags
+- [ ] Add search icon tooltip
+- [ ] Add dark mode
+- [ ] Redesign index page
+- [ ] Fix flex container layout
 - [ ] ...
