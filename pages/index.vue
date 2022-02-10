@@ -35,7 +35,7 @@
             responsive and it's best to view with desktop-sized screens.
           </p>
 
-          <h1>More about the author</h1>
+          <h1 id="more-about-the-author">More about the author</h1>
 
           <p>
             I am a freshgraduate software engineer based in
@@ -54,7 +54,7 @@
             together instead of working as a lone wolf.
           </p>
 
-          <h1>Contacts</h1>
+          <h1 id="contacts">Contacts</h1>
 
           <p>
             These are a list of social media accounts of mine. I use Facebook
@@ -248,7 +248,7 @@
             </a>
           </div>
 
-          <h1>Developed with</h1>
+          <h1 id="developed-with">Developed with</h1>
 
           <div class="flex my-4 items-center">
             <a href="https://vuejs.org/" class="mx-1" target="_blank">
@@ -285,7 +285,7 @@
             </a>
           </div>
 
-          <h1>Rule of thumb</h1>
+          <h1 id="rule-of-thumbs">Rule of thumb</h1>
 
           <p>
             To provide a more intuitive and informative article, there are a few
@@ -305,7 +305,7 @@
             </li>
           </ul>
 
-          <h1>Todos</h1>
+          <h1 id="todos">Todos</h1>
 
           <p>
             Although this seems like a very easy project, but the efforts are
@@ -348,7 +348,7 @@
     </div>
     <div class="flex-1 flex justify-start">
       <div class="px-5 w-1/2 relative">
-        <Quicklinks />
+        <Quicklinks :quicklinks="quicklinks" />
       </div>
     </div>
   </div>
@@ -362,6 +362,37 @@ export default Vue.extend({
   head: () => ({
     title: 'Just an ordinary book - Book',
   }),
+  computed: {
+    quicklinks() {
+      return [
+        {
+          id: 'more-about-the-author',
+          depth: 2,
+          text: 'More about the author',
+        },
+        {
+          id: 'contacts',
+          depth: 2,
+          text: 'Contacts',
+        },
+        {
+          id: 'developed-with',
+          depth: 2,
+          text: 'Developed with',
+        },
+        {
+          id: 'rule-of-thumb',
+          depth: 2,
+          text: 'Rule of thumb',
+        },
+        {
+          id: 'todos',
+          depth: 2,
+          text: 'Todos',
+        },
+      ]
+    },
+  },
 })
 </script>
 
