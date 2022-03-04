@@ -5,7 +5,7 @@
         <!-- heading -->
         <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
           <!-- title  -->
-          <div class="text-4xl font-semibold">Preface</div>
+          <div class="text-4xl font-semibold">Introduction</div>
 
           <!-- subtitle -->
           <div class="text-xl mt-2 text-gray-500">
@@ -23,17 +23,49 @@
           </p>
 
           <p>
-            If you have found an issue, kindly report the issues through the
+            I developed this site a few months back and I am still actively
+            adding in more features and maintaining it to become a better site.
+            I am currently working on a landing page for this site, so people
+            like you won't be greeted with this boring introduction anymore, so
+            please look forward to it!
+          </p>
+
+          <p>
+            On the sidenote, if you are interested on joining the team, please
+            feel free to contact me, I would love to collaborate! If you have
+            found an issue, kindly report the issues through the
             <strong>issues</strong> tab in the
             <a href="https://github.com/data-miner00/book" target="_blank"
               >Github Repo</a
             >.
           </p>
 
-          <p>
-            Please note that this book is <strong>NOT</strong>(yet) mobile
-            responsive and it's best to view with desktop-sized screens.
-          </p>
+          <blockquote
+            class="px-5 py-4 bg-yellow-50 text-yellow-500 flex items-center"
+          >
+            <span class="flex items-center justify-center mr-4 w-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="block"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
+                />
+                <path
+                  d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"
+                />
+              </svg>
+            </span>
+            <span class="block">
+              Please note that this site it not mobile friendly but I'm
+              currently working on it, so it's best to view with desktop-sized
+              screens for the time being.
+            </span>
+          </blockquote>
 
           <h1 id="more-about-the-author">More about the author</h1>
 
@@ -46,13 +78,59 @@
             leisure time.
           </p>
 
+          <h1 id="mission">Mission</h1>
+
           <p>
-            <strong>Incentive:</strong> Actually, I have reached out several
-            friends to ask if they are willing to collaborate and contribute to
-            this book about their knowledge but none of them met my expectation,
-            if not, I would prefer building the knowledge repository with them
-            together instead of working as a lone wolf.
+            I strife to educate people that read through my articles with
+            accurate and relevant information. I am also devoted to provide
+            impeccable experience while indulging in the articles.
           </p>
+
+          <p>
+            I will be continuously adopting on how the other successful
+            blog/articles/docs websites structure their website in terms of
+            UI/UX and content structure. Some of my favourite article websites
+            are <a href="https://medium.com/">Medium.com</a>,
+            <a href="https://decrypt.co/">Decrypt.co</a> and
+            <a href="https://dev.to/">Dev.to</a>.
+          </p>
+
+          <h1 id="developed-with">Developed with</h1>
+
+          <div class="flex my-4 items-center">
+            <a href="https://vuejs.org/" class="mx-1" target="_blank">
+              <img
+                class="block w-8"
+                :src="require('../assets/images/vue.png')"
+                alt="vuejs"
+              />
+            </a>
+            <a href="https://nuxtjs.org" class="mx-1" target="_blank">
+              <img
+                class="block w-8"
+                :src="require('../assets/images/nuxt.svg')"
+                alt="nuxtjs"
+              />
+            </a>
+            <a
+              href="https://www.typescriptlang.org/"
+              class="mx-1"
+              target="_blank"
+            >
+              <img
+                class="block w-8"
+                :src="require('../assets/images/typescript.png')"
+                alt="typescript"
+              />
+            </a>
+            <a href="https://tailwindcss.com/" class="mx-1" target="_blank">
+              <img
+                class="block w-10"
+                :src="require('../assets/images/tailwind.jpg')"
+                alt="tailwindcss"
+              />
+            </a>
+          </div>
 
           <h1 id="contacts">Contacts</h1>
 
@@ -248,76 +326,22 @@
             </a>
           </div>
 
-          <h1 id="developed-with">Developed with</h1>
-
-          <div class="flex my-4 items-center">
-            <a href="https://vuejs.org/" class="mx-1" target="_blank">
-              <img
-                class="block w-8"
-                :src="require('../assets/images/vue.png')"
-                alt="vuejs"
-              />
-            </a>
-            <a href="https://nuxtjs.org" class="mx-1" target="_blank">
-              <img
-                class="block w-8"
-                :src="require('../assets/images/nuxt.svg')"
-                alt="nuxtjs"
-              />
-            </a>
-            <a
-              href="https://www.typescriptlang.org/"
-              class="mx-1"
-              target="_blank"
-            >
-              <img
-                class="block w-8"
-                :src="require('../assets/images/typescript.png')"
-                alt="typescript"
-              />
-            </a>
-            <a href="https://tailwindcss.com/" class="mx-1" target="_blank">
-              <img
-                class="block w-10"
-                :src="require('../assets/images/tailwind.jpg')"
-                alt="tailwindcss"
-              />
-            </a>
-          </div>
-
-          <h1 id="rule-of-thumbs">Rule of thumb</h1>
-
-          <p>
-            To provide a more intuitive and informative article, there are a few
-            principles that I've always strive to follow.
-          </p>
-
-          <ul>
-            <li>
-              Efficient use of tables, diagrams, images and proper wording.
-            </li>
-            <li>
-              Read through the articles again and again, refactoring any
-              inefficient use of wordings
-            </li>
-            <li>
-              Research extensively online to get more information on the topic
-            </li>
-          </ul>
-
-          <h1 id="todos">Todos</h1>
+          <h1 id="coming-soon">Coming soon...</h1>
 
           <p>
             Although this seems like a very easy project, but the efforts are
             insurmountable to make it better and better, and hence it takes time
             and iteration to become fully-functional. Below shows some of the
-            planned features that will be introduced incrementally in my free
-            time.
+            planned features that will be introduced incrementally in the
+            future.
           </p>
 
           <ul>
-            <li>Add more articles</li>
-            <li>Add more responsiveness</li>
+            <li>Add tags.</li>
+            <li>Add links for social sharing.</li>
+            <li>Introduce a landing page.</li>
+            <li>Add custom component for cryptocurrency related articles.</li>
+            <li>Add more responsiveness.</li>
           </ul>
         </article>
 
@@ -340,7 +364,7 @@
               />
             </div>
             <div class="text-gray-400 text-xs pt-1">
-              Last updated on October 20, 2021 by Shaun Chong
+              Last updated on my birthday, by myself 😁
             </div>
           </div>
         </footer>
@@ -371,6 +395,11 @@ export default Vue.extend({
           text: 'More about the author',
         },
         {
+          id: 'mission',
+          depth: 2,
+          text: 'Mission',
+        },
+        {
           id: 'contacts',
           depth: 2,
           text: 'Contacts',
@@ -380,15 +409,11 @@ export default Vue.extend({
           depth: 2,
           text: 'Developed with',
         },
+
         {
-          id: 'rule-of-thumb',
+          id: 'coming-soon',
           depth: 2,
-          text: 'Rule of thumb',
-        },
-        {
-          id: 'todos',
-          depth: 2,
-          text: 'Todos',
+          text: 'Coming soon',
         },
       ]
     },
