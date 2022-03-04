@@ -116,6 +116,8 @@ My personal favourite internet browsers for surfing the internet.
 - [Brave](https://brave.com/)
 - [Tor](https://www.torproject.org/)
 - [Chrome](https://www.google.com/chrome/)
+- [Vivaldi](https://vivaldi.com/)
+- [Waterfox](https://www.waterfox.net/)
 
 ### Game
 
