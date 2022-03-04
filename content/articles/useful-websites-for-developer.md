@@ -48,6 +48,8 @@ Websites that contains loads of written tutorial in multiple technologies that c
 - [C# Corner](https://www.c-sharpcorner.com/)
 - [Real Python](https://realpython.com/)
 - [Scotch.io](https://scotch.io/)
+- [易百教程](https://www.yiibai.com/)
+- [Guru99](https://www.guru99.com/)
 
 ## Programming Language Docs
 
@@ -92,6 +94,7 @@ Documentation sites for the web application frameworks that emerged over the yea
 - [Angular](https://angular.io/)
 - [Svelte](https://svelte.dev/)
 - [Sapper](https://sapper.svelte.dev/)
+- [Astro](https://astro.build/)
 
 ## Server Framework Docs
 
@@ -130,8 +133,18 @@ Amazing blog by seasoned developers that shares their wisdom and experience in s
 - [SteveGordon](https://www.stevejgordon.co.uk/) .NET
 - [Philippe](https://pvlerick.github.io/) .NET
 - [Codopia](https://codopia.wordpress.com/)
+- [Webdevsimplified](https://blog.webdevsimplified.com/)
 
 ## Mini Course
 
 - [Code craft](https://codecraft.tv/)
 - [Teks tutorial hub](https://www.tektutorialshub.com/)
+
+## Tools
+
+- [Grabify](https://grabify.link/)
+- [HomeIdea3D](https://homeidea3d.seanwasere.com/)
+
+## News
+
+- [Independent](https://www.independent.co.uk/asia)

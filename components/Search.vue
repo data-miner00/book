@@ -1,9 +1,12 @@
 <template>
-  <div class="max-h-screen overflow-auto p-5">
+  <div
+    class="max-h-screen h-full overflow-auto p-5 w-1/5 ml-auto bg-gray-100"
+    @click.stop
+  >
     <div class="rounded overflow-hidden">
       <input
         type="search"
-        class="px-3 py-2 w-full"
+        class="px-3 py-2 w-full focus:outline-white"
         v-model="searchQuery"
         placeholder="Search by title or keyword"
         ref="searchInput"
