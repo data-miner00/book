@@ -62,6 +62,7 @@
     <div class="relative hidden md:flex md:justify-start" style="width: 448px">
       <div class="fixed top-0 w-72 hidden md:block">
         <Quicklinks :quicklinks="quicklinks" />
+        <Tags :tags="tags" />
       </div>
     </div>
   </div>
