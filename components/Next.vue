@@ -14,13 +14,13 @@
     "
     :class="{ 'flex-row-reverse': isPrev }"
   >
-    <div class="my-auto" :class="{ 'text-right': isPrev }">
+    <div :class="{ 'text-right': isPrev }">
       <div class="text-xs text-gray-400">
         {{ isPrev ? 'Previous' : 'Next' }}
       </div>
       <div class="nxtitle font-semibold">{{ title }}</div>
     </div>
-    <div class="flex" :class="[isPrev ? 'pr-4' : 'pl-4']">
+    <div class="flex self-center" :class="[isPrev ? 'pr-4' : 'pl-4']">
       <svg
         v-if="isPrev"
         xmlns="http://www.w3.org/2000/svg"
