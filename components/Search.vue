@@ -28,6 +28,7 @@
           v-for="article in articles"
           :key="article.slug"
           class="
+            outline-none
             item
             p-5
             bg-white
@@ -36,6 +37,7 @@
             border border-transparent border-solid
             my-2
             block
+            focus:border-blue-500 focus:bg-blue-50 focus:text-blue-500
           "
           @click.native="
             toggleSearchPanel()
