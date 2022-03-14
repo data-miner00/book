@@ -59,8 +59,8 @@
         </footer>
       </div>
     </div>
-    <div class="hidden md:flex md:justify-start" style="width: 448px">
-      <div class="px-5 w-1/2 relative">
+    <div class="relative hidden md:flex md:justify-start" style="width: 448px">
+      <div class="fixed top-0 w-72 hidden md:block">
         <Quicklinks :quicklinks="quicklinks" />
       </div>
     </div>
@@ -102,6 +102,10 @@ export default Vue.extend({
     next: {
       type: Object,
       default: () => null,
+    },
+    tags: {
+      type: Array,
+      default: () => [],
     },
   },
   filters: {

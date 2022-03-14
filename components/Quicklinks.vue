@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 mt-12 w-72 hidden md:block">
+  <nav class="mt-12 w-full">
     <div
       class="
         px-8
