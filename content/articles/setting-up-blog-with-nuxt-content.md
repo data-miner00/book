@@ -290,13 +290,13 @@ In the `nuxt.config.js`, paste the following code inside the `export default` ob
 content: {
   markdown: {
   	prism: {
-  	  theme: 'prism-themes/themes/prism-duotone-dark.css',
+  	  theme: 'prism-themes/themes/prism-material-oceanic.css',
     },
   },
 },
 ```
 
-You can use any theme that you want from the package. The documentation can be found [here](https://github.com/PrismJS/prism-themes).
+There are a wide variety of themes for PrismJS that you can choose from. The documentation can be found [here](https://github.com/PrismJS/prism-themes). So do yourself a favour and select one that match your style and feeling the most.
 
 ### Components
 
