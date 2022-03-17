@@ -1,6 +1,11 @@
 <template>
   <!-- container -->
-  <div class="relative lg:flex lg:flex-row" style="color: #0f1419">
+  <div
+    class="relative lg:flex lg:flex-row"
+    style="color: #0f1419"
+    tabindex="0"
+    @keydown.ctrl="navigateSearch"
+  >
     <!-- left menu sidebar -->
     <div
       class="
@@ -52,6 +57,12 @@ import { mapGetters, mapMutations } from 'vuex'
 export default Vue.extend({
   methods: {
     ...mapMutations(['toggleSearchPanel']),
+    navigateSearch(event: KeyboardEvent): void {
+      if (event.key == 'k') {
+        event.preventDefault()
+        this.toggleSearchPanel()
+      }
+    },
   },
   computed: {
     ...mapGetters(['getSearchPanelState']),

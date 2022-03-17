@@ -48,6 +48,7 @@ Code editors are similar to IDEs, but with little or no support to advanced feat
 - [Vim](https://www.vim.org/)
 - [NeoVim](https://neovim.io/)
 - [Sublime Text](https://www.sublimetext.com/)
+- [Emacs](https://www.gnu.org/software/emacs/)
 
 ### Tools
 
