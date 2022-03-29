@@ -19,7 +19,7 @@
 
         <!-- article footer -->
         <footer class="mt-12">
-          <div class="flex gap-1">
+          <div class="flex gap-1 flex-col md:flex-row">
             <Next
               :isPrev="true"
               v-if="prev"
