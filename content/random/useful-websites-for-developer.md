@@ -1,8 +1,8 @@
 ---
 title: Useful websites for developers
-subtitle: A curated list of websites that contains rich resources and information for the latest technologies
+subtitle: A curated list of websites that contains information for the latest technologies and useful tools
 topic: List
-displayTopic: Programming
+displayTopic: Random
 author:
   name: Shaun Chong
   avatar: levi.png
@@ -10,6 +10,8 @@ tags:
   - productivity
   - application
   - website
+updatedAt: 2022-03-27T13:33:30.485Z
+createdAt: 2022-03-27T13:33:30.485Z
 ---
 
 This article contains multiple hand-picked website that can be really useful and handy for developers that need to get access quickly without constantly typing and searching in the search bar in the browser as that can be a mundane and tedious task to do.
@@ -50,6 +52,7 @@ Websites that contains loads of written tutorial in multiple technologies that c
 - [Scotch.io](https://scotch.io/)
 - [易百教程](https://www.yiibai.com/)
 - [Guru99](https://www.guru99.com/)
+- [dotnetperls](https://www.dotnetperls.com/)
 
 ## Programming Language Docs
 
@@ -70,6 +73,7 @@ The official documentation sites for various programming languages.
 - [TypeScript](https://www.typescriptlang.org/)
 - [ReScript](https://rescript-lang.org/)
 - [Apl](https://xpqz.github.io/learnapl/intro.html)
+- [Racket](https://racket-lang.org/)
 
 ## Screencast
 
@@ -139,12 +143,8 @@ Amazing blog by seasoned developers that shares their wisdom and experience in s
 
 - [Code craft](https://codecraft.tv/)
 - [Teks tutorial hub](https://www.tektutorialshub.com/)
+- [Exercism](https://exercism.org/)
 
 ## Tools
 
 - [Grabify](https://grabify.link/)
-- [HomeIdea3D](https://homeidea3d.seanwasere.com/)
-
-## News
-
-- [Independent](https://www.independent.co.uk/asia)

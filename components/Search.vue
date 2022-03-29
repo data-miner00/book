@@ -78,7 +78,7 @@ export default Vue.extend({
         return
       }
       //@ts-ignore
-      this.articles = await this.$content('articles')
+      this.articles = await this.$content('/', { deep: true })
         .search(searchQuery)
         .only(['title', 'subtitle', 'slug', 'displayTopic'])
         .fetch()
