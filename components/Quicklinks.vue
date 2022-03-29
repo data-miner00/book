@@ -32,8 +32,9 @@
           py-1
           border-solid border-gray-200
           box-border
-          block
           hover:text-purple-600
+          flex
+          items-center
         "
         v-for="link in quicklinks"
         :class="[false ? 'border-purple-400 border-l-4' : 'border-l']"
@@ -44,7 +45,7 @@
           class="pl-3"
           :class="[
             { 'text-purple-600 font-bold': false },
-            { 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 },
+            { 'ml-2': link.depth === 3 },
           ]"
           >{{ link.text }}</span
         >
