@@ -10,6 +10,9 @@ tags:
   - css
   - ui/ux
   - references
+directory: web-dev
+updatedAt: 2022-01-27T13:33:30.485Z
+createdAt: 2021-10-25T13:33:30.485Z
 ---
 
 Accessing any of the web development resources that came into your mind might sometimes be a bit pesky when we are developing front-end applications. Time is wasted in order to search for bookmarks, noted on the resources to aid in the development.

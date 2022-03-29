@@ -9,6 +9,9 @@ author:
 tags:
   - react
   - web development
+directory: web-dev
+updatedAt: 2022-01-27T13:33:30.485Z
+createdAt: 2022-01-27T13:33:30.485Z
 ---
 
 When working with React applications, there are a number of ways to create reusable components that can be applied throughout the application. However, not all of them are recommended as of now due to deprecation.

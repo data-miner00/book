@@ -10,6 +10,9 @@ tags:
   - rust
   - programming
   - wasm
+directory: web-dev
+updatedAt: 2022-02-02T13:33:30.485Z
+createdAt: 2022-02-02T13:33:30.485Z
 ---
 
 In this article, we will be creating WASM project with Rust from scratch.

@@ -9,6 +9,9 @@ author:
 tags:
   - programming
   - guide
+directory: programming
+updatedAt: 2021-10-22T13:33:30.485Z
+createdAt: 2021-10-13T13:33:30.485Z
 ---
 
 In software development, obfuscation is the **_deliberate act_** of creating source or machine code that is **_difficult for humans to understand_**. Like obfuscation in natural language, it may use needlessly roundabout expressions to compose statements.

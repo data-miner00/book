@@ -11,7 +11,9 @@ tags:
   - nuxt
   - blog
   - tutorial
-  - web-dev
+directory: web-dev
+updatedAt: 2022-03-18T13:33:30.485Z
+createdAt: 2021-10-08T13:33:30.485Z
 ---
 
 Having a **personal blog** is pretty much a standard and fundamental as a developer to _express themself_ and _sharing their knowledge_ to the world. There are countless tools and technologies out there for anyone to create their own blog, whether by paid or free of charge.

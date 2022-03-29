@@ -10,6 +10,9 @@ tags:
   - software
   - development
   - tools
+directory: random
+updatedAt: 2022-03-18T13:33:30.485Z
+createdAt: 2021-10-20T13:33:30.485Z
 ---
 
 As a developer, setting up a brand new computer from scratch can be quite an enduring process as the tools that we are using might have some complicated steps to setup but might have already forgotten over the years. Besides, there are so much softwares and tools that are essential and it's just impossible to remember each and every one of them.

@@ -10,6 +10,9 @@ tags:
   - markdown
   - example
   - experimental
+directory: random
+updatedAt: 2021-10-20T13:33:30.485Z
+createdAt: 2021-10-13T13:33:30.485Z
 ---
 
 This is a _dummy article_ in which I am using for testing out new functionalities, please kindly ignore this page. **Thanks**.

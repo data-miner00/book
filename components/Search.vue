@@ -22,7 +22,7 @@
       <div v-else class="overflow-auto">
         <nuxt-link
           :to="{
-            name: `${article.displayTopic.toLowerCase()}-slug`,
+            name: `${article.directory}-slug`,
             params: { slug: article.slug },
           }"
           v-for="article in articles"
@@ -80,7 +80,7 @@ export default Vue.extend({
       //@ts-ignore
       this.articles = await this.$content('/', { deep: true })
         .search(searchQuery)
-        .only(['title', 'subtitle', 'slug', 'displayTopic'])
+        .only(['title', 'subtitle', 'slug', 'directory'])
         .fetch()
     },
     getSearchPanelState(newState: boolean) {

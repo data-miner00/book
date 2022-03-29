@@ -9,6 +9,7 @@ author:
 tags:
   - quines
   - cheatsheet
+directory: programming
 updatedAt: 2022-03-29T13:33:30.485Z
 createdAt: 2021-10-31T13:33:30.485Z
 ---

@@ -8,10 +8,12 @@ author:
   avatar: levi.png
 tags:
   - vuejs
-  - technology
   - nuxt
   - jest
   - testing
+directory: web-dev
+updatedAt: 2022-01-12T13:33:30.485Z
+createdAt: 2021-01-12T13:33:30.485Z
 ---
 
 Just some BS before we begin, I've been using various web frameworks such as <span class="text-blue-600 font-bold">React</span>, <span class="text-red-700 font-bold">Angular</span> and <span class="text-green-600 font-bold">Vue</span> for quite some time for developing personal projects but rarely do I write tests for them.

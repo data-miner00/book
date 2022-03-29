@@ -10,6 +10,9 @@ tags:
   - technology
   - react
   - testing
+directory: web-dev
+updatedAt: 2021-12-29T13:33:30.485Z
+createdAt: 2021-12-27T13:33:30.485Z
 ---
 
 Testing can be **intimidating** especially for beginners in software development like me years ago. I tried to avoid writing tests whenever I can to spare myself some mercy. However, writing efficient tests can improve the software quality and the confidence as well, which in turn improve user satisfaction over the well engineered software features without any unexpected behavior.

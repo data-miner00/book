@@ -10,6 +10,9 @@ tags:
   - minecraft
   - gaming
   - cheatsheet
+directory: minecraft
+updatedAt: 2022-01-27T13:33:30.485Z
+createdAt: 2021-10-13T13:33:30.485Z
 ---
 
 In Minecraft, empowering tools and gears is one of the most important aspect of the game. Without enchantment, you will be facing a very huge bottleneck in the game that **impedes further progression** at some point and **reduces your productivity** as well. This also means that you are actually wasting your time and effort. Asides, without stacked armor that actually give much much more protection compared to the raw, unenchanted armor, you are extremely **vulnerable to dangers** poses by the game. There are a thousands way that you could die in game and it's definitely not a good experience to go through especially in a hardcore world.

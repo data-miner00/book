@@ -10,6 +10,9 @@ tags:
   - minecraft
   - gaming
   - cheatsheet
+directory: minecraft
+updatedAt: 2022-01-27T13:33:30.485Z
+createdAt: 2021-11-04T13:33:30.485Z
 ---
 
 There are a bunch of mundane tasks and chores in Minecraft that can be automated to improve the overall efficiency and effectiveness. Some of the farm are AFK-able and some are not. Dozens of players have came out with their own delicate designs on a particular farm and shares to the world through any platform such as Youtube.
