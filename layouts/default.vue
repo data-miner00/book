@@ -171,6 +171,12 @@ export default Vue.extend({
   @apply border-b border-solid border-gray-100;
 }
 
+.nuxt-content mjx-container svg {
+  /* height: 4ex; */
+  display: block;
+  margin: 0 auto;
+}
+
 .this {
   transition-property: left, right;
 }
