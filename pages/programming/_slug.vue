@@ -20,12 +20,12 @@ import Vue from 'vue'
 export default Vue.extend({
   //@ts-ignore
   async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
+    const article = await $content('programming', params.slug).fetch()
 
-    const [prev, next] = await $content('articles')
+    const [prev, next] = await $content('programming')
       .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'slug'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('title', 'asc')
       .surround(params.slug)
       .fetch()
 

@@ -81,16 +81,15 @@
           <h1 id="mission">Mission</h1>
 
           <p>
-            I strife to educate people that read through my articles with
-            accurate and relevant information. I am also devoted to provide
-            impeccable experience while indulging in the articles.
+            I strife to <em>learn as much</em> as I can through writing articles
+            on various topics that I found intriguing.
           </p>
 
           <p>
-            I will be continuously adopting on how the other successful
-            blog/articles/docs websites structure their website in terms of
-            UI/UX and content structure. Some of my favourite article websites
-            are <a href="https://medium.com/">Medium.com</a>,
+            Insipired by other thoughtful technical writeup sites, I am also
+            trying to provide a similar experience that they provide. Some of my
+            favourite article websites are
+            <a href="https://medium.com/">Medium.com</a>,
             <a href="https://decrypt.co/">Decrypt.co</a> and
             <a href="https://dev.to/">Dev.to</a>.
           </p>

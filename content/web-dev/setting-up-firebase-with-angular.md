@@ -7,10 +7,12 @@ author:
   name: Shaun Chong
   avatar: levi.png
 tags:
-  - webdev
   - angular
   - firebase
   - website
+directory: web-dev
+updatedAt: 2022-02-19T13:33:30.485Z
+createdAt: 2022-02-19T13:33:30.485Z
 ---
 
 In this article, we will learn how to setup a web application in Angular that has Firebase integration. This can be useful in a handful of ways including database and authentications.

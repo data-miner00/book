@@ -1,7 +1,7 @@
 <template>
   <Overview
     title="Programming"
-    subtitle="The only way to future technological advancement"
+    subtitle="The only way to sparkle meaningful and invigorating communication with computers"
     topic="programming"
     :articles="articles"
   />
@@ -16,7 +16,7 @@ export default Vue.extend({
   }),
   //@ts-ignore
   async asyncData({ $content, params }) {
-    const articles = await $content('articles')
+    const articles = await $content('programming')
       .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'subtitle', 'slug'])
       .fetch()

@@ -8,6 +8,9 @@ author:
   avatar: levi.png
 tags:
   - algorithm
+directory: programming
+updatedAt: 2021-10-22T13:33:30.485Z
+createdAt: 2021-10-13T13:33:30.485Z
 ---
 
 A Quack III inverse square root is an extremely fast inverse square root algorithm created by Carmack back in 1999 that make uses of unconventional and clever computing methods with high efficiency to get the approximate result.

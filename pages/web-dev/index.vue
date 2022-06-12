@@ -1,8 +1,8 @@
 <template>
   <Overview
-    title="Random"
-    subtitle="Here contains all topics that are totally unrelated"
-    topic="random"
+    title="Web Development"
+    subtitle="A very basic yet essential towards a flourishing internet era"
+    topic="web-dev"
     :articles="articles"
   />
 </template>
@@ -12,12 +12,12 @@ import Vue from 'vue'
 
 export default Vue.extend({
   head: () => ({
-    title: 'Random | Book',
+    title: 'Web Development | Book',
   }),
   //@ts-ignore
   async asyncData({ $content, params }) {
-    const articles = await $content('random')
-      .where({ displayTopic: { $eq: 'Random' } })
+    const articles = await $content('web-dev')
+      .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'subtitle', 'slug'])
       .fetch()
 

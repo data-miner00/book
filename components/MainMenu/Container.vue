@@ -17,6 +17,11 @@
         componentName="programming"
         :entries="programming"
       />
+      <MainMenuSection
+        title="Web Development"
+        componentName="web-dev"
+        :entries="web"
+      />
     </div>
   </div>
 </template>
@@ -29,27 +34,35 @@ export default Vue.extend({
     random: [],
     minecraft: [],
     programming: [],
+    web: [],
   }),
   async mounted() {
     //@ts-ignore
-    this.random = await this.$content('articles')
+    this.random = await this.$content('random')
       .where({ displayTopic: { $eq: 'Random' } })
       .only(['title', 'slug'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('title', 'asc')
       .fetch()
 
     //@ts-ignore
-    this.minecraft = await this.$content('articles')
+    this.minecraft = await this.$content('minecraft')
       .where({ displayTopic: { $eq: 'Minecraft' } })
       .only(['title', 'slug'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('title', 'asc')
       .fetch()
 
     //@ts-ignore
-    this.programming = await this.$content('articles')
+    this.programming = await this.$content('programming')
       .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'slug'])
-      .sortBy('createdAt', 'asc')
+      .sortBy('title', 'asc')
+      .fetch()
+
+    //@ts-ignore
+    this.web = await this.$content('web-dev')
+      .where({ displayTopic: { $eq: 'Programming' } })
+      .only(['title', 'slug'])
+      .sortBy('title', 'asc')
       .fetch()
   },
 })

@@ -9,15 +9,18 @@ author:
 tags:
   - quines
   - cheatsheet
+directory: programming
+updatedAt: 2022-03-29T13:33:30.485Z
+createdAt: 2021-10-31T13:33:30.485Z
 ---
 
-A quine is a piece of code that upon executing will produce itself as the output. A quine is **idempotent**. The result will remain exactly the same no matter how much time you execute it.
+A quine is a piece of code that upon executing will **produce itself** as the output. A quine is _idempotent_. The result will remain exactly the same no matter how much time you execute it. They are also known as self-replicating programs or self-copying programs.
 
 ## Gallery of Quines
 
-Here are a collection of quines with different programming languages that I've collected through the internet.
+Here are a collection of quines with different programming languages that I've collected through the internet. 
 
-### C
+### C implementation
 
 Example 1:
 
@@ -52,13 +55,13 @@ Example 3:
 main(){char*s="main(){char*s=%c%s%c;printf(s,34,s,34);}";printf(s,34,s,34);}
 ```
 
-### CoffeeScript
+### CoffeeScript implementation
 
 ```coffee
 s="s=%j;console.log s,s";console.log s,s
 ```
 
-### Java
+### Java implementation
 
 This is a verbose one compared to others.
 
@@ -96,7 +99,7 @@ public class Quine
 }
 ```
 
-### JavaScript
+### JavaScript implementation
 
 ```js
 s="s=%j;console.log(s,s)";console.log(s,s)
@@ -106,13 +109,13 @@ s="s=%j;console.log(s,s)";console.log(s,s)
 code='var q=unescape("%27");console.log("code="+q+code+q+";eval(code)")';eval(code)
 ```
 
-### Lua
+### Lua implementation
 
 ```lua
 s="s=%qprint(s:format(s))"print(s:format(s))
 ```
 
-### Perl
+### Perl implementation
 
 Example 1:
 
@@ -126,7 +129,7 @@ Example 2:
 $s=q($s=q(%s);printf($s,%s););printf($s,%s);
 ```
 
-### Python
+### Python implementation
 
 Example 1:
 
@@ -146,7 +149,7 @@ Example 3:
 s='s=%r;print(s%%s,sep="")';print(s%s,sep="")
 ```
 
-### Ruby
+### Ruby implementation
 
 Example 1:
 
@@ -172,13 +175,13 @@ Example 4:
 s="s=%c%s%c;printf s,34,s,34";printf s,34,s,34
 ```
 
-### Shell
+### Shell implementation
 
 ```sh
 s='s=\47%s\47;printf "$s" "$s"';printf "$s" "$s"
 ```
 
-### Scheme
+### Scheme implementation
 
 ```scheme
 (define x '(
@@ -199,4 +202,6 @@ As we can see, the simplest quine are of this format, `s="s=%p;printf s,s";print
 
 ## Reference
 
-https://cs.lmu.edu/~ray/notes/quineprograms/
+- [Quine Programs](https://cs.lmu.edu/~ray/notes/quineprograms/)
+- [How to write your first Quine program](https://towardsdatascience.com/how-to-write-your-first-quine-program-947f2b7e4a6f)
+- [Quine - Technopedia](https://www.techopedia.com/definition/21581/quine)
