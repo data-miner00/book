@@ -201,3 +201,5 @@ Selected developer tools extension for Firefox browser.
 - [Preact devtools](https://addons.mozilla.org/en-US/firefox/addon/preact-devtools/)
 - [Metamask](https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/)
 - [Browsec](https://addons.mozilla.org/en-US/firefox/addon/browsec/)
+- [Wappanalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
+- [Phantom](https://addons.mozilla.org/en-US/firefox/addon/phantom-app/)

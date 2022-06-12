@@ -54,8 +54,6 @@ fn add(self, s: &str) -> String {
 }
 ```
 
-$$ L = \frac{1}{2} \rho v^2 S C_L $$
-
 ## Chapter 3
 
 - item 1
