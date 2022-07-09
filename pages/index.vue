@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
-    <div class="px-20">
-      <div class="lg:max-w-screen-md pb-12">
+    <div class="px-10 md:px-20">
+      <div class="max-w-screen-md pb-12">
         <!-- heading -->
         <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
           <!-- title  -->
@@ -369,7 +369,7 @@
         </footer>
       </div>
     </div>
-    <div class="relative hidden md:flex md:justify-start" style="width: 448px">
+    <div class="relative hidden md:flex md:justify-start" style="width: 370px">
       <div class="fixed top-0 w-72 hidden md:block">
         <Quicklinks :quicklinks="quicklinks" />
         <Tags :tags="tags" />
