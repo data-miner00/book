@@ -46,7 +46,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    //
+    // https://content.nuxtjs.org/v1/getting-started/introduction/
     '@nuxt/content',
   ],
 
