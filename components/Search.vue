@@ -1,6 +1,15 @@
 <template>
   <div
-    class="max-h-screen h-full overflow-auto p-5 w-1/5 ml-auto bg-gray-100"
+    class="
+      max-h-screen
+      h-full
+      overflow-auto
+      p-5
+      w-1/4
+      3xl:w-1/5
+      ml-auto
+      bg-gray-100
+    "
     @click.stop
   >
     <div class="rounded overflow-hidden">
