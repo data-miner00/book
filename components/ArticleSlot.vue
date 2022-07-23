@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <div class="px-10 md:px-20">
-      <div class="max-w-screen-md pb-12">
+      <div class="max-w-2xl 3xl:max-w-screen-md pb-12">
         <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
           <!-- title  -->
           <div class="text-4xl font-semibold">{{ title }}</div>
@@ -59,7 +59,7 @@
         </footer>
       </div>
     </div>
-    <div class="relative hidden md:flex md:justify-start" style="width: 448px">
+    <div class="menu-wrapper relative hidden md:flex md:justify-start">
       <div class="fixed top-0 w-72 hidden md:block">
         <Quicklinks :quicklinks="quicklinks" />
         <Tags :tags="tags" />
@@ -123,3 +123,15 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+.menu-wrapper {
+  width: 300px;
+}
+
+@media screen and (min-width: 1600px) {
+  .menu-wrapper {
+    width: 448px;
+  }
+}
+</style>
