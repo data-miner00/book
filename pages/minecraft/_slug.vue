@@ -15,19 +15,19 @@
 </template>
 
 <script lang="ts">
+import { IContentDocument } from '@nuxt/content/types/content'
 import Vue from 'vue'
 
 export default Vue.extend({
-  //@ts-ignore
   async asyncData({ $content, params }) {
     const article = await $content('minecraft', params.slug).fetch()
 
-    const [prev, next] = await $content('minecraft')
+    const [prev, next] = (await $content('minecraft')
       .where({ displayTopic: { $eq: 'Minecraft' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
       .surround(params.slug)
-      .fetch()
+      .fetch()) as Array<IContentDocument>
 
     return { article, prev, next }
   },

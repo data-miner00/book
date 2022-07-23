@@ -57,11 +57,17 @@
 </template>
 
 <script lang="ts">
+import { IContentDocument } from '@nuxt/content/types/content'
 import Vue from 'vue'
 import { mapMutations, mapGetters } from 'vuex'
 
+type Data = {
+  searchQuery: string
+  articles: Array<IContentDocument>
+}
+
 export default Vue.extend({
-  data: () => ({
+  data: (): Data => ({
     searchQuery: '',
     articles: [],
   }),
@@ -77,11 +83,11 @@ export default Vue.extend({
         this.articles = []
         return
       }
-      //@ts-ignore
-      this.articles = await this.$content('/', { deep: true })
+
+      this.articles = (await this.$content('/', { deep: true })
         .search(searchQuery)
         .only(['title', 'subtitle', 'slug', 'directory'])
-        .fetch()
+        .fetch()) as Array<IContentDocument>
     },
     getSearchPanelState(newState: boolean) {
       if (process.browser && this.$refs.searchInput && newState) {
