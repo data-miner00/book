@@ -38,19 +38,18 @@ This is some more info
 
 > This is cool
 
-```rust
-let s1 = String::from("Hello");
-let s2 = String::from("world!");
-let s3 = s1 + &s2;
-
-struct Smth {
+```rust{1-2,8}[lib.rs]
+#[pallet::config]
+pub trait Config: frame_system::Config {
+    type Event: From<Event<Self>> + IsType<<Self as frame_system::Config>::Event>;
+    type MaxBytesInHash: Get<u32>;
 }
 
-impl Smth {
-}
-
-fn add(self, s: &str) -> String {
-    a.push(s)
+#[pallet::event]
+#[pallet::generate_deposit(pub(super) fn deposit_event)]
+pub enum Event<T: Config> {
+    ClaimCreated(T::AccountId, BoundedVec<u8, T::MaxBytesInHash>),
+    ClaimRevoked(T::AccountId, BoundedVec<u8, T::MaxBytesInHash>),
 }
 ```
 
