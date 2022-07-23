@@ -118,6 +118,10 @@ export default Vue.extend({
   @apply rounded;
 }
 
+.nuxt-content-highlight .filename {
+  @apply absolute top-4 right-2 text-white z-10 px-3 bg-gray-600 rounded-sm;
+}
+
 .nuxt-content-highlight pre code {
   @apply bg-transparent;
   @apply px-0;
@@ -134,7 +138,7 @@ export default Vue.extend({
 }
 
 .nuxt-content-highlight {
-  @apply max-w-full overflow-x-auto;
+  @apply max-w-full overflow-x-auto relative;
 }
 
 .nuxt-content-highlight pre {
