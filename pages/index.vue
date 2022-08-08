@@ -399,14 +399,14 @@ export default Vue.extend({
           text: 'Mission',
         },
         {
-          id: 'contacts',
-          depth: 2,
-          text: 'Contacts',
-        },
-        {
           id: 'developed-with',
           depth: 2,
           text: 'Developed with',
+        },
+        {
+          id: 'contacts',
+          depth: 2,
+          text: 'Contacts',
         },
         {
           id: 'future-improvements',
