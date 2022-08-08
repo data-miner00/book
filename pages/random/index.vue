@@ -14,7 +14,6 @@ export default Vue.extend({
   head: () => ({
     title: 'Random | Book',
   }),
-  //@ts-ignore
   async asyncData({ $content, params }) {
     const articles = await $content('random')
       .where({ displayTopic: { $eq: 'Random' } })

@@ -14,7 +14,6 @@ export default Vue.extend({
   head: () => ({
     title: 'Minecraft | Book',
   }),
-  //@ts-ignore
   async asyncData({ $content, params }) {
     const articles = await $content('minecraft')
       .where({ displayTopic: { $eq: 'Minecraft' } })

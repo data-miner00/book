@@ -14,7 +14,6 @@ export default Vue.extend({
   head: () => ({
     title: 'Programming | Book',
   }),
-  //@ts-ignore
   async asyncData({ $content, params }) {
     const articles = await $content('programming')
       .where({ displayTopic: { $eq: 'Programming' } })
