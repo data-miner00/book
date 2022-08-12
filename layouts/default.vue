@@ -119,7 +119,7 @@ export default Vue.extend({
 }
 
 .nuxt-content-highlight .filename {
-  @apply absolute top-4 right-2 text-white z-10 px-3 bg-gray-600 rounded-sm;
+  @apply absolute top-4 right-2 text-gray-400 z-10 px-1 rounded-sm text-xs;
 }
 
 .nuxt-content-highlight pre code {
@@ -133,7 +133,7 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote {
-  @apply border-l-8 border-solid border-purple-400 pl-4 my-10;
+  @apply border-l-8 border-solid border-purple-400 pl-4 my-4;
   @apply bg-purple-50 hover:bg-purple-100 cursor-default py-3;
 }
 
