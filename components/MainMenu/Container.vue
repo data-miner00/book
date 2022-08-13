@@ -1,6 +1,6 @@
 <template>
   <div class="flex-1 overflow-auto">
-    <div class="h-screen mt-8">
+    <div class="min-h-screen mt-8 pb-5">
       <MainMenuSection title="Introduction" componentName="index" />
       <MainMenuSection
         title="Random"
