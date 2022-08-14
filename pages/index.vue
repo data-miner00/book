@@ -64,19 +64,18 @@
           <h1 id="more-about-the-author">More about the author</h1>
 
           <p>
-            I am a freshgraduate software engineer based in
-            <strong>Malaysia</strong>. I am passionate about learning foreign
-            languages and currently learning English and Japanese. I like to
-            develop software applications on my own to learn and experiment
-            different technologies on different type of projects during my
-            leisure time.
+            I am a freshgraduate software engineer based in Malaysia. I am
+            passionate about learning foreign languages and currently learning
+            English and Japanese. I like to develop software applications on my
+            own to learn and experiment different technologies on different type
+            of projects during my leisure time.
           </p>
 
           <h1 id="mission">Mission</h1>
 
           <p>
-            Perhaps my <strong>biggest goal</strong> at the moment is to create
-            a decent article site that is on par with websites such as
+            Perhaps my biggest goal at the moment is to create a decent article
+            site that is on par with websites such as
             <a target="_blank" href="https://medium.com/">Medium.com</a>,
             <a target="_blank" href="https://decrypt.co/">Decrypt.co</a> and
             <a target="_blank" href="https://dev.to/">Dev.to</a>. I would be
@@ -328,9 +327,9 @@
 
           <p>
             Although this seems like a very easy project, but the efforts are
-            insurmountable to make it better and better, and hence it takes time
-            and iteration to become fully-functional. Below shows some of the
-            planned features that will be introduced incrementally in the
+            insurmountable to make it better. It takes a long journey and
+            endless iterations to make it fully-functional. Below are some of
+            the planned features that will be introduced incrementally in the
             future.
           </p>
 
@@ -362,7 +361,7 @@
               />
             </div>
             <div class="text-gray-400 text-xs pt-1">
-              Last updated on July 23, 2022 by Shaun Chong.
+              Last updated on August 14, 2022 by Shaun Chong
             </div>
           </div>
         </footer>

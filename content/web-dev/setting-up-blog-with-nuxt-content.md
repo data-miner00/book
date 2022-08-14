@@ -12,13 +12,13 @@ tags:
   - blog
   - tutorial
 directory: web-dev
-updatedAt: 2022-07-23T14:06:27.498Z
+updatedAt: 2022-08-14T07:17:38.233Z
 createdAt: 2021-10-08T13:33:30.485Z
 ---
 
 > Disclaimer: This article uses Nuxt version 2 and Nuxt Content version 1 for demostration. Newer versions of the technologies will have their own caveats.
 
-Having a **personal blog** is pretty much a standard and fundamental as a developer to _express themself_ and _sharing their knowledge_ to the world. There are countless tools and technologies out there for anyone to create their own blog, whether by paid or free of charge.
+Having a personal blog is very useful for developers to document topics that are meaningful and worth sharing. There are countless tools and technologies out there for anyone to create their own blog, whether by paid or free of charge.
 
 For developers like us, we might be interested to build our blog with technologies ourselves such as vanilla HTML, CSS and JavaScript, or even leverage the powerful frameworks out there such as [Next.js](https://nextjs.org/) and [Gatsby.js](https://www.gatsbyjs.com/) to quickly kickstart the development that scales very well.
 
@@ -50,7 +50,7 @@ yarn add @nuxt/content
 
 After that, we need to register the module inside `nuxt.config.js` file as follows:
 
-```js
+```js[nuxt.config.js]
 export default {
   // ...
   modules: ['@nuxt/content'],
@@ -112,7 +112,7 @@ We are going to follow the first approach in which it is a teeny-tiny bit simple
 
 Let's quickly populate some content inside the `my-first-article.md` file.
 
-```md
+```md[my-first-article.md]
 ## Hello
 
 This is my first article!
@@ -128,7 +128,7 @@ Slug here means the unique identifier of your article based on your title. It is
 
 Coming back from the explanations, after you have created the `_slug.vue`, paste the following code:
 
-```html
+```html[_slug.vue]
 <template>
   <div>
     <nuxt-content :document="article"></nuxt-content>
@@ -139,7 +139,6 @@ Coming back from the explanations, after you have created the `_slug.vue`, paste
   import Vue from 'vue'
 
   export default Vue.extend({
-    //@ts-ignore
     async asyncData({ $content, params }) {
       const article = await $content('mymod', params.slug).fetch()
       return { article }
@@ -290,7 +289,7 @@ yarn add prism-themes
 
 In the `nuxt.config.js`, paste the following code inside the `export default` object.
 
-```js
+```js[nuxt.config.js]
 content: {
   markdown: {
   	prism: {
@@ -310,7 +309,7 @@ Let's create a component called `VImage.vue` inside `global`. This is the compon
 
 Paste the following code into `VImage.vue`. Feel free to modify the code as you wish. In my case, I've added a caption section under the image and provide option to size the image shown.
 
-```vue
+```vue[components/global/VImg.vue]
 <template>
   <div>
     <img
@@ -345,7 +344,7 @@ export default Vue.extend({
 
 To use it, simply call the components inside the Markdown.
 
-```html
+```html[content/**/*.md]
 <v-img src="link-to-image.jpg" alt="alt-text"></v-img>
 ```
 
