@@ -13,7 +13,7 @@
         </div>
 
         <!-- article will be injected inside here  -->
-        <article style="color: rgb(59, 69, 78)" class="leading-7">
+        <article style="color: #334155" class="leading-7">
           <slot />
         </article>
 
@@ -111,8 +111,12 @@ export default Vue.extend({
   },
   filters: {
     formatDate(date: string) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      //@ts-ignore
+      const options: Intl.DateTimeFormatOptions = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      }
+
       return new Date(date).toLocaleDateString('en', options)
     },
   },
