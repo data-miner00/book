@@ -11,7 +11,7 @@ tags:
   - development
   - tools
 directory: random
-updatedAt: 2022-03-18T13:33:30.485Z
+updatedAt: 2022-08-14T07:17:38.233Z
 createdAt: 2021-10-20T13:33:30.485Z
 ---
 
@@ -80,6 +80,8 @@ The software that aids in the development of projects, predominantly in software
 - [ffmpeg](http://www.ffmpeg.org/)
 - [emscripten](https://emscripten.org/)
 - [Github Desktop](https://desktop.github.com/)
+- [Azure Service Bus Explorer](https://github.com/paolosalvatori/ServiceBusExplorer)
+- [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)
 
 ### VMs and Emulators
 
@@ -203,3 +205,4 @@ Selected developer tools extension for Firefox browser.
 - [Browsec](https://addons.mozilla.org/en-US/firefox/addon/browsec/)
 - [Wappanalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
 - [Phantom](https://addons.mozilla.org/en-US/firefox/addon/phantom-app/)
+- [Zilpay](https://zilpay.io/)

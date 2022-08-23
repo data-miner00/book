@@ -1,6 +1,15 @@
 <template>
   <div
-    class="max-h-screen h-full overflow-auto p-5 w-1/5 ml-auto bg-gray-100"
+    class="
+      max-h-screen
+      h-full
+      overflow-auto
+      p-5
+      w-1/4
+      3xl:w-1/5
+      ml-auto
+      bg-gray-100
+    "
     @click.stop
   >
     <div class="rounded overflow-hidden">
@@ -57,11 +66,17 @@
 </template>
 
 <script lang="ts">
+import { IContentDocument } from '@nuxt/content/types/content'
 import Vue from 'vue'
 import { mapMutations, mapGetters } from 'vuex'
 
+type Data = {
+  searchQuery: string
+  articles: Array<IContentDocument>
+}
+
 export default Vue.extend({
-  data: () => ({
+  data: (): Data => ({
     searchQuery: '',
     articles: [],
   }),
@@ -77,11 +92,11 @@ export default Vue.extend({
         this.articles = []
         return
       }
-      //@ts-ignore
-      this.articles = await this.$content('/', { deep: true })
+
+      this.articles = (await this.$content('/', { deep: true })
         .search(searchQuery)
         .only(['title', 'subtitle', 'slug', 'directory'])
-        .fetch()
+        .fetch()) as Array<IContentDocument>
     },
     getSearchPanelState(newState: boolean) {
       if (process.browser && this.$refs.searchInput && newState) {

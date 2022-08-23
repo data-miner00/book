@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
-    <div class="px-20">
-      <div class="lg:max-w-screen-md pb-12">
+    <div class="px-10 md:px-20">
+      <div class="max-w-screen-md pb-12">
         <!-- heading -->
         <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
           <!-- title  -->
@@ -9,35 +9,29 @@
 
           <!-- subtitle -->
           <div class="text-xl mt-2 text-gray-500">
-            A short introduction to this digital grimoire 🙂
+            A short introduction to this homemade book 🙂
           </div>
         </div>
 
         <!-- actual content -->
         <article style="color: rgb(59, 69, 78)" class="this leading-7">
           <p>
-            Hi. This is Shaun and this site was developed for me to document the
-            knowledge that I've came across on various topics in the form of a
-            note or memo for my future reference. This site is open to the
-            public to benefit those who might need it.
+            Hi. This is Shaun and welcome to my site. This site was developed
+            for me to document the information that I've came across on various
+            topics in the form of a note or memo for my future reference. This
+            site is open to the public to benefit those who might find it
+            useful.
           </p>
 
           <p>
-            I developed this site a few months back and I am still actively
-            adding in more features and maintaining it to become a better site.
-            I am currently working on a landing page for this site, so people
-            like you won't be greeted with this boring introduction anymore, so
-            please look forward to it!
-          </p>
-
-          <p>
-            On the sidenote, if you are interested on joining the team, please
-            feel free to contact me, I would love to collaborate! If you have
-            found an issue, kindly report the issues through the
-            <strong>issues</strong> tab in the
+            However, this site is far from perfect and there might be bugs and
+            issues that emerges from time to time. If you have spotted any of
+            the <em>potential bugs</em> or <em>bizzare behaviours</em>, please
+            do not hesitate to open an issue
             <a href="https://github.com/data-miner00/book" target="_blank"
-              >Github Repo</a
-            >.
+              >here</a
+            >
+            and I will look into the issues.
           </p>
 
           <blockquote
@@ -70,33 +64,40 @@
           <h1 id="more-about-the-author">More about the author</h1>
 
           <p>
-            I am a freshgraduate software engineer based in
-            <strong>Malaysia</strong>. I am passionate about learning foreign
-            languages and currently learning English and Japanese. I like to
-            develop software applications on my own to learn and experiment
-            different technologies on different type of projects during my
-            leisure time.
+            I am a freshgraduate software engineer based in Malaysia. I am
+            passionate about learning foreign languages and currently learning
+            English and Japanese. I like to develop software applications on my
+            own to learn and experiment different technologies on different type
+            of projects during my leisure time.
           </p>
 
           <h1 id="mission">Mission</h1>
 
           <p>
-            I strife to <em>learn as much</em> as I can through writing articles
-            on various topics that I found intriguing.
+            Perhaps my biggest goal at the moment is to create a decent article
+            site that is on par with websites such as
+            <a target="_blank" href="https://medium.com/">Medium.com</a>,
+            <a target="_blank" href="https://decrypt.co/">Decrypt.co</a> and
+            <a target="_blank" href="https://dev.to/">Dev.to</a>. I would be
+            flattered if I am able to achieve this.
           </p>
 
           <p>
-            Insipired by other thoughtful technical writeup sites, I am also
-            trying to provide a similar experience that they provide. Some of my
-            favourite article websites are
-            <a href="https://medium.com/">Medium.com</a>,
-            <a href="https://decrypt.co/">Decrypt.co</a> and
-            <a href="https://dev.to/">Dev.to</a>.
+            I also strife to <em>learn as much</em> as I can through writing
+            articles on various topics that I found intriguing.
           </p>
 
           <h1 id="developed-with">Developed with</h1>
 
-          <div class="flex my-4 items-center">
+          <p>
+            This website is using Nuxt.js as the front-end framework as it
+            allows static-site generation which is perfect for this project. On
+            top of that, I am using Nuxt Content, a file-based CMS module built
+            for Nuxt.js to serve the contents. Tailwind.css is used for styling
+            the site.
+          </p>
+
+          <div class="flex my-4 items-center justify-end">
             <a href="https://vuejs.org/" class="mx-1" target="_blank">
               <img
                 class="block w-8"
@@ -134,11 +135,8 @@
           <h1 id="contacts">Contacts</h1>
 
           <p>
-            These are a list of social media accounts of mine. I use Facebook
-            and Instagram sparingly as I don't see any useful gains for binging
-            them. I do however, use Twitter more frequent than I expected,
-            mainly to scout the trending topics that people talks about in my
-            country, particularly regarding to politics.
+            These are a list of social media accounts of mine. Feel free to
+            reach out to me on any particular topic that is interesting.
           </p>
 
           <!-- Refactor into individual component and image file -->
@@ -325,22 +323,22 @@
             </a>
           </div>
 
-          <h1 id="coming-soon">Coming soon...</h1>
+          <h1 id="future-improvements">Future improvements</h1>
 
           <p>
             Although this seems like a very easy project, but the efforts are
-            insurmountable to make it better and better, and hence it takes time
-            and iteration to become fully-functional. Below shows some of the
-            planned features that will be introduced incrementally in the
+            insurmountable to make it better. It takes a long journey and
+            endless iterations to make it fully-functional. Below are some of
+            the planned features that will be introduced incrementally in the
             future.
           </p>
 
           <ul>
-            <li>Add tags.</li>
+            <li>Add LaTeX Support</li>
             <li>Add links for social sharing.</li>
-            <li>Introduce a landing page.</li>
-            <li>Add custom component for cryptocurrency related articles.</li>
-            <li>Add more responsiveness.</li>
+            <li>Add cryptocurrency articles with custom component.</li>
+            <li>Add more responsiveness to support more screen resolutions.</li>
+            <li>Improve accesibility of the site.</li>
           </ul>
         </article>
 
@@ -363,13 +361,13 @@
               />
             </div>
             <div class="text-gray-400 text-xs pt-1">
-              Last updated on my birthday, by myself 😁
+              Last updated on August 14, 2022 by Shaun Chong
             </div>
           </div>
         </footer>
       </div>
     </div>
-    <div class="relative hidden md:flex md:justify-start" style="width: 448px">
+    <div class="relative hidden md:flex md:justify-start" style="width: 370px">
       <div class="fixed top-0 w-72 hidden md:block">
         <Quicklinks :quicklinks="quicklinks" />
         <Tags :tags="tags" />
@@ -400,19 +398,19 @@ export default Vue.extend({
           text: 'Mission',
         },
         {
-          id: 'contacts',
-          depth: 2,
-          text: 'Contacts',
-        },
-        {
           id: 'developed-with',
           depth: 2,
           text: 'Developed with',
         },
         {
-          id: 'coming-soon',
+          id: 'contacts',
           depth: 2,
-          text: 'Coming soon',
+          text: 'Contacts',
+        },
+        {
+          id: 'future-improvements',
+          depth: 2,
+          text: 'Future improvements',
         },
       ]
     },

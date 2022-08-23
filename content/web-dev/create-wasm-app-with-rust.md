@@ -171,7 +171,7 @@ added 588 packages from 362 contributors in 32.375s
 
 After the installation inside the `www` directory has been completed, go to `package.json` and add the following block to it.
 
-```json
+```json[package.json]
 "dependencies": {
 	"your-project": "file:../pkg"
 }

@@ -1,5 +1,11 @@
 module.exports = {
-  theme: {},
+  theme: {
+    extend: {
+      screens: {
+        '3xl': '1600px',
+      },
+    },
+  },
   variants: {},
   plugins: [],
   purge: {

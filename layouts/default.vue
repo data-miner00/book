@@ -118,6 +118,10 @@ export default Vue.extend({
   @apply rounded;
 }
 
+.nuxt-content-highlight .filename {
+  @apply absolute top-4 right-2 text-gray-400 z-10 px-1 rounded-sm text-xs;
+}
+
 .nuxt-content-highlight pre code {
   @apply bg-transparent;
   @apply px-0;
@@ -129,12 +133,12 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote {
-  @apply border-l-8 border-solid border-purple-400 pl-4 my-10;
+  @apply border-l-8 border-solid border-purple-400 pl-4 my-4;
   @apply bg-purple-50 hover:bg-purple-100 cursor-default py-3;
 }
 
 .nuxt-content-highlight {
-  @apply max-w-full overflow-x-auto;
+  @apply max-w-full overflow-x-auto relative;
 }
 
 .nuxt-content-highlight pre {

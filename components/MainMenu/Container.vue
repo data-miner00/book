@@ -1,6 +1,6 @@
 <template>
   <div class="flex-1 overflow-auto">
-    <div class="h-screen mt-8">
+    <div class="min-h-screen mt-8 pb-5">
       <MainMenuSection title="Introduction" componentName="index" />
       <MainMenuSection
         title="Random"
@@ -27,43 +27,40 @@
 </template>
 
 <script lang="ts">
+import { IContentDocument } from '@nuxt/content/types/content'
 import Vue from 'vue'
 
 export default Vue.extend({
   data: () => ({
-    random: [],
-    minecraft: [],
-    programming: [],
-    web: [],
+    random: [] as Array<IContentDocument>,
+    minecraft: [] as Array<IContentDocument>,
+    programming: [] as Array<IContentDocument>,
+    web: [] as Array<IContentDocument>,
   }),
   async mounted() {
-    //@ts-ignore
-    this.random = await this.$content('random')
+    this.random = (await this.$content('random')
       .where({ displayTopic: { $eq: 'Random' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
-      .fetch()
+      .fetch()) as Array<IContentDocument>
 
-    //@ts-ignore
-    this.minecraft = await this.$content('minecraft')
+    this.minecraft = (await this.$content('minecraft')
       .where({ displayTopic: { $eq: 'Minecraft' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
-      .fetch()
+      .fetch()) as Array<IContentDocument>
 
-    //@ts-ignore
-    this.programming = await this.$content('programming')
+    this.programming = (await this.$content('programming')
       .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
-      .fetch()
+      .fetch()) as Array<IContentDocument>
 
-    //@ts-ignore
-    this.web = await this.$content('web-dev')
+    this.web = (await this.$content('web-dev')
       .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
-      .fetch()
+      .fetch()) as Array<IContentDocument>
   },
 })
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="my-4" :class="{ 'border border-black': border }">
     <img
       :src="fullpath"
       :alt="alt"
@@ -24,6 +24,10 @@ export default Vue.extend({
     alt: String,
     caption: String,
     maxWidth: String,
+    border: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     fullpath(): string {

@@ -288,9 +288,7 @@ it('should not have completed class when initially rendered', () => {
 
 Mocks can be created in a `__mock__` directory in root.
 
-```tsx
-// axios.js
-
+```tsx[axios.js]
 const mockResponse = {
   data: {
     results: [

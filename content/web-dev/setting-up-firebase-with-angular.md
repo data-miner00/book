@@ -11,7 +11,7 @@ tags:
   - firebase
   - website
 directory: web-dev
-updatedAt: 2022-02-19T13:33:30.485Z
+updatedAt: 2022-08-14T07:17:38.233Z
 createdAt: 2022-02-19T13:33:30.485Z
 ---
 
@@ -151,7 +151,7 @@ After this, the Angular-Firebase package will created `.firebaserc` and `firebas
 
 We can see something like this inside any of the `environment.ts` file
 
-```ts
+```ts[environment.ts]
 export const environment = {
   firebase: {
     projectId: '<your-project-id>',
@@ -180,7 +180,7 @@ After that, add a `.gitkeep` file inside the environments folder. Proceed to com
 
 Now proceed to commit the 'removed file' and add the `environments` folder to `.gitignore`
 
-```
+```[.gitignore]
 # Environments
 /src/environments
 ```
@@ -230,9 +230,9 @@ Error: src/environments/environment.ts:5:13 - error TS2591: Cannot find name 'pr
 
 This is because the JavaScript code bundled and run on the browser does not have a context for `process`, which is server-side scoped by Node.js.
 
-The workaround for this issue is to create a `scripts` folder at the root of the project and create a file named `setenv.js` with the following contents:
+The workaround for this issue is to use a custom script. Create a `scripts` folder at the root of the project and create a file named `setenv.js` with the following contents:
 
-```js
+```js[scripts/setenv.js]
 const { writeFile } = require('fs')
 const { argv } = require('yargs')
 
@@ -274,7 +274,7 @@ What this file does is to preload the environments variables in the `.env` file 
 
 Next step is to invoke this file every time the project starts or builds. We can do that by modifying the `scripts` in `package.json` for `start` and `build` as follows:
 
-```json
+```json[package.json]
 // Excerpt ---
 {
   "scripts": {
@@ -293,8 +293,6 @@ That's it! Run `npm start` to see it in effect. It should compiles successfully 
 
 ## Reference
 
-[Building a web application with Angular and Firebase](https://developers.google.com/codelabs/building-a-web-app-with-angular-and-firebase#0)
-
-[@angular/fire - NPM](https://www.npmjs.com/package/@angular/fire)
-
-[Setup dotenv to Access Environment Variables in Angular](https://javascript.plainenglish.io/setup-dotenv-to-access-environment-variables-in-angular-9-f06c6ffb86c0)
+- [Building a web application with Angular and Firebase](https://developers.google.com/codelabs/building-a-web-app-with-angular-and-firebase#0)
+- [@angular/fire - NPM](https://www.npmjs.com/package/@angular/fire)
+- [Setup dotenv to Access Environment Variables in Angular](https://javascript.plainenglish.io/setup-dotenv-to-access-environment-variables-in-angular-9-f06c6ffb86c0)
