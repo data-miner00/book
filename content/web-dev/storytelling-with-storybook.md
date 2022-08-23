@@ -79,7 +79,7 @@ Some of the popular addons including but not limited to [Links](https://storyboo
 
 The simplest testing method is to spot check the components before and after to see if there are any discrepancies with the intended behavior. Automating the test are possible as Storybook offers [visual tests](https://storybook.js.org/docs/react/writing-tests/visual-testing) that snapshot each of the component pixel by pixel. If changes are detected, it will show where the changes are. If the changes are intended, we can accept the new changes as the baseline that is used for comparison for the next test run.
 
-Storybook can also test the behaviour of the components such as events and state. It also provides the option to test for accessibility compliance through the accesibility addon provided by the Storybook team.
+Storybook can also test the behaviour of the components such as events and state. It also provides the option to test for **accessibility compliance** through the accesibility addon provided by the Storybook team.
 
 ## Storybook User Interface
 
@@ -143,7 +143,7 @@ export const Default = () => <Button label="Click me" />;
 export const Primary = () => <Button label="Click me" primary />
 ```
 
-The props for the component are not customizable at the moment. To make it customizable, create a reusable `Template` and assign `args` to each of the variants.
+The props for the component are **not customizable** at the moment. It cannot take any inputs from the user. To make it customizable, create a reusable `Template` and assign `args` to each of the variants.
 
 ```tsx[Button.stories.tsx]
 import { ComponentStory } from "@storybook/react";
@@ -206,7 +206,7 @@ Read more on theming [here](https://storybook.js.org/docs/react/configure/themin
 
 ## Summary
 
-In a nutshell, Storybook is extremely helpful when it comes to front-end development. It is used for isolating components for visualization and development. It is also a great tool to produce top-notch documentation of a project. There are a lot of addons available that can be integrated with Storybook to extend its capability that make it more useful.
+In a nutshell, Storybook is extremely helpful when it comes to front-end development. It is used for isolating components for visualization and development. It is also a great tool to produce top-notch documentation of a project. There are a lot of addons available that can be integrated with Storybook to extend its capability.
 
 ## Links and Reference
 
