@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nuxt -p 8888",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "nuxt start -p 8888",
     "generate": "nuxt generate",
     "test": "jest"
   },
