@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import { IContentDocument } from '@nuxt/content/types/content'
+import { FetchReturn } from '@nuxt/content/types/query-builder'
 import Vue from 'vue'
 
 export default Vue.extend({
@@ -27,7 +27,7 @@ export default Vue.extend({
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
       .surround(params.slug)
-      .fetch()) as Array<IContentDocument>
+      .fetch()) as Array<FetchReturn>
 
     return { article, prev, next }
   },

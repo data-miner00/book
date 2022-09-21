@@ -66,13 +66,13 @@
 </template>
 
 <script lang="ts">
-import { IContentDocument } from '@nuxt/content/types/content'
+import { FetchReturn } from '@nuxt/content/types/query-builder'
 import Vue from 'vue'
 import { mapMutations, mapGetters } from 'vuex'
 
 type Data = {
   searchQuery: string
-  articles: Array<IContentDocument>
+  articles: Array<FetchReturn>
 }
 
 export default Vue.extend({
@@ -96,7 +96,8 @@ export default Vue.extend({
       this.articles = (await this.$content('/', { deep: true })
         .search(searchQuery)
         .only(['title', 'subtitle', 'slug', 'directory'])
-        .fetch()) as Array<IContentDocument>
+        .fetch()
+        .catch(console.error)) as Array<FetchReturn>
     },
     getSearchPanelState(newState: boolean) {
       if (process.browser && this.$refs.searchInput && newState) {

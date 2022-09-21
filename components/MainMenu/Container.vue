@@ -27,40 +27,40 @@
 </template>
 
 <script lang="ts">
-import { IContentDocument } from '@nuxt/content/types/content'
+import { FetchReturn } from '@nuxt/content/types/query-builder'
 import Vue from 'vue'
 
 export default Vue.extend({
   data: () => ({
-    random: [] as Array<IContentDocument>,
-    minecraft: [] as Array<IContentDocument>,
-    programming: [] as Array<IContentDocument>,
-    web: [] as Array<IContentDocument>,
+    random: [] as Array<FetchReturn>,
+    minecraft: [] as Array<FetchReturn>,
+    programming: [] as Array<FetchReturn>,
+    web: [] as Array<FetchReturn>,
   }),
   async mounted() {
     this.random = (await this.$content('random')
       .where({ displayTopic: { $eq: 'Random' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
-      .fetch()) as Array<IContentDocument>
+      .fetch()) as Array<FetchReturn>
 
     this.minecraft = (await this.$content('minecraft')
       .where({ displayTopic: { $eq: 'Minecraft' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
-      .fetch()) as Array<IContentDocument>
+      .fetch()) as Array<FetchReturn>
 
     this.programming = (await this.$content('programming')
       .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
-      .fetch()) as Array<IContentDocument>
+      .fetch()) as Array<FetchReturn>
 
     this.web = (await this.$content('web-dev')
       .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
-      .fetch()) as Array<IContentDocument>
+      .fetch()) as Array<FetchReturn>
   },
 })
 </script>
