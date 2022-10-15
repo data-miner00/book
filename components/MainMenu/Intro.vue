@@ -24,7 +24,7 @@
     </div>
 
     <!-- section 3: search-icon -->
-    <div class="ml-auto flex items-center text-gray-500">
+    <button class="ml-auto flex items-center text-gray-500" title="Search">
       <div class="search-wrapper" @click="toggleSearchPanel">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
           />
         </svg>
       </div>
-    </div>
+    </button>
   </div>
 </template>
 
