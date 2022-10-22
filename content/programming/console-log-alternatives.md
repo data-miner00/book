@@ -11,7 +11,7 @@ tags:
   - logging
   - console
 directory: programming
-updatedAt: 2022-08-13T01:50:38.048Z
+updatedAt: 2022-10-19T01:50:38.048Z
 createdAt: 2022-08-12T17:38:48.848Z
 ---
 
@@ -82,6 +82,29 @@ Prints the stack trace to the console. Useful to trace the calls in nested funct
 A counter that logs and increments by 1 each time when it is being called. Useful for detecting multiple calls on a piece of code that suppose to run only once. It may be labelled with a string passed into the parameter.
 
 To reset the count, use the method `console.countReset()`.
+
+### Level
+
+Gives the logs some level to differentiate them from their intention.
+
+```js
+// Appear in blue color
+console.info('This is debug message')
+
+// Appear in yellow color
+console.warn('This is warning message')
+
+// Appear in red color
+console.error('This is error message')
+
+// Appear to be traceable
+console.debug('This is debug message')
+```
+
+- Info: General messages, such as service start/stop, feature invoked etc.
+- Warn: Potential breaking behaviour such as missing arguments.
+- Error: Any behaviour that is fatal and impedes the operation to continue.
+- Debug: Provide diagnostic info that is helpful to others.
 
 ## Benchmarking
 
