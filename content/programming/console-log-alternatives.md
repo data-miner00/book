@@ -11,7 +11,7 @@ tags:
   - logging
   - console
 directory: programming
-updatedAt: 2022-10-19T01:50:38.048Z
+updatedAt: 2022-10-27T17:53:03.861Z
 createdAt: 2022-08-12T17:38:48.848Z
 ---
 
@@ -169,4 +169,4 @@ The above log takes in the string to be logged as its first parameter and taking
 
 <v-img src="console-log-alternatives/Pasted image 20220727003901.png" alt="" border></v-img>
 
-This is how to over-engineer the console.log and make it appealing. One potential use case for this would be grouping logs based on different level that has colors designated for each of them.
+This is how to over-engineer the console.log and make it appealing as I did with one of my project. One potential use case for this would be grouping logs based on different level such as info, warnings, critical and fatal that has distinct color representing each of them.
