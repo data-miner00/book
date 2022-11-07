@@ -22,6 +22,11 @@
         componentName="web-dev"
         :entries="web"
       />
+      <MainMenuSection
+        title="Blockchain"
+        componentName="blockchain"
+        :entries="blockchain"
+      />
     </div>
   </div>
 </template>
@@ -36,6 +41,7 @@ export default Vue.extend({
     minecraft: [] as Array<IContentDocument>,
     programming: [] as Array<IContentDocument>,
     web: [] as Array<IContentDocument>,
+    blockchain: [] as Array<IContentDocument>,
   }),
   async mounted() {
     this.random = (await this.$content('random')
@@ -58,6 +64,12 @@ export default Vue.extend({
 
     this.web = (await this.$content('web-dev')
       .where({ displayTopic: { $eq: 'Programming' } })
+      .only(['title', 'slug'])
+      .sortBy('title', 'asc')
+      .fetch()) as Array<IContentDocument>
+
+    this.blockchain = (await this.$content('blockchain')
+      .where({ displayTopic: { $eq: 'Blockchain' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
       .fetch()) as Array<IContentDocument>
