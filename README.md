@@ -59,4 +59,4 @@ The development wotk items for this project are broken down into small and manag
 - [ ] Add dark mode
 - [ ] Redesign index page
 - [ ] Add accessibility and use semantic tags
-- [ ] Cryto graph component
+- [ ] Crypto graph component

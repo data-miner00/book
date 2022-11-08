@@ -11,7 +11,7 @@ tags:
   - react
   - testing
 directory: web-dev
-updatedAt: 2021-12-29T13:33:30.485Z
+updatedAt: 2022-11-07T14:25:33.879Z
 createdAt: 2021-12-27T13:33:30.485Z
 ---
 
@@ -153,12 +153,12 @@ return <Link to="/link">Link</Link>
 ```
 
 ```tsx
-import { BrowserRouter } from 'react-router-dom'
+import { MemoryRouter } from 'react-router-dom'
 
 const MockComponent = ({ someProp }) => (
-  <BrowserRouter>
+  <MemoryRouter>
     <Component someProp={someProp} />
-  </BrowserRouter>
+  </MemoryRouter>
 )
 
 it('should render with Link and prop', () => {

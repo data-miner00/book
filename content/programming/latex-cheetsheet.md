@@ -501,7 +501,7 @@ The best practice to tables is to use horizontal rule to seperate out the headin
 \end{tabular}
 ```
 
-That is not enough, we still need to specify the padding for the cells with
+That is not enough, the padding for the cells still needs to be specified with
 
 ```tex
 \renewcommand{\arraystretch}{1.5}
@@ -511,7 +511,7 @@ That is not enough, we still need to specify the padding for the cells with
 \begin{tabular}{ p{3.5cm} p{2.2cm} p{0.25\textwidth} }
 ```
 
-To include the list of tables, simply use `\listoftables` the same as with table of contents and figures.
+To include the list of tables, simply use `\listoftables` the same as with [table of contents](#content) and [figures](#list-of-figures).
 
 ## LaTeX Logo
 

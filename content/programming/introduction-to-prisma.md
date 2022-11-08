@@ -11,11 +11,11 @@ tags:
   - prisma
   - orm
   - sql
-updatedAt: 2022-10-15T12:01:41.858Z
+updatedAt: 2022-11-08T13:03:05.084Z
 createdAt: 2022-10-15T12:01:41.858Z
 ---
 
-Prisma is an ORM layer for Node.js and Typescript. While Prisma is mainly used for relational databases, no-SQL databases such as MongoDb can still be used through extra configurations.
+Prisma is an ORM layer for Node.js and Typescript. While Prisma is mainly used for relational databases, no-SQL database such as MongoDb can still be used through extra configurations.
 
 There are 3 components that comes under the Prisma umbrella:
 
@@ -25,7 +25,7 @@ There are 3 components that comes under the Prisma umbrella:
 
 ## Text Editor
 
-First of all, the text editor that is highly recommended for most of the coding endeavours is of course [Visual Studio Code](). It has the [Prisma extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma) in which we can install to provide syntax highlighting, autoformatting and more. It also empowers the development by providing useful code autocompletion that makes the development fast and enjoyable.
+First of all, the text editor that is highly recommended for most of the coding endeavours is of course [Visual Studio Code](https://code.visualstudio.com/). It has the [Prisma extension](https://marketplace.visualstudio.com/items?itemName=Prisma.prisma) in which we can install to provide syntax highlighting, autoformatting and more. It also empowers the development by providing useful code autocompletion that makes the development fast and enjoyable.
 
 ## Project Initialization
 
@@ -147,7 +147,7 @@ There are a number of data types in Prisma. The data types here is a generalizat
 
 ### Type Modifiers
 
-Type modifiers is to modify the behaviour of a field. There are only 2 modifiers in Prisma and are very easy to understand.
+Type modifiers is to modify the behaviour of a field. There are only 2 modifiers in Prisma and they are very easy to understand.
 
 - The nullable modifier `?`: Marks a field as nullable
 - The array modifier `[]`: Indicates that the field can be referenced to multiple ocurences.

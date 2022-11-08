@@ -44,7 +44,7 @@ var people = [
 console.table(people)
 ```
 
-The output table are as follows
+The output table are as follows.
 
 | index | 0         | 1         |
 | ----- | --------- | --------- |
@@ -79,7 +79,7 @@ Prints the stack trace to the console. Useful to trace the calls in nested funct
 
 ### Count
 
-A counter that logs and increments by 1 each time when it is being called. Useful for detecting multiple calls on a piece of code that suppose to run only once. It may be labelled with a string passed into the parameter.
+A counter that logs and increments by one each time when it is being called. Useful for detecting multiple calls on a piece of code that suppose to run only once. It may be labelled with a string passed into the parameter.
 
 To reset the count, use the method `console.countReset()`.
 

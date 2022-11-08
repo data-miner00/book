@@ -11,7 +11,7 @@ tags:
   - example
   - experimental
 directory: random
-updatedAt: 2021-10-20T13:33:30.485Z
+updatedAt: 2022-11-08T13:03:05.084Z
 createdAt: 2021-10-13T13:33:30.485Z
 ---
 
@@ -34,7 +34,7 @@ This is some more info `Some(_)` is cool as well
 - Schrödinger equation
 
 $$
-i \hbar \frac{\partial}{\partial t} \Psi \big(\textbf{r}, t) = \left[- \frac{\hbar^2}{2m}\nabla^2 + V(\textbf{r})\right]\psi(\textbf{r}, t)
+i \hbar \frac{\partial}{\partial t} \Psi \big(\textbf{r}, t) = \left[- \frac{\hbar^2}{2m}\nabla^2 + V(\textbf{r})\right]\Psi(\textbf{r}, t)
 $$
 
 - Matrices
@@ -55,6 +55,13 @@ This is some more info
 **Hello** _world_ **hahaha**
 
 > This is cool
+
+```mermaid
+graph TD;
+	Animal-->Cat;
+```
+
+Mermaid graph does not work in here 😥
 
 ```rust{1-2,8}[lib.rs]
 #[pallet::config]

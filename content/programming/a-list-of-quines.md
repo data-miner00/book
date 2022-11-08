@@ -196,9 +196,9 @@ s='s=\47%s\47;printf "$s" "$s"';printf "$s" "$s"
 (map eval x)
 ```
 
-## Discussion
+## Conclusion
 
-As we can see, the simplest quine are of this format, `s="s=%p;printf s,s";printf s,s` and larger quine requires more complexity and intricacy to produce.
+As we can see, the simplest quine have similar format like this `s="s=%p;printf s,s";printf s,s`, and larger quine requires more complexity and intricacy to produce.
 
 ## Reference
 
