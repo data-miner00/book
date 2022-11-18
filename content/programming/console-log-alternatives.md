@@ -11,7 +11,7 @@ tags:
   - logging
   - console
 directory: programming
-updatedAt: 2022-08-13T01:50:38.048Z
+updatedAt: 2022-10-27T17:53:03.861Z
 createdAt: 2022-08-12T17:38:48.848Z
 ---
 
@@ -44,7 +44,7 @@ var people = [
 console.table(people)
 ```
 
-The output table are as follows
+The output table are as follows.
 
 | index | 0         | 1         |
 | ----- | --------- | --------- |
@@ -79,9 +79,32 @@ Prints the stack trace to the console. Useful to trace the calls in nested funct
 
 ### Count
 
-A counter that logs and increments by 1 each time when it is being called. Useful for detecting multiple calls on a piece of code that suppose to run only once. It may be labelled with a string passed into the parameter.
+A counter that logs and increments by one each time when it is being called. Useful for detecting multiple calls on a piece of code that suppose to run only once. It may be labelled with a string passed into the parameter.
 
 To reset the count, use the method `console.countReset()`.
+
+### Level
+
+Gives the logs some level to differentiate them from their intention.
+
+```js
+// Appear in blue color
+console.info('This is debug message')
+
+// Appear in yellow color
+console.warn('This is warning message')
+
+// Appear in red color
+console.error('This is error message')
+
+// Appear to be traceable
+console.debug('This is debug message')
+```
+
+- Info: General messages, such as service start/stop, feature invoked etc.
+- Warn: Potential breaking behaviour such as missing arguments.
+- Error: Any behaviour that is fatal and impedes the operation to continue.
+- Debug: Provide diagnostic info that is helpful to others.
 
 ## Benchmarking
 
@@ -146,4 +169,4 @@ The above log takes in the string to be logged as its first parameter and taking
 
 <v-img src="console-log-alternatives/Pasted image 20220727003901.png" alt="" border></v-img>
 
-This is how to over-engineer the console.log and make it appealing. One potential use case for this would be grouping logs based on different level that has colors designated for each of them.
+This is how to over-engineer the console.log and make it appealing as I did with one of my project. One potential use case for this would be grouping logs based on different level such as info, warnings, critical and fatal that has distinct color representing each of them.

@@ -133,8 +133,8 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote {
-  @apply border-l-8 border-solid border-purple-400 pl-4 my-4;
-  @apply bg-purple-50 hover:bg-purple-100 cursor-default py-3;
+  @apply border-l-8 border-solid border-purple-400 pl-4 my-4 rounded-md;
+  @apply bg-purple-50 cursor-default py-3;
 }
 
 .nuxt-content-highlight {
@@ -175,7 +175,11 @@ export default Vue.extend({
   @apply border-b border-solid border-gray-100;
 }
 
-.nuxt-content mjx-container svg {
+.nuxt-content .math-inline mjx-container svg {
+  display: inline;
+}
+
+.nuxt-content .math:not(.math-inline) mjx-container svg {
   /* height: 4ex; */
   display: block;
   margin: 0 auto;

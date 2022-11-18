@@ -11,7 +11,7 @@ tags:
   - example
   - experimental
 directory: random
-updatedAt: 2021-10-20T13:33:30.485Z
+updatedAt: 2022-11-08T13:03:05.084Z
 createdAt: 2021-10-13T13:33:30.485Z
 ---
 
@@ -29,6 +29,24 @@ This ~is some~ more info [hello](http://somelink.com). 内容あんま読んで�
 
 This is some more info `Some(_)` is cool as well
 
+### Equation
+
+- Schrödinger equation
+
+$$
+i \hbar \frac{\partial}{\partial t} \Psi \big(\textbf{r}, t) = \left[- \frac{\hbar^2}{2m}\nabla^2 + V(\textbf{r})\right]\Psi(\textbf{r}, t)
+$$
+
+- Matrices
+
+$$
+\begin{pmatrix*}[r]
+    -1 & 2 & 3 \\
+    4 & -5 & 6 \\
+    7 & 8 & -9
+\end{pmatrix*}
+$$
+
 ## Chapter 2
 
 <v-img src="deserted-place.jpg" alt="deserted place" caption="Pic 1: This is a humble caption"></v-img>
@@ -37,6 +55,13 @@ This is some more info
 **Hello** _world_ **hahaha**
 
 > This is cool
+
+```mermaid
+graph TD;
+	Animal-->Cat;
+```
+
+Mermaid graph does not work in here 😥
 
 ```rust{1-2,8}[lib.rs]
 #[pallet::config]

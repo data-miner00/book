@@ -22,13 +22,18 @@
         componentName="web-dev"
         :entries="web"
       />
+      <MainMenuSection
+        title="Blockchain"
+        componentName="blockchain"
+        :entries="blockchain"
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { IContentDocument } from '@nuxt/content/types/content'
 import Vue from 'vue'
+import { IContentDocument } from '@nuxt/content/types/content'
 
 export default Vue.extend({
   data: () => ({
@@ -36,31 +41,26 @@ export default Vue.extend({
     minecraft: [] as Array<IContentDocument>,
     programming: [] as Array<IContentDocument>,
     web: [] as Array<IContentDocument>,
+    blockchain: [] as Array<IContentDocument>,
   }),
   async mounted() {
-    this.random = (await this.$content('random')
-      .where({ displayTopic: { $eq: 'Random' } })
-      .only(['title', 'slug'])
-      .sortBy('title', 'asc')
-      .fetch()) as Array<IContentDocument>
-
-    this.minecraft = (await this.$content('minecraft')
-      .where({ displayTopic: { $eq: 'Minecraft' } })
-      .only(['title', 'slug'])
-      .sortBy('title', 'asc')
-      .fetch()) as Array<IContentDocument>
-
-    this.programming = (await this.$content('programming')
-      .where({ displayTopic: { $eq: 'Programming' } })
-      .only(['title', 'slug'])
-      .sortBy('title', 'asc')
-      .fetch()) as Array<IContentDocument>
-
-    this.web = (await this.$content('web-dev')
-      .where({ displayTopic: { $eq: 'Programming' } })
-      .only(['title', 'slug'])
-      .sortBy('title', 'asc')
-      .fetch()) as Array<IContentDocument>
+    this.random = await this.query('random', 'Random')
+    this.minecraft = await this.query('minecraft', 'Minecraft')
+    this.programming = await this.query('programming', 'Programming')
+    this.web = await this.query('web-dev', 'Programming')
+    this.blockchain = await this.query('blockchain', 'Blockchain')
+  },
+  methods: {
+    query(
+      folder: string,
+      displayTopic: string
+    ): Promise<Array<IContentDocument>> {
+      return this.$content(folder)
+        .where({ displayTopic: { $eq: displayTopic } })
+        .only(['title', 'slug'])
+        .sortBy('title', 'asc')
+        .fetch() as Promise<Array<IContentDocument>>
+    },
   },
 })
 </script>

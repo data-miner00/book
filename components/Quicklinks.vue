@@ -23,7 +23,7 @@
       </svg>
       <span class="ml-1">Quicklinks</span>
     </div>
-    <div>
+    <div class="max-h-96 overflow-y-auto">
       <nuxt-link
         class="
           text-sm text-gray-500

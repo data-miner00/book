@@ -105,4 +105,4 @@ However, you still can use Class component if thats your personal preference, an
 
 ## Reference
 
-https://ultimatecourses.com/blog/react-create-class-versus-component
+- [React.createClass versus extends React.Component](https://ultimatecourses.com/blog/react-create-class-versus-component)

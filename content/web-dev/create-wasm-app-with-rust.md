@@ -43,13 +43,13 @@ After all of the tools are ready, we can proceed to creating the WASM project.
 
 ## Using WASM template
 
-To create a WASM project, first run the `cargo generate` command to clone the project template
+To create a WASM project, first run the `cargo generate` command to clone the project template. Remember to replace `<your-app-name>` with your project name.
 
 ```
 cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name <your-app-name>
 ```
 
-and replace `<your-app-name>` with your project name. Below are the sample output after running the command.
+Below are the sample output after running the command.
 
 ```
  Unable to load config file: C:\Users\User\.cargo\cargo-generate.toml

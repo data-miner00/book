@@ -11,17 +11,17 @@ tags:
   - programming
   - tutorial
 directory: programming
-updatedAt: 2022-03-28T13:33:30.485Z
+updatedAt: 2022-11-08T13:03:05.084Z
 createdAt: 2022-03-27T13:33:30.485Z
 ---
 
-Go is a language that is notorious for its lack of Generics, a rudimentary programming feature that is widely adopted in other famous languages all this while, until the release of Go version 18 that has finally shipped along with Generics into the codebase.
+Go is a language that is notorious for its [lack of Generics](https://medium.com/hackernoon/why-go-doesnt-have-generics-b40ef9e69833), a rudimentary programming feature that is widely adopted in other famous languages all this while, until the release of Go version 18 that has finally shipped along with Generics into its codebase.
 
 ## Updating Go
 
 First thing that you will need to do is to update your Go version to **at least 18** if you haven't already by running the Go install command from an elevated command line such as the Powershell on Windows.
 
-[Chocolatey](https://chocolatey.org/), a package manager for Windows are used for both the installation and update for Go.
+[Chocolatey](https://chocolatey.org/), a package manager for Windows are used for the demonstration for both the installation as well as the update for Go.
 
 ```
 # Install
@@ -43,27 +43,35 @@ The updating guides for Linux can also be found here on the [instruction gist](h
 
 ## Generics syntax
 
-Typically generics in other programming languages are denoted by angel brackets such as `<T>` where `T` is the generic type but it's a bit different here in Go.
+Typically generics in other programming languages are denoted by angle brackets such as `<T>` where `T` is the generic type but it's a bit different in Go as it uses square brackets `[]` instead.
+
+This example shows the generic type `T` is unbounded as it can take in basically every type that Go supports.
 
 ```go
-func genericFunc[gen any](myGen gen) {
-    fmt.Println("My generic variable: ", myGen)
+func genericFunc[T any](item T) {
+    fmt.Println("My generic variable: ", item)
 }
 ```
 
-The above function takes in a custom type called `gen` that can be of any type that Go supports.
+The equivalence in C# is as follows.
 
-```go
-func genericFunc[gen int64 | float32](myGen gen) {
-    fmt.Println("My generic variable: ", myGen)
+```cs
+public void genericFunc<T>(T item) {
+    Console.WriteLine("My generic variable: ", item);
 }
 ```
 
-The above function takes in a custom type called `gen` that can either be `int64` or `float32` only. This pretty much resembles the union type in Typescript.
+The function below takes in a custom type called `item` that can either be `int64` or `float32` only. This pretty much resembles the union type in Typescript.
+
+```go
+func genericFunc[T int64 | float32](item T) {
+    fmt.Println("My generic variable: ", item)
+}
+```
 
 ## Grouping types
 
-If we would like to implement a generic function that takes in a multitude of types but not `any`, we can group them into a union type by using interface.
+If you would like to implement a generic function that takes in a multitude of types but not `any`, you can group them into a union type by using interface.
 
 ```go
 type Integer interface {
@@ -71,11 +79,11 @@ type Integer interface {
 }
 ```
 
-We will now be able to use all the types in the function.
+You will now be able to use all the integer types in the function.
 
 ```go
-func genericFunc[gen Integer](myGen gen) {
-    fmt.Println("My generic variable: ", myGen)
+func genericFunc[T Integer](item T) {
+    fmt.Println("My generic variable: ", item)
 }
 ```
 

@@ -9,7 +9,7 @@ author:
 tags:
   - algorithm
 directory: programming
-updatedAt: 2021-10-22T13:33:30.485Z
+updatedAt: 2022-11-08T13:03:05.084Z
 createdAt: 2021-10-13T13:33:30.485Z
 ---
 
@@ -40,10 +40,12 @@ float Q_rsqrt( float number )
 
 In game, vectors need to be scaled down to 1 so that calculations involving physics can have more precision.
 
-$$l = \frac{1}{\sqrt(x^2+y^2+z^2)}$$
+$$
+l = \frac{1}{\sqrt{ \left(x^2+y^2+z^2 \right)}}
+$$
 
 ## Reference
 
-Adapted from [Youtube](https://www.youtube.com/watch?v=p8u_k2LIZyo)
+Adapted from [Youtube](https://www.youtube.com/watch?v=p8u_k2LIZyo).
 
-Read more at [Benchmarking Carmack’s fast inverse square root](https://onestepcode.com/benchmarking-fast-inverse-square-root)
+Read more at [Benchmarking Carmack’s fast inverse square root](https://onestepcode.com/benchmarking-fast-inverse-square-root).

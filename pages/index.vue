@@ -334,7 +334,6 @@
           </p>
 
           <ul>
-            <li>Add LaTeX Support</li>
             <li>Add links for social sharing.</li>
             <li>Add cryptocurrency articles with custom component.</li>
             <li>Add more responsiveness to support more screen resolutions.</li>
