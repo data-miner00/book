@@ -9,15 +9,18 @@
       items-center
     "
   >
-    <div class="flex">
+    <div class="flex flex-1">
       <!-- secion 1: image -->
       <div
-        class="h-12 w-12 bg-green-100 mr-4 rounded object-cover overflow-hidden"
+        class="h-12 w-12 bg-green-100 rounded object-cover overflow-hidden mr-4"
       >
-        <img :src="require('~/assets/images/aes.jpg')" alt="demo image" />
+        <img
+          :src="require('~/assets/images/icon-img.jpeg')"
+          alt="site icon image"
+        />
       </div>
       <!-- section 2: texts -->
-      <div class="w-3/5 xl:w-4/5">
+      <div>
         <div class="text-lg font-bold">Notes</div>
         <div class="text-xs text-gray-500">My personal take to everything</div>
       </div>
@@ -26,7 +29,6 @@
     <!-- section 3: search-icon -->
     <button
       class="
-        ml-auto
         mr-1
         flex
         items-center
