@@ -2,7 +2,7 @@
 title: Storytelling with Storybook
 subtitle: A brief introduction to Storybook and it's competency in front-end development
 topic: Web Development
-displayTopic: Programming
+displayTopic: Web Development
 author:
   name: Shaun Chong
   avatar: levi.png

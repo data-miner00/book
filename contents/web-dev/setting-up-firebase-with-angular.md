@@ -2,7 +2,7 @@
 title: Setting up Firebase with Angular
 subtitle: Steps required to bootstrap an Angular project with Firebase and best practices
 topic: Angular
-displayTopic: Programming
+displayTopic: Web Development
 author:
   name: Shaun Chong
   avatar: levi.png

@@ -2,7 +2,7 @@
 title: Short guide to React testing library
 subtitle: Tips and tricks for the common use cases with the @testing-library/react library
 topic: Programming
-displayTopic: Programming
+displayTopic: Web Development
 author:
   name: Shaun Chong
   avatar: levi.png

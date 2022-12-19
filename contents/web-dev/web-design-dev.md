@@ -2,7 +2,7 @@
 title: UI Design/Web Development
 subtitle: A curated list of links that is useful for webdev
 topic: Web Development
-displayTopic: Programming
+displayTopic: Web Development
 author:
   name: Shaun Chong
   avatar: levi.png

@@ -20,9 +20,9 @@ import Vue from 'vue'
 
 export default Vue.extend({
   async asyncData({ $content, params }) {
-    const article = await $content('blockchain', params.slug).fetch()
+    const article = await $content('articles', params.slug).fetch()
 
-    const [prev, next] = (await $content('blockchain')
+    const [prev, next] = (await $content('articles')
       .where({ displayTopic: { $eq: 'Blockchain' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')

@@ -15,7 +15,7 @@ export default Vue.extend({
     title: 'Programming | Book',
   }),
   async asyncData({ $content, params }) {
-    const articles = await $content('programming')
+    const articles = await $content('articles')
       .where({ displayTopic: { $eq: 'Programming' } })
       .only(['title', 'subtitle', 'slug'])
       .fetch()

@@ -1,31 +1,46 @@
 <template>
   <div
     class="
-      flex flex-row
-      p-3
-      xl:p-5 xl:pl-0
+      flex flex-rowp-3
+      xl:py-5 xl:px-0
       w-auto
       justify-between
       border-solid border-b border-gray-200
+      items-center
     "
   >
-    <div class="flex">
+    <div class="flex flex-1">
       <!-- secion 1: image -->
       <div
-        class="h-12 w-12 bg-green-100 mr-4 rounded object-cover overflow-hidden"
+        class="h-12 w-12 bg-green-100 rounded object-cover overflow-hidden mr-4"
       >
-        <img :src="require('~/assets/images/aes.jpg')" alt="demo image" />
+        <img
+          :src="require('~/assets/images/icon-img.jpeg')"
+          alt="site icon image"
+        />
       </div>
       <!-- section 2: texts -->
-      <div class="w-3/5 xl:w-4/5">
+      <div>
         <div class="text-lg font-bold">Notes</div>
         <div class="text-xs text-gray-500">My personal take to everything</div>
       </div>
     </div>
 
     <!-- section 3: search-icon -->
-    <button class="ml-auto flex items-center text-gray-500" title="Search">
-      <div class="search-wrapper" @click="toggleSearchPanel">
+    <button
+      class="
+        mr-1
+        flex
+        items-center
+        text-gray-500
+        p-3
+        rounded-full
+        hover:bg-gray-200
+      "
+      title="Search"
+      @click="toggleSearchPanel"
+    >
+      <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -53,19 +68,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style lang="sass" scoped>
-.search-wrapper
-  position: relative
-  cursor: pointer
-  &:hover::after
-    content: ''
-    position: absolute
-    top: -10px
-    left: -10px
-    right: -10px
-    bottom: -10px
-    border-radius: 999px
-    background: #e5e5e5
-    z-index: -1
-</style>

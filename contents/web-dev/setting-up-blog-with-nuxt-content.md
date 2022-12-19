@@ -2,7 +2,7 @@
 title: Setting up a blog with Nuxt Content
 subtitle: My step-by-step approach to creating a fully-featured Nuxt blog
 topic: Technology
-displayTopic: Programming
+displayTopic: Web Development
 author:
   name: Shaun Chong
   avatar: levi.png

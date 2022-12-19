@@ -1,9 +1,9 @@
 <template>
-  <div class="my-4" :class="{ 'border border-black': border }">
+  <div class="my-4">
     <img
       :src="fullpath"
       :alt="alt"
-      :class="{ 'block mx-auto': !!maxWidth }"
+      :class="{ 'block mx-auto': !!maxWidth, 'border border-black': border }"
       :style="!!this.maxWidth ? `max-width: ${this.maxWidth}` : ''"
     />
     <div

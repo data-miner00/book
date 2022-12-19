@@ -93,7 +93,7 @@ export default Vue.extend({
         return
       }
 
-      this.articles = (await this.$content('/', { deep: true })
+      this.articles = (await this.$content('articles')
         .search(searchQuery)
         .only(['title', 'subtitle', 'slug', 'directory'])
         .fetch()) as Array<IContentDocument>
