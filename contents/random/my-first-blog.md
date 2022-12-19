@@ -15,7 +15,7 @@ updatedAt: 2022-11-08T13:03:05.084Z
 createdAt: 2021-10-13T13:33:30.485Z
 ---
 
-This is a _dummy article_ in which I am using for testing out new functionalities, please kindly ignore this page. **Thanks**.
+> This is a _dummy article_ in which I am using for testing out new functionalities, please kindly ignore this page. **Thanks**.
 
 ## Opening
 
@@ -75,6 +75,19 @@ pub trait Config: frame_system::Config {
 pub enum Event<T: Config> {
     ClaimCreated(T::AccountId, BoundedVec<u8, T::MaxBytesInHash>),
     ClaimRevoked(T::AccountId, BoundedVec<u8, T::MaxBytesInHash>),
+}
+```
+
+```diff
+#include <iostream>
+
+- using namespace std;
+
+int main() {
+- cout << "hello" << endl;
++ std::cout << "hello" << std::endl;
+
+  return 0;
 }
 ```
 

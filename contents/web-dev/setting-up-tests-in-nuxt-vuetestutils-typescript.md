@@ -2,7 +2,7 @@
 title: Setting up tests in Nuxt with @vue/test-utils and Typescript
 subtitle: Guides to setup test with Nuxt and debugging common issues faced.
 topic: Programming
-displayTopic: Programming
+displayTopic: Web Development
 author:
   name: Shaun Chong
   avatar: levi.png
