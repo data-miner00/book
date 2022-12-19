@@ -44,11 +44,11 @@ export default Vue.extend({
     blockchain: [] as Array<IContentDocument>,
   }),
   async mounted() {
-    this.random = await this.query('random', 'Random')
-    this.minecraft = await this.query('minecraft', 'Minecraft')
-    this.programming = await this.query('programming', 'Programming')
-    this.web = await this.query('web-dev', 'Programming')
-    this.blockchain = await this.query('blockchain', 'Blockchain')
+    this.random = await this.query('articles', 'Random')
+    this.minecraft = await this.query('articles', 'Minecraft')
+    this.programming = await this.query('articles', 'Programming')
+    this.web = await this.query('articles', 'Web Development')
+    this.blockchain = await this.query('articles', 'Blockchain')
   },
   methods: {
     query(

@@ -15,7 +15,7 @@ export default Vue.extend({
     title: 'Random | Book',
   }),
   async asyncData({ $content, params }) {
-    const articles = await $content('random')
+    const articles = await $content('articles')
       .where({ displayTopic: { $eq: 'Random' } })
       .only(['title', 'subtitle', 'slug'])
       .fetch()
