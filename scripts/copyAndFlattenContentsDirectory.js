@@ -26,7 +26,7 @@ function getAllFiles(dir, files_) {
 
 function copyFilesToDir(files, destination) {
   if (!fs.existsSync(destination)) {
-    fs.mkdirSync(destination)
+    fs.mkdirSync(destination, { recursive: true })
   }
 
   files.forEach((fullQualifiedPath) => {
