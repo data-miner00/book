@@ -32,6 +32,7 @@
         componentName="debug-logs"
         :entries="debug"
       />
+      <MainMenuSection title="Math" componentName="math" :entries="math" />
     </div>
   </div>
 </template>
@@ -48,6 +49,7 @@ export default Vue.extend({
     web: [] as Array<IContentDocument>,
     blockchain: [] as Array<IContentDocument>,
     debug: [] as Array<IContentDocument>,
+    math: [] as Array<IContentDocument>,
   }),
   async mounted() {
     this.random = await this.query('articles', 'Random')
@@ -56,6 +58,7 @@ export default Vue.extend({
     this.web = await this.query('articles', 'Web Development')
     this.blockchain = await this.query('articles', 'Blockchain')
     this.debug = await this.query('articles', 'Debug Logs')
+    this.math = await this.query('articles', 'Math')
   },
   methods: {
     query(

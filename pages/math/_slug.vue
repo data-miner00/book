@@ -6,7 +6,7 @@
     :lastUpdated="article.updatedAt"
     :prev="prev"
     :next="next"
-    componentName="debug-logs"
+    componentName="math"
     :author="article.author"
     :tags="article.tags"
   >
@@ -23,7 +23,7 @@ export default Vue.extend({
     const article = await $content('articles', params.slug).fetch()
 
     const [prev, next] = (await $content('articles')
-      .where({ displayTopic: { $eq: 'Debug Logs' } })
+      .where({ displayTopic: { $eq: 'Math' } })
       .only(['title', 'slug'])
       .sortBy('title', 'asc')
       .surround(params.slug)
