@@ -12,7 +12,10 @@
       </div>
 
       <div style="color: rgb(59, 69, 78)" class="leading-7 font-medium">
-        <div class="max-w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div
+          v-if="articles.length > 0"
+          class="max-w-full grid grid-cols-1 md:grid-cols-2 gap-4"
+        >
           <nuxt-link
             v-for="(a, index) in articles"
             :key="index"
@@ -29,6 +32,21 @@
             <div class="xmtitle font-semibold">{{ a.title }}</div>
             <div class="text-sm text-gray-500">{{ a.subtitle }}</div>
           </nuxt-link>
+        </div>
+        <div v-else>
+          <div>
+            <img
+              :src="require('../assets/svg/undraw_small_town_re_7mcn.svg')"
+              alt="illustration image by undraw.co"
+              title="Illustration image by undraw.co"
+            />
+          </div>
+          <div class="font-bold text-3xl uppercase text-center">
+            Nothing to show yet
+          </div>
+          <div class="text-gray-400 text-xl text-center">
+            New posts will be added soon, stay tuned ✨
+          </div>
         </div>
       </div>
     </div>
