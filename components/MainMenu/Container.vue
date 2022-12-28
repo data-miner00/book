@@ -27,6 +27,11 @@
         componentName="blockchain"
         :entries="blockchain"
       />
+      <MainMenuSection
+        title="Debug Logs"
+        componentName="debug-logs"
+        :entries="debug"
+      />
     </div>
   </div>
 </template>
@@ -42,6 +47,7 @@ export default Vue.extend({
     programming: [] as Array<IContentDocument>,
     web: [] as Array<IContentDocument>,
     blockchain: [] as Array<IContentDocument>,
+    debug: [] as Array<IContentDocument>,
   }),
   async mounted() {
     this.random = await this.query('articles', 'Random')
@@ -49,6 +55,7 @@ export default Vue.extend({
     this.programming = await this.query('articles', 'Programming')
     this.web = await this.query('articles', 'Web Development')
     this.blockchain = await this.query('articles', 'Blockchain')
+    this.debug = await this.query('articles', 'Debug Logs')
   },
   methods: {
     query(
