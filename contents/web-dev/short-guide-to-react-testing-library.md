@@ -11,11 +11,11 @@ tags:
   - react
   - testing
 directory: web-dev
-updatedAt: 2022-11-07T14:25:33.879Z
+updatedAt: 2023-01-11T14:50:40.403Z
 createdAt: 2021-12-27T13:33:30.485Z
 ---
 
-Testing can be **intimidating** especially for beginners in software development like me years ago. I tried to avoid writing tests whenever I can to spare myself some mercy. However, writing efficient tests can improve the software quality and the confidence as well, which in turn improve user satisfaction over the well engineered software features without any unexpected behavior.
+Testing can be **intimidating** especially for beginners like me years ago. I tried to avoid writing tests whenever I can to spare myself some mercy from dealing with the pain. However, I came to understand how tests works and eventually become very good at writing tests. Writing efficient tests can improve the software quality and confidence, which in turn improve user satisfaction and minimal unexpected behavior.
 
 In this article, we will be taking a look on the testing library for React which literally called `@testing-library/react` that can be npm installed.
 
@@ -304,4 +304,9 @@ export default {
 
 ## Conclusion
 
-In this articles, we've seen how the tests looks like using `@testing-library/react` to test a React application, differences between kinds and types of selectors available and a few example unit tests and integration tests.
+In this article, we've seen how the tests looks like using `@testing-library/react` to test a React application, differences between kinds and types of selectors available and a few example unit tests and integration tests.
+
+## Reference
+
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [How To Test a React App with Jest and React Testing Library](https://www.digitalocean.com/community/tutorials/how-to-test-a-react-app-with-jest-and-react-testing-library)
