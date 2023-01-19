@@ -7,7 +7,7 @@
         'block mx-auto': !!maxWidth || center,
         'border border-black': border,
       }"
-      :style="!!this.maxWidth ? `max-width: ${this.maxWidth}` : ''"
+      :style="!!maxWidth ? `max-width: ${maxWidth}` : ''"
     />
     <div
       v-if="caption"
