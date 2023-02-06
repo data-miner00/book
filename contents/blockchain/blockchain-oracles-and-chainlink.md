@@ -20,7 +20,7 @@ Blockchain oracles acts as a bridge that connects **real-world data** onto the b
 
 This has brought a profound impact on how dApps and DeFi were built. dApps and DeFi protocols can utilize the oracles to implement sophisticated and complex logics to run on the blockchain.
 
-Chainlink is the [pioneer](https://www.prnewswire.com/news-releases/chainlink-awarded-as-technology-pioneer-by-world-economic-forum-301077216.html) of this field and their main objective is to provide **tamper-proof**, **trustless** off-chain data to the blockchain.
+Chainlink is the [trailblazer](https://www.prnewswire.com/news-releases/chainlink-awarded-as-technology-pioneer-by-world-economic-forum-301077216.html) of this field and their main objective is to provide **tamper-proof**, **trustless** off-chain data to the blockchain.
 
 Currently Chainlink supports Ethereum, Arbitrum, Avalanche, Fantom, Polygon and others.
 

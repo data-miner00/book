@@ -140,3 +140,4 @@ Chainlink VRF is a paid service. We can fund the contract with enough LINK token
 - [Getting Random Numbers With Chainlink VRF | StackUp](https://app.stackup.dev/quest_page/getting-random-numbers-with-chainlink-vrf)
 - [What is Chainlink VRF, and how does it work?](https://cointelegraph.com/news/what-is-chainlink-vrf-and-how-does-it-work)
 - [Random Numbers: Using Chainlink VRF](https://docs.chain.link/getting-started/intermediates-tutorial)
+- [What is Chainlink VRF | Leeway Hertz](https://www.leewayhertz.com/what-is-chainlink-vrf/)
