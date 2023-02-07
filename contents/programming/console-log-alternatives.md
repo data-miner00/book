@@ -11,7 +11,7 @@ tags:
   - logging
   - console
 directory: programming
-updatedAt: 2022-10-27T17:53:03.861Z
+updatedAt: 2022-12-26T17:53:03.861Z
 createdAt: 2022-08-12T17:38:48.848Z
 ---
 
@@ -65,13 +65,27 @@ console.groupEnd()
 
 The logs are grouped nicely with an accordion to expand or collapse the details.
 
-<v-img src="console-log-alternatives/Pasted image 20220727005927.png" alt="" border></v-img>
+<v-img src="console-log-alternatives/Pasted image 20220727005927.png" alt="console groupings" border></v-img>
+
+The group can be nested as well by creating sub groups. It is required to end the group by calling `groupEnd()` accordingly.
+
+```js
+console.group('Parent Group')
+console.log('Parent log - 1')
+console.group('Child Group')
+console.log('Child log - 1')
+console.log('Child log - 2')
+console.groupEnd()
+console.groupEnd()
+```
+
+<v-img src="console-log-alternatives/nested-groups.png" alt="nested groups" border></v-img>
 
 ### Dir
 
-Provides a better readibility for object types when logged.
+Provides a better readibility for object types when logged. Outputs JSON info when html elements (with `document.querySelector` or methods akin) was passed.
 
-<v-img src="console-log-alternatives/Pasted image 20220804232456.png" alt="" border></v-img>
+<v-img src="console-log-alternatives/Pasted image 20220804232456.png" alt="console dir" border></v-img>
 
 ### Trace
 
@@ -108,6 +122,8 @@ console.debug('This is debug message')
 
 ## Benchmarking
 
+### Timer
+
 To benchmark a function call or the whole execution time of an application feature, the Time function allows us to start a timer when it is being called. Somewhere in the middle of the code, we can check the time elapsed since the timer started with `console.timeLog()`. The timer will need to be ended with `console.timeEnd()` to reset the timer.
 
 ```js
@@ -125,6 +141,32 @@ console.timeEnd()
 
 Read more at [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/console/time) about timer.
 
+### Profiler
+
+The `console.profile` is used to profile code execution performance with the JavaScript Profiler tool available in Google Chrome browser.
+
+```js
+function shortFunction() {
+  let number = 1
+  number++
+  console.log(number)
+}
+
+function longFunction() {
+  for (let i = 0; i < 100000; i++);
+}
+
+console.profile('Profiler')
+shortFunction()
+console.timeStamp('Profiler')
+longFunction()
+console.profileEnd('Profiler')
+```
+
+The code above registers a profiling activity named 'Profiler' and can be inspected in the DevTools under JavaScript Profiler.
+
+<v-img src="console-log-alternatives/javascript-profiler.png" alt="JavaScript profiler" border center></v-img>
+
 ## Summary
 
 Below are the summary of the aforementioned methods:
@@ -137,6 +179,8 @@ Below are the summary of the aforementioned methods:
 | [Dir](https://developer.mozilla.org/en-US/docs/Web/API/console/dir)                        | Logs all the properties of an object                          | `console.dir(object)`                            |
 | [Trace](https://developer.mozilla.org/en-US/docs/Web/API/console/trace)                    | Trace upon the entire call stack                              | `console.trace()`                                |
 | [Count](https://developer.mozilla.org/en-US/docs/Web/API/console/count)                    | Increment the counter of a given label each time it is called | `console.count(label)`                           |
+| Time                                                                                       | Start a timer                                                 | `console.time()`                                 |
+| Profiler                                                                                   | Start a profiling session in Chrome                           | `console.profile(label)`                         |
 
 ## Styling Console.log
 
@@ -151,7 +195,7 @@ console.log(
 
 Results in the following awesome looking console.
 
-<v-img src="console-log-alternatives/Pasted image 20220727003016.png" alt="" border></v-img>
+<v-img src="console-log-alternatives/Pasted image 20220727003016.png" alt="sample colorful logs" border></v-img>
 
 To provide multiple different stylings for one single log can be achieved by specifying more `%c` characters. They are essentially indicating **where** does the style would start from. If the intepreter encounters a second `%c` in one single log, the first applied style will **stop** there and begin to style the following with the second styles string provided.
 
@@ -167,6 +211,6 @@ console.log(
 
 The above log takes in the string to be logged as its first parameter and taking two string of styles subsequently. It will yield the following when called.
 
-<v-img src="console-log-alternatives/Pasted image 20220727003901.png" alt="" border></v-img>
+<v-img src="console-log-alternatives/Pasted image 20220727003901.png" alt="colorful logs used in my real project" border></v-img>
 
 This is how to over-engineer the console.log and make it appealing as I did with one of my project. One potential use case for this would be grouping logs based on different level such as info, warnings, critical and fatal that has distinct color representing each of them.

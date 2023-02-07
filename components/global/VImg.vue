@@ -3,8 +3,11 @@
     <img
       :src="fullpath"
       :alt="alt"
-      :class="{ 'block mx-auto': !!maxWidth, 'border border-black': border }"
-      :style="!!this.maxWidth ? `max-width: ${this.maxWidth}` : ''"
+      :class="{
+        'block mx-auto': !!maxWidth || center,
+        'border border-black': border,
+      }"
+      :style="!!maxWidth ? `max-width: ${maxWidth}` : ''"
     />
     <div
       v-if="caption"
@@ -25,6 +28,10 @@ export default Vue.extend({
     caption: String,
     maxWidth: String,
     border: {
+      type: Boolean,
+      default: false,
+    },
+    center: {
       type: Boolean,
       default: false,
     },
