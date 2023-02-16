@@ -23,7 +23,7 @@
     </div>
 
     <!-- right content section -->
-    <div class="flex-1 flex">
+    <div>
       <!-- content  -->
       <nuxt />
 
