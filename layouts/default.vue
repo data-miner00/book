@@ -43,6 +43,7 @@
         h-full
         right-0
         w-full
+        z-40
         bg-gray-500 bg-opacity-30
         border-l border-solid border-gray-200
       "
@@ -137,7 +138,7 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote {
-  @apply border-l-8 border-solid border-purple-400 pl-4 my-4 rounded-md;
+  @apply border-l-2 border-solid border-purple-400 pl-4 my-4 rounded-tr-md rounded-br-md;
   @apply bg-purple-50 cursor-default py-3;
 }
 
