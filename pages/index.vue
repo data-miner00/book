@@ -7,65 +7,37 @@
 
         <!-- subtitle -->
         <div class="text-xl mt-2 text-gray-500">
-          A short introduction to this homemade book 🙂
+          A brief introduction about this book and its purpose
         </div>
       </div>
 
       <!-- actual content -->
       <article style="color: rgb(59, 69, 78)" class="this leading-7">
         <p>
-          Hi. This is Shaun and welcome to my site. This site was developed for
-          me to document the information that I've came across on various topics
-          in the form of a note or memo for my future reference. This site is
-          open to the public to benefit those who might find it useful.
+          Shaun here. This site was developed for me to document the information
+          that I've came across on various topics in the form of a note or memo
+          for my future reference. This site is open to the public to benefit
+          those who might find it useful.
         </p>
 
         <p>
-          However, this site is far from perfect and there might be bugs and
-          issues that emerges from time to time. If you have spotted any of the
-          <em>potential bugs</em> or <em>bizzare behaviours</em>, please do not
-          hesitate to open an issue
+          If you have spotted any of the potential bugs or bizzare behaviours,
+          please do not hesitate to open an issue on the
           <a href="https://github.com/data-miner00/book" target="_blank"
-            >here</a
+            >GitHub repo</a
           >
           and I will look into the issues.
         </p>
 
-        <blockquote
-          class="px-5 py-4 bg-yellow-50 text-yellow-500 flex items-center"
-        >
-          <span class="flex items-center justify-center mr-4 w-6">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="block"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"
-              />
-              <path
-                d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"
-              />
-            </svg>
-          </span>
-          <span class="block">
-            Please note that this site it not mobile friendly but I'm currently
-            working on it, so it's best to view with desktop-sized screens for
-            the time being.
-          </span>
-        </blockquote>
-
         <h1 id="more-about-the-author">More about the author</h1>
 
         <p>
-          I am a freshgraduate software engineer based in Malaysia. I am
-          passionate about learning foreign languages and currently learning
-          English and Japanese. I like to develop software applications on my
-          own to learn and experiment different technologies on different type
-          of projects during my leisure time.
+          I am a software engineer that has a little bit shy of 2 years
+          experience based in Malaysia. I am passionate about learning foreign
+          languages and currently learning English and Japanese. I like to
+          develop software applications on my own to learn and experiment
+          different technologies on different type of projects during my leisure
+          time.
         </p>
 
         <h1 id="mission">Mission</h1>
@@ -79,19 +51,14 @@
           flattered if I am able to achieve this.
         </p>
 
-        <p>
-          I also strife to <em>learn as much</em> as I can through writing
-          articles on various topics that I found intriguing.
-        </p>
-
         <h1 id="developed-with">Developed with</h1>
 
         <p>
-          This website is using Nuxt.js as the front-end framework as it allows
-          static-site generation which is perfect for this project. On top of
+          This website is developed with Nuxt.js as it allows static-site
+          generation which is perfect for content-oriented websites. On top of
           that, I am using Nuxt Content, a file-based CMS module built for
-          Nuxt.js to serve the contents. Tailwind.css is used for styling the
-          site.
+          Nuxt.js to serve and manage the contents. Tailwind.css is used for
+          styling the site.
         </p>
 
         <div class="flex my-4 items-center justify-end">
@@ -323,15 +290,12 @@
         <h1 id="future-improvements">Future improvements</h1>
 
         <p>
-          Although this seems like a very easy project, but the efforts are
-          insurmountable to make it better. It takes a long journey and endless
-          iterations to make it fully-functional. Below are some of the planned
-          features that will be introduced incrementally in the future.
+          There are a number of items that are planned for this website to be
+          implemented in near future.
         </p>
 
         <ul>
           <li>Add links for social sharing.</li>
-          <li>Add cryptocurrency articles with custom component.</li>
           <li>Add more responsiveness to support more screen resolutions.</li>
           <li>Improve accesibility of the site.</li>
         </ul>
@@ -356,7 +320,7 @@
             />
           </div>
           <div class="text-gray-400 text-xs pt-1">
-            Last updated on August 14, 2022 by Shaun Chong
+            Last updated on February 18, 2023 by Shaun Chong
           </div>
         </div>
       </footer>

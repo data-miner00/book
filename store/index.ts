@@ -1,6 +1,6 @@
 export const state = () => ({
   isSearchPanelOpen: false,
-  isSidebarOpen: true,
+  isSidebarOpen: false,
 })
 
 export const mutations = {
