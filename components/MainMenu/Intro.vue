@@ -1,7 +1,9 @@
 <template>
   <div
     class="
-      flex flex-rowp-3
+      flex flex-row
+      px-5
+      py-4
       xl:py-5 xl:px-0
       w-auto
       justify-between

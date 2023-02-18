@@ -21,7 +21,7 @@
       "
       :class="getSidebarState ? 'left-0' : '-left-full'"
     >
-      <div class="w-full lg:w-60 xl:w-72">
+      <div class="w-72">
         <MainMenu />
       </div>
     </div>
