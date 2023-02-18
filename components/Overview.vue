@@ -36,6 +36,7 @@
         <div v-else>
           <div>
             <img
+              class="block mx-auto w-80"
               :src="require('../assets/svg/undraw_small_town_re_7mcn.svg')"
               alt="illustration image by undraw.co"
               title="Illustration image by undraw.co"
