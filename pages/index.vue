@@ -137,7 +137,7 @@
         </p>
 
         <!-- Refactor into individual component and image file -->
-        <div class="my-2 flex gap-1">
+        <div class="my-2 flex gap-1 flex-wrap">
           <a
             href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/"
             target="_blank"
