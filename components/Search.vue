@@ -5,7 +5,8 @@
       h-full
       overflow-auto
       p-5
-      w-1/4
+      w-3/4
+      lg:w-1/4
       3xl:w-1/5
       ml-auto
       bg-gray-100

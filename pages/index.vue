@@ -61,7 +61,7 @@
           styling the site.
         </p>
 
-        <div class="flex my-4 items-center justify-end">
+        <div class="flex my-4 items-center justify-start">
           <a href="https://vuejs.org/" class="mx-1" target="_blank">
             <img
               class="block w-8"
