@@ -26,6 +26,8 @@
       </div>
     </div>
 
+    <MobileHeader />
+
     <!-- right content section -->
     <div class="mx-auto">
       <!-- content  -->
