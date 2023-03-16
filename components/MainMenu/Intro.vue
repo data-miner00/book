@@ -1,7 +1,9 @@
 <template>
   <div
     class="
-      flex flex-rowp-3
+      flex flex-row
+      px-5
+      py-3
       xl:py-5 xl:px-0
       w-auto
       justify-between
@@ -12,17 +14,48 @@
     <div class="flex flex-1">
       <!-- secion 1: image -->
       <div
-        class="h-12 w-12 bg-green-100 rounded object-cover overflow-hidden mr-4"
+        class="
+          hidden
+          md:block
+          h-12
+          w-12
+          bg-green-100
+          rounded
+          object-cover
+          overflow-hidden
+          mr-4
+        "
       >
         <img
           :src="require('~/assets/images/icon-img.jpeg')"
           alt="site icon image"
         />
       </div>
+
+      <button
+        aria-label="Toggle navigation bar"
+        aria-expanded="false"
+        class="block mr-3 md:hidden"
+        type="button"
+        @click="toggleSidebar"
+      >
+        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+            d="M4 7h22M4 15h22M4 23h22"
+          ></path>
+        </svg>
+      </button>
+
       <!-- section 2: texts -->
       <div>
         <div class="text-lg font-bold">Notes</div>
-        <div class="text-xs text-gray-500">My personal take to everything</div>
+        <div class="hidden md:block text-xs text-gray-500">
+          My personal take to everything
+        </div>
       </div>
     </div>
 
@@ -64,7 +97,7 @@ import { mapMutations } from 'vuex'
 
 export default Vue.extend({
   methods: {
-    ...mapMutations(['toggleSearchPanel']),
+    ...mapMutations(['toggleSearchPanel', 'toggleSidebar']),
   },
 })
 </script>

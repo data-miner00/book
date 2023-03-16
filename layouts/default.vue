@@ -7,45 +7,52 @@
     @keydown.ctrl="navigateSearch"
   >
     <!-- left menu sidebar -->
+
     <div
       class="
-        absolute
-        -left-full
+        lg:flex lg:flex-row
+        w-auto
+        lg:justify-end
+        fixed
+        top-0
         bg-gray-100
-        lg:relative lg:left-0 lg:w-1/4 lg:flex-none
+        z-30
+        lg:left-0 lg:w-1/4 lg:flex-none
       "
+      :class="getSidebarState ? 'left-0' : '-left-full'"
     >
-      <div class="lg:flex lg:flex-row w-auto lg:justify-end sticky top-0">
-        <div class="w-full lg:w-60 xl:w-72">
-          <MainMenu />
-        </div>
+      <div class="w-72">
+        <MainMenu />
       </div>
     </div>
 
+    <MobileHeader />
+
     <!-- right content section -->
-    <div class="flex-1 flex">
+    <div class="mx-auto">
       <!-- content  -->
       <nuxt />
+    </div>
 
-      <!-- search section, hidden by default -->
-      <div
-        class="
-          this
-          duration-500
-          ease-in-out
-          fixed
-          top-0
-          h-full
-          right-0
-          w-full
-          bg-gray-500 bg-opacity-30
-          border-l border-solid border-gray-200
-        "
-        @click="toggleSearchPanel"
-        v-show="getSearchPanelState"
-      >
-        <Search />
-      </div>
+    <!-- search section, hidden by default -->
+    <div
+      class="
+        this
+        duration-500
+        ease-in-out
+        fixed
+        top-0
+        h-full
+        right-0
+        w-full
+        z-40
+        bg-gray-500 bg-opacity-30
+        border-l border-solid border-gray-200
+      "
+      @click="toggleSearchPanel"
+      v-show="getSearchPanelState"
+    >
+      <Search />
     </div>
   </div>
 </template>
@@ -56,7 +63,7 @@ import { mapGetters, mapMutations } from 'vuex'
 
 export default Vue.extend({
   methods: {
-    ...mapMutations(['toggleSearchPanel']),
+    ...mapMutations(['toggleSearchPanel', 'toggleSidebar']),
     navigateSearch(event: KeyboardEvent): void {
       if (event.key == 'k') {
         event.preventDefault()
@@ -65,7 +72,7 @@ export default Vue.extend({
     },
   },
   computed: {
-    ...mapGetters(['getSearchPanelState']),
+    ...mapGetters(['getSearchPanelState', 'getSidebarState']),
   },
 })
 </script>
@@ -133,7 +140,7 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote {
-  @apply border-l-8 border-solid border-purple-400 pl-4 my-4 rounded-md;
+  @apply border-l-2 border-solid border-purple-400 pl-4 my-4 rounded-tr-md rounded-br-md;
   @apply bg-purple-50 cursor-default py-3;
 }
 
