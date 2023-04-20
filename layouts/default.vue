@@ -78,17 +78,23 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss">
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+.nuxt-content {
+  font-family: 'Source Serif Pro', serif;
+}
+
 .nuxt-content h1,
 .nuxt-content h2 {
-  @apply text-2xl font-semibold mt-10 mb-4 relative cursor-pointer hover:text-gray-500;
+  @apply text-2xl font-semibold  mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
 .nuxt-content h3 {
-  @apply text-xl font-semibold mt-5 mb-4 relative cursor-pointer hover:text-gray-500;
+  @apply text-xl font-semibold  mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
 .nuxt-content h4 {
-  @apply text-lg font-semibold mt-4 mb-4 relative cursor-pointer hover:text-gray-500;
+  @apply text-lg font-semibold  mb-4 relative cursor-pointer hover:text-gray-500;
 }
 
 .nuxt-content h1:hover a,
@@ -106,7 +112,7 @@ export default Vue.extend({
 .nuxt-content p,
 .nuxt-content > ul,
 .nuxt-content > ol {
-  @apply my-4;
+  @apply mb-10;
 }
 
 .icon.icon-link {
@@ -122,7 +128,7 @@ export default Vue.extend({
   @apply bg-gray-100;
   @apply px-2;
   @apply py-1;
-  @apply rounded;
+  @apply rounded text-base;
 }
 
 .nuxt-content-highlight .filename {
@@ -140,12 +146,12 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote {
-  @apply border-l-2 border-solid border-purple-400 pl-4 my-4 rounded-tr-md rounded-br-md;
+  @apply border-l-2 border-solid border-purple-400 px-4 mb-10 rounded-tr-md rounded-br-md;
   @apply bg-purple-50 cursor-default py-3;
 }
 
 .nuxt-content-highlight {
-  @apply max-w-full overflow-x-auto relative;
+  @apply max-w-full overflow-x-auto relative mb-10 text-base;
 }
 
 .nuxt-content-highlight pre {
@@ -165,7 +171,7 @@ export default Vue.extend({
 }
 
 .nuxt-content table {
-  @apply w-full;
+  @apply w-full mb-10;
 }
 
 .nuxt-content thead {
