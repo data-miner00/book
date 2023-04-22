@@ -12,7 +12,7 @@
       </div>
 
       <!-- actual content -->
-      <article style="color: rgb(59, 69, 78)" class="this leading-7">
+      <article style="color: rgb(59, 69, 78)" class="this">
         <p>
           Shaun here. This site was developed for me to document the information
           that I've came across on various topics in the form of a note or memo
@@ -393,7 +393,7 @@ export default Vue.extend({
 
 .this {
   font-family: 'Source Serif Pro', serif;
-  @apply text-lg;
+  @apply text-lg leading-8;
 }
 
 .this p {
