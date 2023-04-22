@@ -391,6 +391,11 @@ export default Vue.extend({
   @apply rounded;
 }
 
+.this {
+  font-family: 'Source Serif Pro', serif;
+  @apply text-lg;
+}
+
 .this p {
   @apply my-4;
 }

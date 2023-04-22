@@ -12,7 +12,7 @@
       </div>
 
       <!-- article will be injected inside here  -->
-      <article style="color: #334155" class="leading-7">
+      <article style="color: #334155" class="leading-8 text-lg">
         <slot />
       </article>
 
