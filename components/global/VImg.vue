@@ -1,21 +1,25 @@
 <template>
-  <div class="my-4">
-    <img
-      :src="fullpath"
-      :alt="alt"
-      :class="{
-        'block mx-auto': !!maxWidth || center,
-        'border border-black': border,
-      }"
-      :style="!!maxWidth ? `max-width: ${maxWidth}` : ''"
-    />
-    <div
+  <figure class="my-4 block">
+    <picture>
+      <source :srcset="fullpath" media="(min-width: 480px)" />
+      <img
+        :src="fullpath"
+        :alt="alt"
+        :class="{
+          'block mx-auto': !!maxWidth || center,
+          'border border-black': border,
+        }"
+        :style="!!maxWidth ? `max-width: ${maxWidth}` : ''"
+      />
+    </picture>
+    <figcaption
       v-if="caption"
-      class="text-center font-semibold text-sm my-2 text-gray-500"
+      class="text-center text-sm mt-3 max-w-3xl mx-auto break-words"
+      style="color: rgb(117, 117, 117)"
     >
       {{ caption }}
-    </div>
-  </div>
+    </figcaption>
+  </figure>
 </template>
 
 <script lang="ts">
