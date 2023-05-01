@@ -1,5 +1,5 @@
 <template>
-  <div class="px-10 md:px-20">
+  <div class="px-6 md:px-20">
     <div class="max-w-2xl 3xl:max-w-screen-md pb-12">
       <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
         <!-- title  -->

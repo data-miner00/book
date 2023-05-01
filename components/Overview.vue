@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 flex px-5 lg:px-20">
+  <div class="flex-1 flex px-6 lg:px-20">
     <div class="max-w-screen-md flex-1">
       <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
         <!-- title  -->
