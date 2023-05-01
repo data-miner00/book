@@ -148,6 +148,10 @@ export default Vue.extend({
   @apply bg-purple-50 cursor-default py-3;
 }
 
+.nuxt-content blockquote code {
+  @apply bg-purple-100;
+}
+
 .nuxt-content-highlight {
   @apply max-w-full overflow-x-auto relative mb-10 text-base;
 }
