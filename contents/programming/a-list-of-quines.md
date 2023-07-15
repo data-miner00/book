@@ -10,15 +10,15 @@ tags:
   - quines
   - cheatsheet
 directory: programming
-updatedAt: 2022-03-29T13:33:30.485Z
+updatedAt: 2023-07-15T13:17:10.163Z
 createdAt: 2021-10-31T13:33:30.485Z
 ---
 
-A quine is a piece of code that upon executing will **produce itself** as the output. A quine is _idempotent_. The result will remain exactly the same no matter how much time you execute it. They are also known as self-replicating programs or self-copying programs.
+A quine is a piece of code that upon executing will **produce itself** as the output. A quine is _idempotent_ as its result will remain exactly the same no matter how much time you execute it. Quine are also known as self-replicating programs or self-copying programs.
 
 ## Gallery of Quines
 
-Here are a collection of quines with different programming languages that I've collected through the internet. 
+Here is a collection of quines in different programming languages that I've collected from the internet. 
 
 ### C implementation
 

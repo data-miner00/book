@@ -11,13 +11,13 @@ tags:
   - logging
   - console
 directory: programming
-updatedAt: 2022-12-26T17:53:03.861Z
+updatedAt: 2023-07-15T13:17:10.163Z
 createdAt: 2022-08-12T17:38:48.848Z
 ---
 
-More often than not, when developers try to debug their Javascript code, the de facto method would be using `console.log()` as it is the simplest and straight to the point. It will just print out the object that has being passed in. Through `console.log()`, we could identify the state of the variables, whether they are a number type, an object type or undefined.
+More often than not, when Javascript developers try to debug their code, the de facto method would be using `console.log()` as it is simple and straight to the point. It will just print out the anything that has being passed in. Through `console.log()`, we could identify the state of the variables, whether they are a number type, an object type or undefined.
 
-After that, developers would be complacent about their current debugging technique with `console.log` and being totally ignorant about the existence of other useful `console` methods.
+After that, developers would be complacent about their current debugging technique with `console.log` and being totally ignorant about the existence of other incredibly useful `console` methods.
 
 ## Debugging
 
@@ -25,7 +25,7 @@ There are a couple of `console` methods that can be utilized for a more effectiv
 
 ### Assert
 
-The method to assert the expression passed in are truthy, else will log out the error message that has been supplied to.
+The method to assert the expression passed in are truthy, else it will log out the error message that it has been given as the second parameter.
 
 ```js
 console.assert(1 === 1, '1 is not equal to 1')
@@ -54,7 +54,7 @@ The output table are as follows.
 
 ### Group Collapsed
 
-Group collapsed is a method to start a section of console loggings in the console, with subsequent console calls grouped under the parent umbrella until `console.groupEnd` is called.
+Group collapsed is a method to start a section of structured console loggings in the console, with subsequent console calls grouped under the parent umbrella until `console.groupEnd` is called.
 
 ```js
 console.groupCollapsed('Mysterious Errors')
@@ -63,7 +63,7 @@ console.log('Mom pls help')
 console.groupEnd()
 ```
 
-The logs are grouped nicely with an accordion to expand or collapse the details.
+The logs are grouped nicely with an accordion to expand or collapse the underlying details.
 
 <v-img src="console-log-alternatives/Pasted image 20220727005927.png" alt="console groupings" border></v-img>
 
@@ -93,13 +93,26 @@ Prints the stack trace to the console. Useful to trace the calls in nested funct
 
 ### Count
 
-A counter that logs and increments by one each time when it is being called. Useful for detecting multiple calls on a piece of code that suppose to run only once. It may be labelled with a string passed into the parameter.
+A counter that logs and increment by one each time it is being invoked. Useful for detecting multiple duplicated calls on a piece of code that suppose to only run once. It may be labelled with a string passed into the parameter.
+
+```js
+console.count() // 1
+console.count() // 2
+
+// Labelled count
+console.count('myLabel') // 1
+```
 
 To reset the count, use the method `console.countReset()`.
 
+```js
+console.countReset() // Reset `default` label
+console.countReset('myLabel') // Reset `myLabel` label
+```
+
 ### Level
 
-Gives the logs some level to differentiate them from their intention.
+Gives the logs a level that can be used to distinguish its intention or urgency.
 
 ```js
 // Appear in blue color
@@ -115,16 +128,18 @@ console.error('This is error message')
 console.debug('This is debug message')
 ```
 
-- Info: General messages, such as service start/stop, feature invoked etc.
-- Warn: Potential breaking behaviour such as missing arguments.
-- Error: Any behaviour that is fatal and impedes the operation to continue.
-- Debug: Provide diagnostic info that is helpful to others.
+|     | Level | Description                                                        |
+| --- | ----- | ------------------------------------------------------------------ |
+| 1.  | Info  | General messages, such as service start/stop, feature invoked etc. |
+| 2.  | Warn  | Potential breaking behaviour such as missing arguments.            |
+| 3.  | Error | Any behaviour that is fatal and impedes the operation to continue. |
+| 4.  | Debug | Provide diagnostic info that is helpful to others.                 |
 
 ## Benchmarking
 
 ### Timer
 
-To benchmark a function call or the whole execution time of an application feature, the Time function allows us to start a timer when it is being called. Somewhere in the middle of the code, we can check the time elapsed since the timer started with `console.timeLog()`. The timer will need to be ended with `console.timeEnd()` to reset the timer.
+To benchmark a function call or the whole execution time of a feature, the `time` function allows us to start a timer when it is being called. Somewhere in the middle of the code, we can check the time elapsed since the timer started with `console.timeLog()`. The timer will need to be ended with the call to `console.timeEnd()` to reset the timer.
 
 ```js
 // starting the timer
@@ -163,7 +178,7 @@ longFunction()
 console.profileEnd('Profiler')
 ```
 
-The code above registers a profiling activity named 'Profiler' and can be inspected in the DevTools under JavaScript Profiler.
+The code above registers a profiling activity named `Profiler` and can be inspected in the DevTools under JavaScript Profiler.
 
 <v-img src="console-log-alternatives/javascript-profiler.png" alt="JavaScript profiler" border center></v-img>
 
@@ -184,7 +199,7 @@ Below are the summary of the aforementioned methods:
 
 ## Styling Console.log
 
-Some protip for the diehard `console.log` users. The logging in the browser (not Node.js) can be enhanced with different CSS stylings to make the log looks much better than the default one. To do that, add `%c` with a whitespace followed by the content to log, followed by **a string of** CSS related styles, seperated by semicolons between the styles.
+Here is a pro tip for the `console.log` fanatics. The logging in the browser (not Node.js) can be enhanced with different CSS stylings to make the log looks much better than the default one. To do that, add `%c` with a whitespace followed by the content to log, followed by **a string of** CSS related styles, seperated by semicolons between the styles.
 
 ```js
 console.log(
@@ -213,4 +228,4 @@ The above log takes in the string to be logged as its first parameter and taking
 
 <v-img src="console-log-alternatives/Pasted image 20220727003901.png" alt="colorful logs used in my real project" border></v-img>
 
-This is how to over-engineer the console.log and make it appealing as I did with one of my project. One potential use case for this would be grouping logs based on different level such as info, warnings, critical and fatal that has distinct color representing each of them.
+This is how to over-engineer the `console.log` and make it appealing as I did with one of my project.

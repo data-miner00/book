@@ -10,29 +10,29 @@ tags:
   - data structure
   - notes
 directory: programming
-updatedAt: 2023-03-22T12:58:10.024Z
+updatedAt: 2023-07-15T13:17:10.163Z
 createdAt: 2023-03-22T12:58:10.024Z
 ---
 
-Bloom Filter is a data structure that allows rapid lookup on an element, say a string whether it is present in a set. It is a **bit vector** that contains an array of zeros and ones (booleans) with a fixed length. It is known for it's space and time efficiency.
+Bloom Filter is a data structure that allows rapid lookup on an element, say a string whether it is present in a set. Implementation-wise, it is a **bit vector** that contains an array of zeros and ones (booleans) with a fixed length. It is known for its space and time efficiency.
 
 It is probabilistic in nature that is useful for lookup on **non-critical data**, such as caching search keywords and detecting weak passwords. Upon querying, bloom filter will only return one of the two responses - "maybe" or "no".
 
-If the answer is "maybe", there is a high possibility that the data is indeed there, based on the allowed false positive rate configured. If the answer is "no", then the data is definitely absent in the set. In other words, Bloom filter can have a _low_ chance of getting a False positive (Type I Error) but _never_ a False negative.
+If the answer is "maybe", there is a high possibility that the data is indeed there, based on the allowed false positive rate configured. If the answer is "no", then the data is definitely absent in the set. In other words, a Bloom Filter can have a _low_ chance of getting a False positive (Type I Error) but _never_ a False negative.
 
-Here is a simple bloom filter of size 10 for demo.
+Here is a simple Bloom Filter with the size of 10 for demonstration.
 
 <v-img src="bloom-filter/bloom-filter.png" alt="A simple bloom filter with 10 bits"></v-img>
 
 ## How it works
 
-To add an item in the Bloom filter, it takes the input and hashed it with a few hash functions to get multiple hash digests. Subsequently, the results are used to determine the position of the bits to be flipped.
+To add an item in the Bloom Filter, it takes the input and hashed it with a few hash functions to get multiple hash digests. Subsequently, the results are used to determine the position of the bits to be flipped.
 
 <v-img src="bloom-filter/insertion.png" alt="Insertion operation of a string"></v-img>
 
 Here, we take the string `"hello, world"` and hash it with 3 different, independent hash functions and flip the bits accordingly.
 
-After that, when a query tries to lookup for the same value, the hash produced will be the same and the results will points to the same bits that is already flipped, indicating the item exist, ideally.
+After that, when a query tries to lookup for the same value, the hash produced will be the same and the results will points to the same bits that is already flipped, indicating the item is very likely to be there.
 
 Let's try to query for the string `"hi, mum"` and observe the behaviour.
 
@@ -42,11 +42,11 @@ Base on the results, only `Hash1` got a match whereas both `Hash2` and `Hash3` d
 
 ## Collision
 
-As the number of items in the bloom filter increases, more bits are bring flipped and collision are bound to happen. Given a non-existing input, all of the hash functions may have their results point to the already flipped bit, hence yielding a false positive result and this is the reason bloom filter is considered as a probabilistic data structure.
+As the number of items in the Bloom Filter increases, more bits are being flipped and collision are bound to happen. Given a non-existing input, all of the hash functions may even have their results point to the flipped bit, hence producing a false positive result and this is the reason bloom filter is considered as a probabilistic data structure.
 
 <v-img src="bloom-filter/query-collision.png" alt="A query that is collided"></v-img>
 
-The hashes for the string `"hi, dad"` coincidentally falls to the flipped bits by `"hello, world"` earlier and this shows how a false positive can be manifested.
+The hashes for the string `"hi, dad"` coincidentally fall to the flipped bits by `"hello, world"` earlier and this shows how a false positive can manifest.
 
 The good news is, with proper tuning of the parameters, we can minimize the rate of false positivity to the threshold that is low enough to be acceptable for our use case.
 
@@ -79,7 +79,7 @@ $$
 k = \frac{m \ln 2}{n}
 $$
 
-However, do be mindful that the number of hash functions used does not correspond to the efficiency of the bloom filter as it will occupy more bits when inserting an element that might cause collision. In fact, the more hash functions used, the slower it is for the operation to execute.
+However, be mindful that the number of hash functions used does **not** correspond to the efficiency of the Bloom Filter as it will occupy more bits when inserting an element and consequently increases the likelihood of a collision. In fact, the more hash functions used, the slower it is for the operation to execute.
 
 ## Sample Implementation
 
@@ -164,11 +164,11 @@ class BloomFilter {
 
 Strings can be inserted via the `insert` method, `find` for the lookup operation that returns a boolean value and the `showState` method shows the current state of the bit array. The `#itemCount` keep tracks of how many elements has been inserted since its instantiation.
 
-The `#sliceStart` and `#sliceEnd` does not have anything to do with Bloom Filter. It's just a way I use to intepret the hashes and convert them into bit array positions.
+The `#sliceStart` and `#sliceEnd` does not have anything to do with Bloom Filter. It is just a way I personally use to intepret the hashes and convert them into bit array positions.
 
 ## Closing Remark
 
-Bloom Filter is a powerful data structure that can be used in situations when false positive can be tolerated.
+In short, Bloom Filter is a powerful and efficient data structure that can be used in situations when false positive can be tolerated.
 By tolerating the slim chance of collision, we are rewarded with an incredibly memory efficient data structure with miniscule size.
 
 ## Reference
