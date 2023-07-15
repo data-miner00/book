@@ -11,7 +11,7 @@ tags:
   - application
   - website
 directory: random
-updatedAt: 2022-03-27T13:33:30.485Z
+updatedAt: 2023-07-15T13:17:10.163Z
 createdAt: 2022-03-27T13:33:30.485Z
 ---
 
@@ -23,6 +23,8 @@ Web applications that I like to used for software planning and designing.
 
 - [draw.io](https://app.diagrams.net/)
 - [Figma](https://www.figma.com/)
+- [excalidraw](https://www.excalidraw.com)
+- [Mermaid](https://mermaid.live/)
 
 ## Blogs and Articles
 
@@ -75,6 +77,7 @@ The official documentation sites for various programming languages.
 - [ReScript](https://rescript-lang.org/)
 - [Apl](https://xpqz.github.io/learnapl/intro.html)
 - [Racket](https://racket-lang.org/)
+- [Julia](https://julialang.org/)
 
 ## Screencast
 
@@ -91,15 +94,19 @@ Website that provides invaluable tutorials or insights for others to pick up reg
 Documentation sites for the web application frameworks that emerged over the years.
 
 - [Vue](https://vuejs.org/)
-- [Nuxt](https://nuxtjs.org/)
-- [React](https://reactjs.org/)
+- [Nuxt](https://nuxt.com/)
+- [React](https://react.dev/)
 - [Next](https://nextjs.org/)
 - [Gatsby](https://www.gatsbyjs.com/)
 - [Gridsome](https://gridsome.org/)
 - [Angular](https://angular.io/)
 - [Svelte](https://svelte.dev/)
 - [Sapper](https://sapper.svelte.dev/)
+- [SvelteKit](https://kit.svelte.dev/)
 - [Astro](https://astro.build/)
+- [Preact](https://preactjs.com/)
+- [Qwik](https://qwik.builder.io/)
+- [SolidJs](https://www.solidjs.com/)
 
 ## Server Framework Docs
 
