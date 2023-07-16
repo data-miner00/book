@@ -1,12 +1,22 @@
 <template>
-  <div class="flex-1 flex px-6 lg:px-20">
+  <div class="flex-1 flex px-4 lg:px-20">
     <div class="max-w-screen-md flex-1">
-      <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
+      <div
+        class="
+          py-6
+          mb-6
+          md:py-12
+          border-b
+          md:border-b-2
+          border-gray-200 border-solid
+          md:mb-12
+        "
+      >
         <!-- title  -->
-        <div class="text-4xl font-semibold">{{ title }}</div>
+        <div class="text-3xl md:text-4xl font-semibold">{{ title }}</div>
 
         <!-- subtitle -->
-        <div class="text-xl mt-2 text-gray-500">
+        <div class="text-lg md:text-xl mt-2 text-gray-500">
           {{ subtitle }}
         </div>
       </div>
