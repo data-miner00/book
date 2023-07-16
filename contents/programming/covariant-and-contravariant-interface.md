@@ -11,13 +11,13 @@ tags:
   - variance
   - interface
   - c#
-updatedAt: 2022-11-09T15:06:47.818Z
+updatedAt: 2023-07-16T01:05:19.344Z
 createdAt: 2022-11-09T15:06:47.818Z
 ---
 
 Covariant and Contravariant are the terms originated from Physics to explain how the scale of the factor can affect the scale of the outcome. Covariant is indicative of the scale of outcome is directly proportional to the scale of the cause whereas contravariant is inversely proportional.
 
-In Programming, covariance and contravariance exists to compliment the Liskov Substitution Principle of the [SOLID Principles]().
+In Programming, covariance and contravariance exists to compliment the Liskov Substitution Principle of the [SOLID Principles](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/).
 
 Simply put, contravariance is the conversion of a derived entity to its parent entity that are higher in the hierarchy. An epitome would converting Cat to Animal (upcasting).
 
@@ -49,7 +49,7 @@ Animal y = new Cat();
 Both `x` and `y` are able to invoke the `Eat` method. However, since the `Meow` method only exist in the `Cat` class, a `Cat` object that is referenced by the base `Animal` class **cannot** invoke that method.
 
 ```cs
-y.Meow(); // compilation error
+x.Meow(); // compilation error
 ```
 
 Only the `Cat` object that has its own class as reference is able to access the `Meow` method.
@@ -61,7 +61,7 @@ z.Meow();
 
 ## Generics
 
-When it comes to generic typed interfaces, variance is mainly concerned with object substitution.
+When it comes to generic typed interfaces, variance is mainly concerned with **how objects can be substituted**.
 
 Covariant interface of type `T` indicates that its derivatives will only have methods that produce entities of type `T`. It is specified with the `out` keyword.
 
@@ -99,7 +99,7 @@ Animal c = producer.Produce();
 Cat d = producer.Produce(); // no issue
 ```
 
-All these means that a **derived** type is _behaving the same_ as the **base** type, hence covariance.
+These means that a **derived** type is _behaving the same_ as the **base** type, hence covariance.
 
 ```
 Cat : Animal ==> IProducer<Cat> : IProducer<Animal>
