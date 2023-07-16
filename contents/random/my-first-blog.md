@@ -11,7 +11,7 @@ tags:
   - example
   - experimental
 directory: random
-updatedAt: 2022-11-08T13:03:05.084Z
+updatedAt: 2023-05-01T19:03:05.084Z
 createdAt: 2021-10-13T13:33:30.485Z
 ---
 
@@ -49,7 +49,7 @@ $$
 
 ## Chapter 2
 
-<v-img src="deserted-place.jpg" alt="deserted place" caption="Pic 1: This is a humble caption"></v-img>
+<v-img src="deserted-place.jpg" alt="deserted place" caption="Figure 1: Random Destroyed Territory, Captioned."></v-img>
 
 This is some more info
 **Hello** _world_ **hahaha**

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-10 md:px-20">
+  <div class="px-6 md:px-20">
     <div class="max-w-2xl 3xl:max-w-screen-md pb-12">
       <div class="py-12 border-b-2 border-gray-200 border-solid mb-12">
         <!-- title  -->
@@ -15,29 +15,28 @@
       <article style="color: rgb(59, 69, 78)" class="this">
         <p>
           Shaun here. This site was developed for me to document the information
-          that I've came across on various topics in the form of a note or memo
+          that I've come across on various topics in the form of a note or memo
           for my future reference. This site is open to the public to benefit
           those who might find it useful.
         </p>
 
         <p>
-          If you have spotted any of the potential bugs or bizzare behaviours,
-          please do not hesitate to open an issue on the
+          If you have spotted any potential bugs or bizarre behaviours, please
+          do not hesitate to open an issue on the
           <a href="https://github.com/data-miner00/book" target="_blank"
             >GitHub repo</a
           >
-          and I will look into the issues.
+          and I will look into it.
         </p>
 
         <h1 id="more-about-the-author">More about the author</h1>
 
         <p>
-          I am a software engineer that has a little bit shy of 2 years
-          experience based in Malaysia. I am passionate about learning foreign
-          languages and currently learning English and Japanese. I like to
-          develop software applications on my own to learn and experiment
-          different technologies on different type of projects during my leisure
-          time.
+          I am a software engineer that has 2 years of working experience based
+          in Malaysia. I am passionate about learning foreign languages and
+          currently learning English and Japanese. I like to develop software
+          applications on my own to learn and experiment with different
+          technologies on different types of projects during my leisure time.
         </p>
 
         <h1 id="mission">Mission</h1>
@@ -100,7 +99,7 @@
 
         <p>
           These are a list of social media accounts of mine. Feel free to reach
-          out to me on any particular topic that is interesting.
+          out to me on any particular topic that is worth discussing.
         </p>
 
         <!-- Refactor into individual component and image file -->

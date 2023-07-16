@@ -10,15 +10,15 @@ author:
 tags:
   - data validation
   - typescript
-updatedAt: 2023-01-12T15:27:38.762Z
+updatedAt: 2023-07-15T13:17:10.163Z
 createdAt: 2023-01-12T15:27:38.762Z
 ---
 
-Zod is a TypeScript library for input validation. TypeScript has done a profound job on ensuring type safety for JavaScript development at compile time. Zod complements TypeScript by providing runtime validation that extends beyond a regular type checks.
+Zod is a TypeScript library for input validation. TypeScript has done a profound job on ensuring type safety for JavaScript development at compile time. Zod complements TypeScript by providing runtime validation such as form validation in the browser.
 
 ## Basic Usage
 
-The sample below tries to parse the `user` object against the Zod object schema `UserSchema`. If the validation is successful, it will return the object itself otherwise it will throw an Error.
+The sample below tries to parse the `user` object against the Zod object schema called `UserSchema`. If the validation is successful, it will return the object itself otherwise it will throw an Error.
 
 ```ts
 import { z } from 'zod'
@@ -36,7 +36,7 @@ console.log(UserSchema.parse(user))
 
 ### Infer Schema
 
-Zod's schema can be also used for type inference, which is extremely handy.
+Zod's schema can be also used for type inference, which is extremely handy for code reuse.
 
 ```ts
 const UserSchema = z.object({
@@ -224,7 +224,7 @@ UserSchema.merge(UserSchema2).parse(user)
 
 ## Non-existing Key
 
-By default, Zod omits all the Key value pairs that are not defined in the schema. For example, if you have this object,
+By default, Zod omits all the key value pairs that are not defined in the schema. For example, if you have this object,
 
 ```ts
 const UserSchema = z.object({

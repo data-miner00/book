@@ -11,13 +11,13 @@ tags:
   - minecraft
   - server
   - ngrok
-updatedAt: 2023-02-14T10:43:27.716Z
+updatedAt: 2023-07-15T13:17:10.163Z
 createdAt: 2023-02-06T13:40:58.648Z
 ---
 
-Hosting a Minecraft server can be expensive for amateur players. Free services out there _suck_ as they can lag the hell out of you whenever they please. Moreover, the save files are not secured as you might find out that your endearing Minecraft world has been _erased_ entirely from your account, from the hard-disk of the server and have no other ways to recover. All the painstaking effort, years of grinding and sanity put into it gets obliterated.
+Hosting a Minecraft server can be expensive for amateur players. Free services out there _suck_ as they can lag the hell out of you whenever they please. Moreover, the saved files are not secured as you might find out that your endearing Minecraft world has been _erased_ entirely from your account, from the hard disk of the server and have no other ways to recover. All the painstaking effort, years of grinding and sanity put into it gets obliterated.
 
-The only solution to all these ordeal is to host one yourself. This article will provide the only guidance you need to do just that and I can guarantee it won't dissapoints.
+The only solution to all these ordeal is to host one yourself. This article will provide the only guidance you need to do just that and I can guarantee it won't disappoints.
 
 ## Requirements
 
@@ -207,7 +207,7 @@ Copy the TCP URL in the `Forwarding` property and give it to your friends to joi
 
 ## Whitelisting
 
-Since the server is publicly available to the entire internet, you wouldn't want some random strangers to be able to join your world and wreak havoc and ruin your day.
+Since the server is publicly available to the entire internet, you wouldn't want some random strangers to be able to join your world to wreak havoc and ruin your day.
 
 To do that, go to `server.properties` file and look for a field named `white-list` and set its value to `true`. After that, to whitelist a player, go to the running server command prompt and type the following to whitelist a player.
 
@@ -219,7 +219,7 @@ A player that is not in the whitelist will be kicked immediately upon joining.
 
 ## Closing
 
-This article walk through how to setup a server hosted on our computer and made accessible to the public via ngrok. It is important to set a whitelist to prevent any unsolicited intruder from joining the server.
+This article walks through how to set up a self-hosted server and made it accessible to the public via ngrok. It is important to **set a whitelist** to prevent any unsolicited intruder from entering the server.
 
 ## Reference
 

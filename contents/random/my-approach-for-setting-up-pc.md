@@ -11,13 +11,13 @@ tags:
   - development
   - tools
 directory: random
-updatedAt: 2022-08-14T07:17:38.233Z
+updatedAt: 2023-07-15T13:17:10.163Z
 createdAt: 2021-10-20T13:33:30.485Z
 ---
 
-As a developer, setting up a brand new computer from scratch can be quite an enduring process as the tools that we are using might have some complicated steps to setup but might have already forgotten over the years. Besides, there are so much softwares and tools that are essential and it's just impossible to remember each and every one of them.
+As a developer, setting up a brand new computer from scratch can be quite an enduring process as the tools that we use might have complicated setups and various dependencies that might have already been forgotten over the years. With the great assortment of essential tools, it is impossible to remember the setups for each and every one of them.
 
-In this article, I will be outlining the ideal steps for me to setting up my new computer for the softwares and development tools from the groundup. This of course includes software applications for other non-programming purposes.
+In this article, I will be outlining the ideal steps for me to setting up my new computer for the software and development tools from the ground up. This, of course, includes software applications for other non-programming purposes.
 
 ## Software Application
 
