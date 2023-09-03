@@ -61,7 +61,7 @@
             />
           </div>
           <div class="text-gray-400 text-xs pt-1">
-            Last updated on {{ lastUpdated | formatDate }} by
+            Last updated on {{ formattedLastUpdated }} by
             {{ author.name }}
           </div>
         </div>
@@ -115,15 +115,15 @@ export default Vue.extend({
       default: () => [],
     },
   },
-  filters: {
-    formatDate(date: string) {
+  computed: {
+    formattedLastUpdated() {
       const options: Intl.DateTimeFormatOptions = {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
       }
 
-      return new Date(date).toLocaleDateString('en', options)
+      return new Date(this.lastUpdated).toLocaleDateString('en', options)
     },
   },
   head() {

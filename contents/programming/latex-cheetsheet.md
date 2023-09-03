@@ -11,7 +11,7 @@ tags:
   - science
   - latex
   - cheatsheet
-updatedAt: 2022-10-22T03:34:20.346Z
+updatedAt: 2023-09-03T08:26:08.383Z
 createdAt: 2022-10-22T03:34:20.346Z
 ---
 
@@ -252,6 +252,12 @@ Adding in a label to the equation makes it easy to be referred within the docume
  y = mx + c
  \label{eq:gradient}
 \end{equation}
+```
+
+To refer to the labelled equation somewhere within the document in a paragraph, use the `\ref` command to link between them.
+
+```tex
+The equation \ref{eq:gradient} is kinda basic.
 ```
 
 ### Inline Math
@@ -513,6 +519,61 @@ That is not enough, the padding for the cells still needs to be specified with
 
 To include the list of tables, simply use `\listoftables` the same as with [table of contents](#content) and [figures](#list-of-figures).
 
+## Lists
+
+To list items in a ordered list, we can use the `enumerate` command as shown. Within the `begin` block, the individual items can be listed out with the `\item` command followed by a space and its description. `enumerate` can be replaced with `itemized` for unordered lists.
+
+```tex
+\section{Definitions of $e$}
+
+\begin{enumerate}
+\item As a \textbf{limit}:
+\[e= \lim_{n\to\infty} \left(1+\frac{1}{n}\right)^n\]
+
+\item As a \textit{sum}:
+\[e= \sum_{n=0}^{\infty} \frac{1}{n!}.\]
+
+\item As a \underline{continued fraction}:
+\[e= 2+\frac{1}{1+\frac{1}{2+\frac{2}{3+\frac{3}{4+\frac{4}{5+\ddots}}}}}\]
+\end{enumerate}
+```
+
+## Sample Formulas
+
+1. Definitions of **e**
+
+> 1.1 As a limit
+
+$$
+e= \lim_{n\to\infty} \left(1+\frac{1}{n}\right)^n
+$$
+
+> 1.2 As a sum
+
+$$
+e= \sum_{n=0}^{\infty} \frac{1}{n!}.
+$$
+
+> 1.3 As a continued fraction
+
+$$
+e= 2+\frac{1}{1+\frac{1}{2+\frac{2}{3+\frac{3}{4+\frac{4}{5+\ddots}}}}}
+$$
+
+2. Triple integral
+
+$$
+\iiint f(x,y,z)\,dxdydz
+$$
+
+3. Vector
+
+$$
+\vec{v}=<v_1, v_2, v_3>
+$$
+
+4. The real numbers, represented as $\mathbb{R}$ is so cool.
+
 ## LaTeX Logo
 
 To use the $\LaTeX$ logo, we can just use the following tag.
@@ -527,3 +588,5 @@ To use the $\LaTeX$ logo, we can just use the following tag.
 - [LaTeX Math Cheatsheet](https://kapeli.com/cheat_sheets/LaTeX_Math_Symbols.docset/Contents/Resources/Documents/index)
 - [LaTeX Docs](https://www.latex-project.org/help/documentation/#general-documentation)
 - [Overleaf](https://www.overleaf.com/)
+- [Intro to LaTeX : Learn to write beautiful math equations || Part 1](https://www.youtube.com/watch?v=Jp0lPj2-DQA)
+- [Intro to LaTeX **Full Tutorial** Part II (Equations, Tables, Figures, Theorems, Macros and more)](https://www.youtube.com/watch?v=-HvRvBjBAvg)
