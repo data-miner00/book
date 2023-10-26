@@ -12,7 +12,7 @@ tags:
   - jsonp
   - cors
 directory: programming
-updatedAt: 2023-10-25T13:47:56.869Z
+updatedAt: 2023-10-26T02:40:29.980Z
 createdAt: 2023-10-25T13:47:56.869Z
 ---
 
@@ -106,6 +106,54 @@ Here is how it looks like in the HTML.
   </body>
 </html>
 ```
+
+## Uncaching
+
+JSONP calls are subjected to caching by the browser for optimization if the `<script src="https://constant-static-url">` is constant. To prevent the browser from caching the stale data, we have to generate the callback function name dynamically by using `Math.random`.
+
+```js
+window.onload = function () {
+  var randomNum = Math.floor(100_000 * Math.random())
+  var functionName = 'cb_' + randomNum
+
+  window[functionName] = function (data) {
+    console.log(data)
+  }
+
+  // We need to dynamically generate the script tag
+  var newScriptTag = document.createElement('script')
+  newScriptTag.src = 'https://a.com/mydata?callback=' + functionName
+
+  document.body.appendChild(newScriptTag)
+}
+```
+
+With this approach, the browser will request for the latest data most of the time.
+
+### Cleanup
+
+We can optionally remove the script tag that is dynamically generated as the data is already consumed by the browser.
+
+```js
+window.onload = function () {
+  var randomNum = Math.floor(100_000 * Math.random())
+  var functionName = 'cb_' + randomNum
+
+  window[functionName] = function (data) {
+    console.log(data)
+  }
+
+  // We need to dynamically generate the script tag
+  var newScriptTag = document.createElement('script')
+  newScriptTag.id = 'script_' + functionName
+  newScriptTag.src = 'https://a.com/mydata?callback=' + functionName
+
+  document.body.appendChild(newScriptTag)
+  document.getElementById(newScriptTag.id).remove()
+}
+```
+
+The cleanup will make the call to JSONP look seamless.
 
 ## Pros and Cons
 
