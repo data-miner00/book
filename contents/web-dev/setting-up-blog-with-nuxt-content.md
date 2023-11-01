@@ -1,5 +1,5 @@
 ---
-title: Setting up a blog with Nuxt Content
+title: Setting up a blog with Nuxt Content v1
 subtitle: My step-by-step approach to creating a fully-featured Nuxt blog
 topic: Technology
 displayTopic: Web Development
@@ -16,7 +16,7 @@ updatedAt: 2022-08-14T07:17:38.233Z
 createdAt: 2021-10-08T13:33:30.485Z
 ---
 
-> Disclaimer: This article uses Nuxt version 2 and Nuxt Content version 1 for demostration. Newer versions of the technologies will have their own caveats.
+> Disclaimer: This article uses Nuxt version 2 and Nuxt Content version 1 for demonstration. Newer versions of the technologies will have their own caveats.
 
 Having a personal blog is very useful for developers to document topics that are meaningful and worth sharing. There are countless tools and technologies out there for anyone to create their own blog, whether by paid or free of charge.
 
@@ -409,7 +409,7 @@ if you are using `fetch` in any of your component which ultimately leads to fail
 
 In this article, we have covered a lot and it would be enough to kickstart your blog project with Nuxt Content. We have discussed on installing dependencies, setting up program structure, creating a simple blog page, accessing the metadata, styling content, creating table of contents, working with Nuxt Content API, adding Prism theme, creating custom component for image. A big shoutout to the Nuxt team for providing such an amazing module to work with.
 
-## Future updates
+## Improvement Ideas
 
 - Adding hyperlink icon to headers
 - Adding search feature
