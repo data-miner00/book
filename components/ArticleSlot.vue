@@ -67,7 +67,7 @@
         </div>
       </footer>
     </div>
-    <div class="fixed right-60 top-0 w-72 hidden md:block">
+    <div class="fixed right-60 top-0 w-72 hidden 3xl:block">
       <Quicklinks :quicklinks="quicklinks" />
       <Tags :tags="tags" />
     </div>
