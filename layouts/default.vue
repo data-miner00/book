@@ -77,7 +77,7 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="postcss">
+<style lang="scss">
 .nuxt-content {
   font-family: 'Source Serif Pro', serif;
 }
@@ -127,6 +127,33 @@ export default Vue.extend({
   @apply px-2;
   @apply py-1;
   @apply rounded text-base;
+}
+
+.nuxt-content kbd {
+  --kbd-color-background: transparent;
+  --kbd-color-border: rgba(128, 128, 128, 0.8);
+  --kbd-color-text: #0f1419;
+
+  background-color: var(--kbd-color-background);
+  color: var(--kbd-color-text);
+  border-radius: 0.25rem;
+  border: 1px solid var(--kbd-color-border);
+  box-shadow: 0 2px 0 1px var(--kbd-color-border);
+  cursor: default;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.75em;
+  line-height: 1;
+  min-width: 0.75rem;
+  display: inline-block;
+  text-align: center;
+  padding: 2px 5px;
+  position: relative;
+  top: -1px;
+}
+
+.nuxt-content kbd:hover {
+  box-shadow: 0 1px 0 0.5px var(--kbd-color-border);
+  top: 1px;
 }
 
 .nuxt-content-highlight .filename {
