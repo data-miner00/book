@@ -13,7 +13,7 @@ tags:
   - arch
   - hp
 directory: programming
-updatedAt: 2023-10-28T12:39:05.389Z
+updatedAt: 2023-11-30T07:51:16.872Z
 createdAt: 2023-10-28T12:39:05.389Z
 ---
 
@@ -378,33 +378,6 @@ ping google.com
 ```
 
 Congratulations. Everything is now completely set up. Next, we can install our favourite packages and software such as window manager, desktop environment and login manager according to our needs.
-
-## Miscellaneous
-
-This section is nothing related to the installation of Arch Linux. It only includes my personal preference that I would like to document. Feel free to ignore this section.
-
-### Install Neovim From Source
-
-```
-git clone https://github.com/neovim/neovim.git
-cd neovim
-make CMAKE_BUILD_TYPE=Release
-sudo make install
-```
-
-- [help](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-source)
-
-### Other Software/Packages
-
-- `htop`
-- `btop`
-- `neofetch`
-- `pfetch`
-- `base-devel`
-- `nano`
-- `git`
-- `vim`
-- `noto-font-cjk`
 
 ## Reference
 
