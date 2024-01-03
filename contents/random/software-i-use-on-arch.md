@@ -13,7 +13,7 @@ tags:
   - development
   - tools
 directory: random
-updatedAt: 2023-11-30T07:51:16.872Z
+updatedAt: 2024-01-03T22:27:16.872Z
 createdAt: 2023-11-30T07:51:16.872Z
 ---
 
@@ -93,24 +93,43 @@ Patched Nerd-Fonts which supports ligatures and icons can be obtained via [nerdf
 
 ## Command Line Utilities
 
-|     | Tools    | Description                                 | Link                                                              |
-| --- | -------- | ------------------------------------------- | ----------------------------------------------------------------- |
-| 1.  | `locate` | Locates the executables located on the disk | [Article](https://linuxize.com/post/locate-command-in-linux/)     |
-| 2.  | `unzip`  | Unzips a `rar` or `zip` file to a directory | [Article](https://linuxize.com/post/how-to-unzip-files-in-linux/) |
-| 3.  | `xclip`  | A clipboard provider for the X11 server     | [GitHub](https://github.com/astrand/xclip)                        |
+|     | Tools    | Description                                 | Link                                                                 |
+| --- | -------- | ------------------------------------------- | -------------------------------------------------------------------- |
+| 1.  | `locate` | Locates the executables located on the disk | [Article](https://linuxize.com/post/locate-command-in-linux/)        |
+| 2.  | `unzip`  | Unzips a `rar` or `zip` file to a directory | [Article](https://linuxize.com/post/how-to-unzip-files-in-linux/)    |
+| 3.  | `xclip`  | A clipboard provider for the X11 server     | [GitHub](https://github.com/astrand/xclip)                           |
+| 4.  | `scrot`  | A minimal screenshot tool for X             | [GitHub](https://github.com/resurrecting-open-source-projects/scrot) |
 
 ## Data Transfer
 
-|     | Tools                   | Description                                                | Link                                           |
-| --- | ----------------------- | ---------------------------------------------------------- | ---------------------------------------------- |
-| 1.  | `curl`                  | Transfers data across the internet via various protocols   | [Homepage](https://curl.se/)                   |
-| 2.  | `wget`                  | A program that retrieves resources from remote web servers | [Homepage](https://www.gnu.org/software/wget/) |
-| 3.  | `postman-bin` **(AUR)** | The Postman GUI client                                     | [Homepage](https://www.postman.com/)           |
+|     | Tools                   | Description                                                    | Link                                           |
+| --- | ----------------------- | -------------------------------------------------------------- | ---------------------------------------------- |
+| 1.  | `curl`                  | Transfers data across the internet via various protocols       | [Homepage](https://curl.se/)                   |
+| 2.  | `wget`                  | A program that retrieves resources from remote web servers     | [Homepage](https://www.gnu.org/software/wget/) |
+| 3.  | `postman-bin` **(AUR)** | The Postman GUI client                                         | [Homepage](https://www.postman.com/)           |
+| 4.  | Speedtest CLI           | A lightweight utility to measure network connectivity by Ookla | [Page](https://www.speedtest.net/apps/cli)     |
 
 ## For Fun
 
-|     | Tools     | Description                                       | Link                                               |
-| --- | --------- | ------------------------------------------------- | -------------------------------------------------- |
-| 1.  | `figlet`  | A text-to-ascii command line utility              | [GitHub](https://github.com/cmatsuoka/figlet)      |
-| 2.  | `lolcat`  | A terminal text rainbownifier                     | [GitHub](https://github.com/busyloop/lolcat)       |
-| 3.  | `cmatrix` | A terminal based "The Matrix" like implementation | [GitHub](https://github.com/abishekvashok/cmatrix) |
+|     | Tools                | Description                                        | Link                                               |
+| --- | -------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| 1.  | `figlet`             | A text-to-ascii command line utility               | [GitHub](https://github.com/cmatsuoka/figlet)      |
+| 2.  | `lolcat`             | A terminal text rainbownifier                      | [GitHub](https://github.com/busyloop/lolcat)       |
+| 3.  | `cmatrix`            | A terminal based "The Matrix" like implementation  | [GitHub](https://github.com/abishekvashok/cmatrix) |
+| 4.  | cointop (deprecated) | A terminal based, top-like cryptocurrency explorer | [Homepage](https://docs.cointop.sh/)               |
+| 5.  | `cowsay`             | A tool that converts a text to a cow ascii art     | [GitHub](https://github.com/piuccio/cowsay)        |
+
+## Programming
+
+|     | Tools                | Description                                        | Link                                       |
+| --- | -------------------- | -------------------------------------------------- | ------------------------------------------ |
+| 1.  | `nvm` **(GitHub)**   | A version manager for Node.js                      | [GitHub](https://github.com/nvm-sh/nvm)    |
+| 2.  | `bun` **(Homepage)** | All-in-one JavaScript toolkit and runtime          | [Homepage](https://bun.sh/)                |
+| 3.  | `python`             | The latest version of the Python interpreter       | [Homepage](https://www.python.org/)        |
+| 4.  | `python-pip`         | The officially endorsed package manager for Python | [Homepage](https://pip.pypa.io/en/stable/) |
+
+## Communications
+
+|     | Tools     | Description                             | Link                             |
+| --- | --------- | --------------------------------------- | -------------------------------- |
+| 1.  | `discord` | A free instant messaging app for gamers | [Homepage](https://discord.com/) |
