@@ -13,7 +13,7 @@ tags:
   - arch
   - hp
 directory: programming
-updatedAt: 2023-11-30T07:51:16.872Z
+updatedAt: 2024-02-05T13:50:12.833Z
 createdAt: 2023-10-28T12:39:05.389Z
 ---
 
@@ -378,6 +378,28 @@ ping google.com
 ```
 
 Congratulations. Everything is now completely set up. Next, we can install our favourite packages and software such as window manager, desktop environment and login manager according to our needs.
+
+## Extras
+
+Additionally, we can update the mirror list for pacman to improve the download speed. Starting off by installing a package called `reflector`.
+
+```
+sudo pacman -S reflector
+```
+
+Next, create a backup for the existing mirror list in case of disaster.
+
+```
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+```
+
+Finally, we can update the mirror list with reflector.
+
+```
+sudo reflector --verbose --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+```
+
+The mirror list should be updated according to the availability on the region.
 
 ## Reference
 
