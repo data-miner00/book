@@ -10,7 +10,7 @@ tags:
   - technology
   - react
 directory: web-dev
-updatedAt: 2023-01-10T13:54:21.745Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2023-01-10T13:54:21.745Z
 ---
 
@@ -299,7 +299,7 @@ useEffect(() => {
 return <div></div>
 ```
 
-Theoritically, the `useEffect` hook should only be triggered once because the `getString` function never changes. However, that's not normally the case. If the component have some reactive state and a rerender is triggered, the `const getString` gets a brand new `() => "hello"` instance instead of always pointing to the same instance in the memory.
+Theoretically, the `useEffect` hook should only be triggered once because the `getString` function never changes. However, that's not normally the case. If the component have some reactive state and a rerender is triggered, the `const getString` gets a brand new `() => "hello"` instance instead of always pointing to the same instance in the memory.
 
 To prevent such behaviour, `useCallback` can help to locate the only instance of the function until the dependency array has been mutated.
 

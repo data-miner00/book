@@ -12,7 +12,7 @@
     "
   >
     <div class="flex flex-1">
-      <!-- secion 1: image -->
+      <!-- section 1: image -->
       <div
         class="
           hidden

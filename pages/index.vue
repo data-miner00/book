@@ -13,6 +13,13 @@
 
       <!-- actual content -->
       <article style="color: rgb(59, 69, 78)" class="this">
+        <blockquote class="warning">
+          I'm in the midst of migrating part of the project into
+          <a href="https://github.com/data-miner00/notes">a newer project</a> to
+          rectify out-of-date technologies and to revitalize the site. This
+          website will be deprecated soon.
+        </blockquote>
+
         <p>
           Shaun here. This site was developed for me to document the information
           that I've come across on various topics in the form of a note or memo
@@ -296,7 +303,7 @@
         <ul>
           <li>Add links for social sharing.</li>
           <li>Add more responsiveness to support more screen resolutions.</li>
-          <li>Improve accesibility of the site.</li>
+          <li>Improve accessibility of the site.</li>
         </ul>
       </article>
 
@@ -319,7 +326,7 @@
             />
           </div>
           <div class="text-gray-400 text-xs pt-1">
-            Last updated on February 18, 2023 by Shaun Chong
+            Last updated on March 28, 2024 by Shaun Chong
           </div>
         </div>
       </footer>
@@ -410,5 +417,10 @@ export default Vue.extend({
 .this a {
   @apply text-blue-600;
   @apply hover:underline;
+}
+
+blockquote.warning {
+  @apply border-l-2 border-solid border-yellow-400 px-4 mb-10 rounded-tr-md rounded-br-md;
+  @apply bg-yellow-50 cursor-default py-3;
 }
 </style>

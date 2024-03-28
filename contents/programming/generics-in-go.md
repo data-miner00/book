@@ -11,7 +11,7 @@ tags:
   - programming
   - tutorial
 directory: programming
-updatedAt: 2022-11-08T13:03:05.084Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-03-27T13:33:30.485Z
 ---
 
@@ -37,7 +37,7 @@ For WSL users, you may install the latest version by running the following comma
 go install golang.org/dl/go1.18@latest
 ```
 
-Alternatively, you may consider using [Go version manager (GVM)](https://github.com/moovweb/gvm) for managing different Go versions in the Linux system as it is very easy to use and has a striking resemblence on how the [Node version manager (NVM)](https://github.com/nvm-sh/nvm) operates.
+Alternatively, you may consider using [Go version manager (GVM)](https://github.com/moovweb/gvm) for managing different Go versions in the Linux system as it is very easy to use and has a striking resemblance on how the [Node version manager (NVM)](https://github.com/nvm-sh/nvm) operates.
 
 The updating guides for Linux can also be found here on the [instruction gist](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753) by Nikhita.
 

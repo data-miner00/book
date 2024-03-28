@@ -1,7 +1,7 @@
 <template>
   <Overview
     title="Minecraft"
-    subtitle="A sandbox game purpotedly only for kids"
+    subtitle="A sandbox game purportedly only for kids"
     topic="minecraft"
     :articles="articles"
   />

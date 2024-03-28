@@ -1,6 +1,6 @@
 ---
 title: My approach for setting up a new PC
-subtitle: Quick list of softwares and tools that will be installed in my new development environment
+subtitle: Quick list of software and tools that will be installed in my new development environment
 topic: Technology
 displayTopic: Random
 author:
@@ -11,7 +11,7 @@ tags:
   - development
   - tools
 directory: random
-updatedAt: 2023-07-15T13:17:10.163Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2021-10-20T13:33:30.485Z
 ---
 
@@ -21,7 +21,7 @@ In this article, I will be outlining the ideal steps for me to setting up my new
 
 ## Software Application
 
-Application such as IDEs, code editors and design tools are covered in this section. Moreover, my preferred internet browser and utility softwares will be outlined here as well.
+Application such as IDEs, code editors and design tools are covered in this section. Moreover, my preferred internet browser and utility software will be outlined here as well.
 
 ### IDEs
 
@@ -143,7 +143,7 @@ Everything involving core of development, such as programming language compilers
 | TypeScript        | [Deno](https://deno.land/)                                           | `npm i -g typescript`       |
 | Go                | [Go compiler](https://golang.org/doc/install)                        | -                           |
 | Rust              | [Rustup](https://www.rust-lang.org/tools/install)                    | -                           |
-| Python            | [Python intepreter](https://www.python.org/downloads/)               | -                           |
+| Python            | [Python interpreter](https://www.python.org/downloads/)              | -                           |
 | Julia             | [Julia compiler](https://julialang.org/downloads/)                   | -                           |
 | D                 | [D compiler](https://dlang.org/)                                     | -                           |
 | C/C++             | [GNU GCC Compiler](https://sourceforge.net/projects/mingw-w64/)      | -                           |
@@ -151,11 +151,11 @@ Everything involving core of development, such as programming language compilers
 | Haskell           | [Haskell compiler](https://www.haskell.org/)                         | -                           |
 | Elm               | [Elm compiler](https://guide.elm-lang.org/install/elm.html)          | -                           |
 | Scala             | [Scala compiler](https://scala-lang.org/download/)                   | -                           |
-| Perl              | [Perl intepreter](https://www.perl.org/get.html)                     | -                           |
-| PHP               | [PHP intepreter](https://www.php.net/downloads.php)                  | -                           |
-| Raku              | [Raku intepreter](https://raku.org/downloads/)                       | -                           |
-| R                 | [R intepreter](https://cran.r-project.org/bin/windows/base/)         | -                           |
-| Lua               | [Lua intepreter](https://www.lua.org/download.html)                  | -                           |
+| Perl              | [Perl interpreter](https://www.perl.org/get.html)                    | -                           |
+| PHP               | [PHP interpreter](https://www.php.net/downloads.php)                 | -                           |
+| Raku              | [Raku interpreter](https://raku.org/downloads/)                      | -                           |
+| R                 | [R interpreter](https://cran.r-project.org/bin/windows/base/)        | -                           |
+| Lua               | [Lua interpreter](https://www.lua.org/download.html)                 | -                           |
 | Elixir            | [Elixir interpreter](https://elixir-lang.org/install.html)           | -                           |
 | Erlang            | [Erlang compiler](https://www.erlang.org/downloads)                  | -                           |
 | PureScript        | [PureScript transpiler](https://www.purescript.org/)                 | `npm install -g purescript` |

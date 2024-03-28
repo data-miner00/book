@@ -10,7 +10,7 @@ author:
 tags:
   - typescript
   - cheatsheet
-updatedAt: 2023-03-15T12:52:58.230Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2023-03-15T12:52:58.230Z
 ---
 
@@ -62,7 +62,7 @@ type PartialUser = {
 
 ### Omit and Pick
 
-`Omit` ignores the fields that is specified whereas `Pick` only select the specified fields during the constuction of the new type.
+`Omit` ignores the fields that is specified whereas `Pick` only select the specified fields during the construction of the new type.
 
 ```ts
 type User = {
