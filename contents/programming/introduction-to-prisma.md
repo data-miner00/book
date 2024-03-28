@@ -284,7 +284,7 @@ model User {
 }
 ```
 
-- `@@map([]`): Creates a mapping of the current model to the actual name in the database.
+- `@@map([])`: Creates a mapping of the current model to the actual name in the database.
 
 ```[schema.prisma]
 model User {

@@ -13,7 +13,7 @@ tags:
   - development
   - tools
 directory: random
-updatedAt: 2024-02-05T13:50:12.833Z
+updatedAt: 2024-03-28T17:36:03.676Z
 createdAt: 2023-11-30T07:51:16.872Z
 ---
 
@@ -31,22 +31,23 @@ Some other packages that is not on the official repository can be acquired from 
 
 ## Essential Tools
 
-|     | Tool                | Description                                                    | Link                                                          |
-| --- | ------------------- | -------------------------------------------------------------- | ------------------------------------------------------------- |
-| 1.  | `git`               | The Git version control system                                 | [Homepage](https://git-scm.com/)                              |
-| 2.  | `bear`              | A tool that generates a compilation database for clang tooling | [GitHub](https://github.com/rizsotto/Bear)                    |
-| 3.  | `zsh`               | The next-generation command and shell interpreter              | [Homepage](https://www.zsh.org/)                              |
-| 4.  | `zsh-completions`   | An auto-complete complimentary tool for zsh                    | [GitHub](https://github.com/zsh-users/zsh-completions)        |
-| 5.  | `alacritty`         | A cross-platform, GPU accelerated terminal emulator            | [Homepage](https://alacritty.org/)                            |
-| 6.  | `tmux`              | A terminal multiplexer for Unix operating systems              | [GitHub](https://github.com/tmux/tmux)                        |
-| 7.  | `screenkey`         | A key screencast utility for X11                               | [Homepage](https://www.thregr.org/wavexx/software/screenkey/) |
-| 8.  | `man-db`            | The manual page reader for most of the unix tools available    | [Webpage](https://linux.die.net/man/)                         |
-| 9.  | `cool-retro-term`   | A 70s nostalgic terminal emulator                              | [GitHub](https://github.com/Swordfish90/cool-retro-term)      |
-| 10. | `fcitx5-im`         | A group of essential fcitx5 tools                              | [GitHub](https://github.com/fcitx/fcitx5)                     |
-| 11. | `flatpak`           | A utility for software deployment and package management       | [Homepage](https://flatpak.org/)                              |
-| 12. | `thunderbird`       | An open-source email client                                    | [Homepage](https://www.thunderbird.net/en-US/)                |
-| 13. | `libreoffice-fresh` | A free alternative to Microsoft 365                            | [Homepage](https://www.libreoffice.org/)                      |
-| 14. | `dunst`             | A notification daemon                                          | [GitHub](https://github.com/dunst-project/dunst)              |
+|     | Tool                | Description                                                    | Link                                                             |
+| --- | ------------------- | -------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 1.  | `git`               | The Git version control system                                 | [Homepage](https://git-scm.com/)                                 |
+| 2.  | `bear`              | A tool that generates a compilation database for clang tooling | [GitHub](https://github.com/rizsotto/Bear)                       |
+| 3.  | `zsh`               | The next-generation command and shell interpreter              | [Homepage](https://www.zsh.org/)                                 |
+| 4.  | `zsh-completions`   | An auto-complete complimentary tool for zsh                    | [GitHub](https://github.com/zsh-users/zsh-completions)           |
+| 5.  | `alacritty`         | A cross-platform, GPU accelerated terminal emulator            | [Homepage](https://alacritty.org/)                               |
+| 6.  | `tmux`              | A terminal multiplexer for Unix operating systems              | [GitHub](https://github.com/tmux/tmux)                           |
+| 7.  | `screenkey`         | A key screencast utility for X11                               | [Homepage](https://www.thregr.org/wavexx/software/screenkey/)    |
+| 8.  | `man-db`            | The manual page reader for most of the unix tools available    | [Webpage](https://linux.die.net/man/)                            |
+| 9.  | `cool-retro-term`   | A 70s nostalgic terminal emulator                              | [GitHub](https://github.com/Swordfish90/cool-retro-term)         |
+| 10. | `fcitx5-im`         | A group of essential fcitx5 tools                              | [GitHub](https://github.com/fcitx/fcitx5)                        |
+| 11. | `flatpak`           | A utility for software deployment and package management       | [Homepage](https://flatpak.org/)                                 |
+| 12. | `thunderbird`       | An open-source email client                                    | [Homepage](https://www.thunderbird.net/en-US/)                   |
+| 13. | `libreoffice-fresh` | A free alternative to Microsoft 365                            | [Homepage](https://www.libreoffice.org/)                         |
+| 14. | `dunst`             | A notification daemon                                          | [GitHub](https://github.com/dunst-project/dunst)                 |
+| 15. | `apache`            | A web server that serves to localhost                          | [Arch Wiki](https://archlinux.org/packages/extra/x86_64/apache/) |
 
 > Zsh on [Arch Wiki](https://wiki.archlinux.org/title/zsh)
 
@@ -80,11 +81,12 @@ Some other packages that is not on the official repository can be acquired from 
 
 ## Web Browsers
 
-|     | Tool                        | Description                            | Link                                                            |
-| --- | --------------------------- | -------------------------------------- | --------------------------------------------------------------- |
-| 1.  | `firefox`                   | The Firefox browser                    | [Download Page](https://www.mozilla.org/en-US/firefox/new/)     |
-| 2.  | `chromium`                  | The "raw" version of Google Chrome     | [Homepage](https://www.chromium.org/chromium-projects/)         |
-| 3.  | `firefox-developer-edition` | The Firefox browser but for developers | [Download Page](https://www.mozilla.org/ast/firefox/developer/) |
+|     | Tool                        | Description                              | Link                                                            |
+| --- | --------------------------- | ---------------------------------------- | --------------------------------------------------------------- |
+| 1.  | `firefox`                   | The Firefox browser                      | [Download Page](https://www.mozilla.org/en-US/firefox/new/)     |
+| 2.  | `chromium`                  | The "raw" version of Google Chrome       | [Homepage](https://www.chromium.org/chromium-projects/)         |
+| 3.  | `firefox-developer-edition` | The Firefox browser but for developers   | [Download Page](https://www.mozilla.org/ast/firefox/developer/) |
+| 4.  | `lynx`                      | The terminal browser that support gopher | [Homepage](https://lynx.invisible-island.net/)                  |
 
 ## Text Editors
 
@@ -98,9 +100,10 @@ Some other packages that is not on the official repository can be acquired from 
 
 ## Fonts
 
-|     | Tools            | Description                                      | Link                                            |
-| --- | ---------------- | ------------------------------------------------ | ----------------------------------------------- |
-| 1.  | `noto-fonts-cjk` | The font to support Chinese-Japanese-Korean text | [GitHub](https://github.com/notofonts/noto-cjk) |
+|     | Tools               | Description                                      | Link                                                                   |
+| --- | ------------------- | ------------------------------------------------ | ---------------------------------------------------------------------- |
+| 1.  | `noto-fonts-cjk`    | The font to support Chinese-Japanese-Korean text | [GitHub](https://github.com/notofonts/noto-cjk)                        |
+| 2.  | `papirus-icon-theme | The ultimate icon theme for Linux                | [GitHub](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) |
 
 Patched Nerd-Fonts which supports ligatures and icons can be obtained via [nerdfonts.com](https://www.nerdfonts.com/font-downloads) and needs to be installed manually.
 
@@ -112,6 +115,7 @@ Patched Nerd-Fonts which supports ligatures and icons can be obtained via [nerdf
 | 2.  | `unzip`  | Unzips a `rar` or `zip` file to a directory | [Article](https://linuxize.com/post/how-to-unzip-files-in-linux/)    |
 | 3.  | `xclip`  | A clipboard provider for the X11 server     | [GitHub](https://github.com/astrand/xclip)                           |
 | 4.  | `scrot`  | A minimal screenshot tool for X             | [GitHub](https://github.com/resurrecting-open-source-projects/scrot) |
+| 5.  | `sxiv`   | Simple X image viewer                       | [GitHub](https://github.com/xyb3rt/sxiv)                             |
 
 ## Data Transfer
 
@@ -124,26 +128,36 @@ Patched Nerd-Fonts which supports ligatures and icons can be obtained via [nerdf
 
 ## For Fun
 
-|     | Tools                | Description                                        | Link                                               |
-| --- | -------------------- | -------------------------------------------------- | -------------------------------------------------- |
-| 1.  | `figlet`             | A text-to-ascii command line utility               | [GitHub](https://github.com/cmatsuoka/figlet)      |
-| 2.  | `lolcat`             | A terminal text rainbownifier                      | [GitHub](https://github.com/busyloop/lolcat)       |
-| 3.  | `cmatrix`            | A terminal based "The Matrix" like implementation  | [GitHub](https://github.com/abishekvashok/cmatrix) |
-| 4.  | cointop (deprecated) | A terminal based, top-like cryptocurrency explorer | [Homepage](https://docs.cointop.sh/)               |
-| 5.  | `cowsay`             | A tool that converts a text to a cow ascii art     | [GitHub](https://github.com/piuccio/cowsay)        |
+|     | Tools                 | Description                                          | Link                                                |
+| --- | --------------------- | ---------------------------------------------------- | --------------------------------------------------- |
+| 1.  | `figlet`              | A text-to-ascii command line utility                 | [GitHub](https://github.com/cmatsuoka/figlet)       |
+| 2.  | `lolcat`              | A terminal text rainbownifier                        | [GitHub](https://github.com/busyloop/lolcat)        |
+| 3.  | `cmatrix`             | A terminal based "The Matrix" like implementation    | [GitHub](https://github.com/abishekvashok/cmatrix)  |
+| 4.  | cointop (deprecated)  | A terminal based, top-like cryptocurrency explorer   | [Homepage](https://docs.cointop.sh/)                |
+| 5.  | `cowsay`              | A tool that converts a text to a cow ascii art       | [GitHub](https://github.com/piuccio/cowsay)         |
+| 6.  | `asciiquarium`        | Enjoy picturesque view of aquarium from the terminal | [GitHub](https://github.com/cmatsuoka/asciiquarium) |
+| 7.  | `cava`                | The audio visualizer                                 | [GitHub](https://github.com/karlstav/cava)          |
+| 8.  | `tty-clock` **(AUR)** | A terminal pomodoro clock                            | [GitHub](https://github.com/xorg62/tty-clock)       |
+| 9.  | `sl`                  | A steam locomotive that runs across the terminal     | [GitHub](https://github.com/mtoyoda/sl)             |
+| 10. | `boxes` **(AUR)**     | A dialog box that wraps the text                     | [Homepage](https://boxes.thomasjensen.com/)         |
+| 11. | pipes.sh **(GitHub)** | Animated pipes terminal screensaver                  | [GitHub](https://github.com/pipeseroni/pipes.sh)    |
 
 ## Programming
 
-|     | Tools                | Description                                        | Link                                       |
-| --- | -------------------- | -------------------------------------------------- | ------------------------------------------ |
-| 1.  | `nvm` **(GitHub)**   | A version manager for Node.js                      | [GitHub](https://github.com/nvm-sh/nvm)    |
-| 2.  | `bun` **(Homepage)** | All-in-one JavaScript toolkit and runtime          | [Homepage](https://bun.sh/)                |
-| 3.  | `python`             | The latest version of the Python interpreter       | [Homepage](https://www.python.org/)        |
-| 4.  | `python-pip`         | The officially endorsed package manager for Python | [Homepage](https://pip.pypa.io/en/stable/) |
-| 5.  | `jdk-openjdk`        | A free and open source Java Development Kit        | [Homepage](https://openjdk.org/)           |
-| 6.  | `luarocks`           | A package manager for Lua                          | [Homepage](https://luarocks.org/)          |
-| 7.  | `gcc-fortran`        | A GNU Fortran compiler                             | [Homepage](https://gcc.gnu.org/fortran/)   |
-| 8.  | ghcup **(Homepage)** | A Haskell toolchain                                | [Homepage](https://www.haskell.org/ghcup/) |
+|     | Tools                 | Description                                          | Link                                                |
+| --- | --------------------- | ---------------------------------------------------- | --------------------------------------------------- |
+| 1.  | `nvm` **(GitHub)**    | A version manager for Node.js                        | [GitHub](https://github.com/nvm-sh/nvm)             |
+| 2.  | `bun` **(Homepage)**  | All-in-one JavaScript toolkit and runtime            | [Homepage](https://bun.sh/)                         |
+| 3.  | `python`              | The latest version of the Python interpreter         | [Homepage](https://www.python.org/)                 |
+| 4.  | `python-pip`          | The officially endorsed package manager for Python   | [Homepage](https://pip.pypa.io/en/stable/)          |
+| 5.  | `jdk-openjdk`         | A free and open source Java Development Kit          | [Homepage](https://openjdk.org/)                    |
+| 6.  | `luarocks`            | A package manager for Lua                            | [Homepage](https://luarocks.org/)                   |
+| 7.  | `gcc-fortran`         | A GNU Fortran compiler                               | [Homepage](https://gcc.gnu.org/fortran/)            |
+| 8.  | ghcup **(Homepage)**  | A Haskell toolchain                                  | [Homepage](https://www.haskell.org/ghcup/)          |
+| 9.  | rustup **(Homepage)** | The toolchains for Rust development                  | [Homepage](https://www.rust-lang.org/tools/install) |
+| 10. | `erlang`              | The Erlang programming language                      | [Homepage](https://www.erlang.org/)                 |
+| 11. | `elixir`              | The cool functional programming language             | [Homepage](https://elixir-lang.org/)                |
+| 12. | `nix`                 | Declarative package manager and programming language | [Homepage](https://nixos.org/)                      |
 
 ## Communications
 
