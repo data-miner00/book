@@ -60,6 +60,8 @@ A simplistic and boring site that I used to document all things technical that I
 
 The decision to develop a place to keep my notes is rather coincidental, whereby I am studying some online articles and books about Rust and came across [this note](https://notes.iveselov.info/programming/cheatsheet-rust-option-vs-haskell-maybe) by Ivan Veselov and his teams on [Gitbook](https://www.gitbook.com/), which immediately caught my attention and sparked the idea of developing an online "book" website that serves as the knowledge repository about some quick but important topics for me and others that might find it useful.
 
+> ⚠ Deprecation notice: This project will soon be obsolete. Part of it will be migrated to my [notes](https://github.com/data-miner00/notes) project.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
