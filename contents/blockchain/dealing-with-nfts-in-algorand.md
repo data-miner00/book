@@ -11,7 +11,7 @@ tags:
   - algorand
   - blockchain
   - tutorial
-updatedAt: 2022-12-03T12:15:24.307Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-12-03T12:15:24.307Z
 ---
 
@@ -93,7 +93,7 @@ Run the following command for more info.
 
 ## Opt In Asset
 
-Opting in an asset is a security mechanism offered by Algorand to prevent users from receiving spam NFTs without their consent. The NFTs might have tax, legel or reputational risks.
+Opting in an asset is a security mechanism offered by Algorand to prevent users from receiving spam NFTs without their consent. The NFTs might have tax, legal or reputational risks.
 
 To opt into an asset, all the user need to do is sending that particular asset to themself with 0 amount before receiving the actual asset from third party. This essentially creates a "record" or entry as I would like to call under the account for having that particular asset but with 0 amount.
 

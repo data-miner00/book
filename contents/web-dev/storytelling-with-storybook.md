@@ -11,7 +11,7 @@ tags:
   - components
   - documentation
 directory: web-dev
-updatedAt: 2022-08-13T15:20:27.829Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-08-13T15:20:27.829Z
 ---
 
@@ -79,7 +79,7 @@ Some of the popular addons including but not limited to [Links](https://storyboo
 
 The simplest testing method is to spot check the components before and after to see if there are any discrepancies with the intended behavior. Automating the test are possible as Storybook offers [visual tests](https://storybook.js.org/docs/react/writing-tests/visual-testing) that snapshot each of the component pixel by pixel. If changes are detected, it will show where the changes are. If the changes are intended, we can accept the new changes as the baseline that is used for comparison for the next test run.
 
-Storybook can also test the behaviour of the components such as events and state. It also provides the option to test for **accessibility compliance** through the accesibility addon provided by the Storybook team.
+Storybook can also test the behaviour of the components such as events and state. It also provides the option to test for **accessibility compliance** through the accessibility addon provided by the Storybook team.
 
 ## Storybook User Interface
 

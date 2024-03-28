@@ -11,7 +11,7 @@ tags:
   - avalanche
   - blockchain
   - tutorial
-updatedAt: 2022-12-12T13:58:03.631Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-12-12T13:58:03.631Z
 ---
 
@@ -101,7 +101,7 @@ Save the config file and try to query the account's public address with the foll
 yarn accounts --network local
 ```
 
-If there are 5 accounts in the accounts array within `hardhat.config.ts`, then it should display 5 corresponsing public address of the accounts.
+If there are 5 accounts in the accounts array within `hardhat.config.ts`, then it should display 5 corresponding public address of the accounts.
 
 ## Deploying Smart Contracts
 

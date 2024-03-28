@@ -12,7 +12,7 @@ tags:
   - blog
   - tutorial
 directory: web-dev
-updatedAt: 2022-08-14T07:17:38.233Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2021-10-08T13:33:30.485Z
 ---
 
@@ -124,7 +124,7 @@ Now, we will be dealing with the actual view(page) that renders the dynamic cont
 
 Inside the `/pages` folder, create a subdirectory named after your name of choice in the decision above, as in the `/content` folder. In my case, I will be sticking with the name `mymod` for now. You will have the directory looked like `/pages/mymod`. Create a file called `_slug.vue` within the folder. This is the vue file that will take care of the rendering of your dynamic content to the browser.
 
-Slug here means the unique identifier of your article based on your title. It is composed of lowercased title seperated with a dash. An article with the title _Bitcoin vs Ethereum_ will have the slug as `bitcoin-vs-ethereum`. The slug will allow your article to be reach at `/mymod/bitcoin-vs-ethereum`. The use of slug instead of conventional ID such as `/mymod/273464` is having a great search engine optimization (SEO) that will greatly improve the searchability of your article.
+Slug here means the unique identifier of your article based on your title. It is composed of lowercased title separated with a dash. An article with the title _Bitcoin vs Ethereum_ will have the slug as `bitcoin-vs-ethereum`. The slug will allow your article to be reach at `/mymod/bitcoin-vs-ethereum`. The use of slug instead of conventional ID such as `/mymod/273464` is having a great search engine optimization (SEO) that will greatly improve the searchability of your article.
 
 Coming back from the explanations, after you have created the `_slug.vue`, paste the following code:
 
@@ -171,7 +171,7 @@ We can access the metadata for the article along with the `article` object retri
 | `slug `     | `string`        | Slug of the article                  | `my-first-blog`          |
 | `toc`       | `Array<Object>` | Table of content based headings used | -                        |
 
-All of the metadata can be accessed with `article.<metadata>`. E.g. `article.createdAt` to get `2021-09-23T13:31:06.399Z`. Additionaly, the `article.body` gives you the entire article content in an object, but you would not need to deal with it normally.
+All of the metadata can be accessed with `article.<metadata>`. E.g. `article.createdAt` to get `2021-09-23T13:31:06.399Z`. Additionally, the `article.body` gives you the entire article content in an object, but you would not need to deal with it normally.
 
 ### Styling Content
 
@@ -229,7 +229,7 @@ You will notice that there is a small code that is within a single sentence and 
 }
 ```
 
-> Note: Using `nuxt generate` on this will cause the output to be rendered as `.nuxt-content code:not(.nuxt-contentprecode)` instead that just render the latter part of the selector useless. This will work fine in local development server nonetheless. A simple workaround is to seperate the into `.nuxt-content code` and `.nuxt-content-highlight pre code` for different styles.
+> Note: Using `nuxt generate` on this will cause the output to be rendered as `.nuxt-content code:not(.nuxt-contentprecode)` instead that just render the latter part of the selector useless. This will work fine in local development server nonetheless. A simple workaround is to separate the into `.nuxt-content code` and `.nuxt-content-highlight pre code` for different styles.
 
 Usually, we will leave margin for every element on top and bottom for better visual hierarchy. For the `<ul>` tag, there might be instance in which there are another list nested inside a list, so by selecting them like `.nuxt-content ul` is not recommended. Instead, we can select only the parent `<ul>` by using `.nuxt-content > ul` and this will not affect the inner list.
 
@@ -241,7 +241,7 @@ Table of contents can be extremely helpful to readers to navigate quickly betwee
 
 One thing to note however, is that it is recommended to denote the sections of the document starting with `h2`, which is equivalent to `##` in markdown and `###` for the subtitle. In fact, any uses of `h1 (#)` will **NOT** appear in the table of content provided. So please bear in mind the nuances of using table of content in Nuxt Content.
 
-We can get the api by accessing with `article.toc` array as mentioned (here)[#accesing-metadata]. The title and its corresponding ID can be visualised as follows:
+We can get the api by accessing with `article.toc` array as mentioned (here)[#accessing-metadata]. The title and its corresponding ID can be visualised as follows:
 
 ```json
 [

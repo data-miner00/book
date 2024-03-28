@@ -11,7 +11,7 @@ tags:
   - react
   - testing
 directory: web-dev
-updatedAt: 2023-01-11T14:50:40.403Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2021-12-27T13:33:30.485Z
 ---
 
@@ -193,7 +193,7 @@ More matchers can be found on [Jest's documentation](https://jestjs.io/docs/usin
 
 ## Firing events
 
-Trigerring DOM events manually can be invaluable for testing as well as it mimic how the user interacts with the web application.
+Triggering DOM events manually can be invaluable for testing as well as it mimic how the user interacts with the web application.
 
 ### Check input
 

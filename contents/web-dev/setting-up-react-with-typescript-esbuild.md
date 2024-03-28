@@ -12,7 +12,7 @@ tags:
   - esbuild
   - template
 directory: web-dev
-updatedAt: 2022-11-03T16:40:30.137Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-11-03T16:40:30.137Z
 ---
 
@@ -227,7 +227,7 @@ eslint-plugin-react@latest eslint-config-standard-with-typescript@latest @typesc
 Successfully created .eslintrc.yml file in C:\Users\my-project
 ```
 
-Select `No` when prompted to install the dependencies as I presume that it will use NPM to install and generate a `package.lock.json` file which in my case I am using Pnpm. Install the dependencies seperately.
+Select `No` when prompted to install the dependencies as I presume that it will use NPM to install and generate a `package.lock.json` file which in my case I am using Pnpm. Install the dependencies separately.
 
 ```
 pnpm i -D eslint-plugin-react@latest eslint-config-standard-with-typescript@latest @typescript-eslint/eslint-plugin@^5.0.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 @typescript-eslint/parser
@@ -276,7 +276,7 @@ C:\Users\MyProject\src\App.tsx
 
 ## Starting the App
 
-To start the app, we will need two seperate terminals. The first terminal listens to the changes in the React files and compile them when new changes are made.
+To start the app, we will need two separate terminals. The first terminal listens to the changes in the React files and compile them when new changes are made.
 
 ```
 pnpm watch
@@ -292,7 +292,7 @@ pnpm start
 
 The next step is to setup a testing framework as well as using Tailwind for styling. Setting up the testing framework with `@testing-framework/react` and Jest on my own is absolutely painful as the toolchains are convoluted and confusing for me that had always taken granted for the out-of-the-box and low-setup tests settings while using Create React App or Next.js.
 
-I had spent countless hours debugging the issues faced, installing and uninstalling packages and meddling round with tonnes of config files and fortunately able to make everything works. I think that setting up tests in this project deserves a seperate article on its own, so stay tuned.
+I had spent countless hours debugging the issues faced, installing and uninstalling packages and meddling round with tonnes of config files and fortunately able to make everything works. I think that setting up tests in this project deserves a separate article on its own, so stay tuned.
 
 ## References
 

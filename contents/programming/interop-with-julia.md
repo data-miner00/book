@@ -11,7 +11,7 @@ tags:
   - julia
   - python
   - guide
-updatedAt: 2023-07-15T13:17:10.163Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2023-07-15T13:17:10.163Z
 ---
 
@@ -48,7 +48,7 @@ total |> println
 
 ### Working With Python Packages
 
-To use a Python library such as those from the [PyPi repository](https://pypi.org/), the package needs to be installed to the correct Python intepreter that `PyCall` is using.
+To use a Python library such as those from the [PyPi repository](https://pypi.org/), the package needs to be installed to the correct Python interpreter that `PyCall` is using.
 
 To find out where the interpreter is, run the following code in Julia to find out its exact location.
 

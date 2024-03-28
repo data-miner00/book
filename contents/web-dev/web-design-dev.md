@@ -11,7 +11,7 @@ tags:
   - ui/ux
   - references
 directory: web-dev
-updatedAt: 2022-01-27T13:33:30.485Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2021-10-25T13:33:30.485Z
 ---
 
@@ -100,7 +100,7 @@ Useful tools that are useful sometimes during web development.
 
 | Tools                                  | Description                                                                                    |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [Storybook](https://storybook.js.org/) | A component-driven UI managment system for web projects                                        |
+| [Storybook](https://storybook.js.org/) | A component-driven UI management system for web projects                                       |
 | [Can I Use](https://caniuse.com/)      | Provides an exhaustive list of browser compatibility information based on CSS feature provided |
 | [Lorem Ipsum](https://loremipsum.io/)  | A dummy text generator for mocking contents in a page                                          |
 | [Lorem Picsum](https://picsum.photos/) | Random image provider that can be used as placeholder for image contents in webpage            |

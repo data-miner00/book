@@ -14,7 +14,7 @@ tags:
   - blog
   - javascript
 directory: debug-logs
-updatedAt: 2023-01-11T14:50:40.403Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-12-28T08:58:38.579Z
 ---
 
@@ -58,7 +58,7 @@ There was a red squiggly line on line 47669. I still dont understand what happen
 
 ## Debugging
 
-After performing a scrutiny towards the code base, including what I've recently changed that leads to the issue, I ended up with no clue on why is that happening. **I regret for not commiting most of the codes that are working earlier** and it would be easier to pinpoint the issue now.
+After performing a scrutiny towards the code base, including what I've recently changed that leads to the issue, I ended up with no clue on why is that happening. **I regret for not committing most of the codes that are working earlier** and it would be easier to pinpoint the issue now.
 
 I am using Firefox for the development and I thought it might be browser specific issue, so I try to push my luck to see whether it also happens on Chrome. Unfortunately and expectedly, that too did not work out. I took a look on the code briefly and feel that the error doesn't make sense.
 
@@ -152,7 +152,7 @@ Finally after hours of research, I've found one [GitHub Issue](https://github.co
 console.log(ethers) // Works
 ```
 
-Now, I am able to see the long dissapeared homepage of my app again with EthersJS working fine with the Metamask wallet and I am overjoyed.
+Now, I am able to see the long disappeared homepage of my app again with EthersJS working fine with the Metamask wallet and I am overjoyed.
 
 <v-img src="cannot-set-property-of-object/app-homepage.png" alt="App homepage"></v-img>
 
@@ -166,4 +166,4 @@ During the debugging and research, albeit pestered by the error, I came to appre
 
 [![esbuild Star History Chart](https://api.star-history.com/svg?repos=evanw/esbuild&type=Date)](https://star-history.com/#evanw/esbuild&Date)
 
-Also, I will not try to code an entire production-ready apps without commiting to source control ever again.
+Also, I will not try to code an entire production-ready apps without committing to source control ever again.

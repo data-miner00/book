@@ -11,7 +11,7 @@ tags:
   - prisma
   - orm
   - sql
-updatedAt: 2022-11-08T13:03:05.084Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-10-15T12:01:41.858Z
 ---
 
@@ -118,7 +118,7 @@ model User {
 }
 ```
 
-Prisma requires every model to have some form of identifier that acts as a primary key to uniquely identifies each of the entries in the databse.
+Prisma requires every model to have some form of identifier that acts as a primary key to uniquely identifies each of the entries in the database.
 
 As we can see, the fields within a Prisma model follows the sequence of name, data types and attributes.
 
@@ -493,7 +493,7 @@ const user = await prisma.user.findUnique({
 })
 ```
 
-When a block level unique constraints is specified across multiple fields, Prisma will define a reference with underscore seperating between the field name as a variable.
+When a block level unique constraints is specified across multiple fields, Prisma will define a reference with underscore separating between the field name as a variable.
 
 For example,
 

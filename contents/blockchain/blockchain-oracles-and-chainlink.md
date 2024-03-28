@@ -12,7 +12,7 @@ tags:
   - blockchain
   - oracle
   - goerli
-updatedAt: 2023-01-14T05:59:29.772Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2023-01-14T05:59:29.772Z
 ---
 
@@ -66,7 +66,7 @@ A prospect for smart contract in enterprise level is the supply chain management
 
 ### Sustainability
 
-Example of sustainability smart contracts is used in the agricultural industry where farmers utilize smart contracts to record sustainability practices they are practising on their farm that can be further verified by third parties and then stored on blockchain for transparancy and accountability.
+Example of sustainability smart contracts is used in the agricultural industry where farmers utilize smart contracts to record sustainability practices they are practising on their farm that can be further verified by third parties and then stored on blockchain for transparency and accountability.
 
 ## Interacting with Chainlink Oracles
 

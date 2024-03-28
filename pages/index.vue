@@ -296,7 +296,7 @@
         <ul>
           <li>Add links for social sharing.</li>
           <li>Add more responsiveness to support more screen resolutions.</li>
-          <li>Improve accesibility of the site.</li>
+          <li>Improve accessibility of the site.</li>
         </ul>
       </article>
 

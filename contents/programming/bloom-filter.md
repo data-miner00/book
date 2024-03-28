@@ -10,7 +10,7 @@ tags:
   - data structure
   - notes
 directory: programming
-updatedAt: 2023-07-15T13:17:10.163Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2023-03-22T12:58:10.024Z
 ---
 
@@ -164,7 +164,7 @@ class BloomFilter {
 
 Strings can be inserted via the `insert` method, `find` for the lookup operation that returns a boolean value and the `showState` method shows the current state of the bit array. The `#itemCount` keep tracks of how many elements has been inserted since its instantiation.
 
-The `#sliceStart` and `#sliceEnd` does not have anything to do with Bloom Filter. It is just a way I personally use to intepret the hashes and convert them into bit array positions.
+The `#sliceStart` and `#sliceEnd` does not have anything to do with Bloom Filter. It is just a way I personally use to interpret the hashes and convert them into bit array positions.
 
 ## Closing Remark
 

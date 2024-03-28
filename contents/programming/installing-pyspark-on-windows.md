@@ -11,7 +11,7 @@ tags:
   - spark
   - setup
 directory: programming
-updatedAt: 2023-04-18T01:41:30.909Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2023-04-18T01:41:30.909Z
 ---
 
@@ -63,7 +63,7 @@ The final step to take is to register the environment variables and paths. Open 
 SET SPARK_HOME=C:\src\spark
 ```
 
-Next, create another variable named `PYSPARK_PYTHON` and assign its value as `python`. This will make sure when Apache Spark is calling Python, it will use the correct Python intepreter as in Unix systems, Apache Spark will invoke them via `python3` instead of `python`.
+Next, create another variable named `PYSPARK_PYTHON` and assign its value as `python`. This will make sure when Apache Spark is calling Python, it will use the correct Python interpreter as in Unix systems, Apache Spark will invoke them via `python3` instead of `python`.
 
 ```
 SET PYSPARK_PYTHON=python
@@ -85,7 +85,7 @@ C:\src\spark\bin
 C:\Users\User\AppData\Local\Programs\Python\Python310\
 ```
 
-## Verifing Setup
+## Verifying Setup
 
 ### Spark Shell
 

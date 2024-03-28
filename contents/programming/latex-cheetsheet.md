@@ -11,7 +11,7 @@ tags:
   - science
   - latex
   - cheatsheet
-updatedAt: 2023-09-03T08:26:08.383Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-10-22T03:34:20.346Z
 ---
 
@@ -162,13 +162,13 @@ To resize it, use the options for the `\includegraphics` tag.
 
 The `\textwidth` indicates the width allowed to display the text on the document. There is no need to specify the height attribute though as the compiler will maintain the aspect ratio of the image.
 
-However, we can explicitly speficy the height as such.
+However, we can explicitly specify the height as such.
 
 ```tex
 \includegraphics[width=5cm, height=6cm]{My_image.png}
 ```
 
-> Tip: Always speficy the image smaller so that it is as close to the text as possible.
+> Tip: Always specify the image smaller so that it is as close to the text as possible.
 
 ### Positioning Image
 
@@ -243,7 +243,7 @@ To use math function in LaTeX document, math package is required. The package ma
 \end{equation}
 ```
 
-Use `equation*` to supress the automated numberings of the equation generated.
+Use `equation*` to suppress the automated numberings of the equation generated.
 
 Adding in a label to the equation makes it easy to be referred within the document.
 
@@ -350,7 +350,7 @@ $$
 
 ### Matrix
 
-The elements of the matrix is seperated by the ampersand `&` symbol and the rows must be ended with `\\` if there is an incoming row after that.
+The elements of the matrix is separated by the ampersand `&` symbol and the rows must be ended with `\\` if there is an incoming row after that.
 
 ```tex
 \begin{equation}
@@ -420,7 +420,7 @@ f(x) &= mx + c
 \end{align}
 $$
 
-For the `align` block to generate no numberings for each line of the equation, `align*` can be used instead. However, to supress numberings only for a certain row of equation, a `\nonumber` tag can be appended after the equation and before the `\\` symbol.
+For the `align` block to generate no numberings for each line of the equation, `align*` can be used instead. However, to suppress numberings only for a certain row of equation, a `\nonumber` tag can be appended after the equation and before the `\\` symbol.
 
 ```tex
 \begin{align}
@@ -480,7 +480,7 @@ Tables also need a table environment just like math and figures. The table also 
 \end{table}
 ```
 
-The `{c|c}` after the tabular begin tag means `<number of columns><border><alignment of data>`. The alignment of data property accepts `l` for left, `c` for center and `r` for right. It is not recommended to use borders to seperate the data, so a `{cc}` is highly suggested.
+The `{c|c}` after the tabular begin tag means `<number of columns><border><alignment of data>`. The alignment of data property accepts `l` for left, `c` for center and `r` for right. It is not recommended to use borders to separate the data, so a `{cc}` is highly suggested.
 
 ```tex
 \begin{tabular}{|c|r|l|c|}
@@ -493,7 +493,7 @@ The `{c|c}` after the tabular begin tag means `<number of columns><border><align
 
 However, managing the tables directly in LaTeX can be a hellish endeavour. It is recommended to use online tools to manage data in the tables such as [Tables Generator](https://tablesgenerator.com/).
 
-The best practice to tables is to use horizontal rule to seperate out the headings and the data, and seperate out the table with the rest of the content within the document. This can be achieved with using `\hline` accordingly.
+The best practice to tables is to use horizontal rule to separate out the headings and the data, and separate out the table with the rest of the content within the document. This can be achieved with using `\hline` accordingly.
 
 ```tex
 \begin{tabular}

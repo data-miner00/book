@@ -1,6 +1,6 @@
 ---
 title: Creating a Wasm app with Rust
-subtitle: Step by step guide on bootstraping a Wasm template with Rust
+subtitle: Step by step guide on bootstrapping a Wasm template with Rust
 topic: Web Development
 displayTopic: Web Development
 author:
@@ -11,7 +11,7 @@ tags:
   - programming
   - wasm
 directory: web-dev
-updatedAt: 2022-02-02T13:33:30.485Z
+updatedAt: 2024-03-28T05:59:29.772Z
 createdAt: 2022-02-02T13:33:30.485Z
 ---
 
