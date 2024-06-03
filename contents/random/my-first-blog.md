@@ -11,7 +11,7 @@ tags:
   - example
   - experimental
 directory: random
-updatedAt: 2023-05-01T19:03:05.084Z
+updatedAt: 2024-06-03T12:46:56.063Z
 createdAt: 2021-10-13T13:33:30.485Z
 ---
 
@@ -76,6 +76,18 @@ pub enum Event<T: Config> {
     ClaimCreated(T::AccountId, BoundedVec<u8, T::MaxBytesInHash>),
     ClaimRevoked(T::AccountId, BoundedVec<u8, T::MaxBytesInHash>),
 }
+```
+
+```sh
+sudo pacman -S p7zip unrar tar rsync exfat-utils fuse-exfat ntfs-3g flac jasper aria2
+
+lscpu
+
+uname -a # list kernel
+
+sudo pacman -S linux-lts linux-lts-headers
+
+yay -S ufw preload
 ```
 
 ```diff
