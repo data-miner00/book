@@ -18,7 +18,7 @@
           articles to
           <a href="https://github.com/data-miner00/notes">my new site</a> and
           will continue over there instead. Expect outdated information and
-          bizzare grammars for the existing articles.
+          bizarre grammars for the existing articles.
         </blockquote>
 
         <p>
@@ -327,7 +327,7 @@
             />
           </div>
           <div class="text-gray-400 text-xs pt-1">
-            Last updated on March 28, 2024 by Shaun Chong
+            Last updated on June 3, 2024 by Shaun Chong
           </div>
         </div>
       </footer>

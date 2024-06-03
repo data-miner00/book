@@ -43,7 +43,7 @@ return (
 )
 ```
 
-First, we will need to define our custome reducer function that handles all of the possible mutation. The reducer takes in two parameters, a `state` and an `action`. The `action` is an object that contains the event type and optionally the payload of the event. Based on the `action.type` provided, the intended value will be updated accordingly.
+First, we will need to define our custom reducer function that handles all of the possible mutation. The reducer takes in two parameters, a `state` and an `action`. The `action` is an object that contains the event type and optionally the payload of the event. Based on the `action.type` provided, the intended value will be updated accordingly.
 
 ```tsx
 function reducer(state, action) {
