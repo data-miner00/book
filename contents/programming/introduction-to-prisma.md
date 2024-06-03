@@ -1,6 +1,6 @@
 ---
 title: Introduction to Prisma
-subtitle: What is Prisma and how it can help us to focus on the actual data but not database
+subtitle: A popular TypeScript ORM for Node.js
 topic: Programming
 displayTopic: Programming
 directory: programming
@@ -8,10 +8,11 @@ author:
   name: Shaun Chong
   avatar: levi.png
 tags:
+  - typescript
   - prisma
   - orm
   - sql
-updatedAt: 2024-03-28T05:59:29.772Z
+updatedAt: 2024-06-03T11:55:33.985Z
 createdAt: 2022-10-15T12:01:41.858Z
 ---
 
@@ -35,7 +36,7 @@ To begin, we will need to create an empty Node.js project.
 npm init -y
 ```
 
-Next, we install Prisma and although optional, it is a good idea to install Typescript as well because Prisma is written on top of it. Second thought, who uses Javascript nowadays lol.
+Next, install Prisma, TypeScript and other complementing dependencies.
 
 ```
 npm install -D prisma typescript ts-node @types/node nodemon
@@ -63,11 +64,11 @@ More information in our documentation:
 https://pris.ly/d/getting-started
 ```
 
-Congratulations, Prisma has been initialized successfully and is ready to rock and roll.
+Prisma has been initialized successfully and is ready to be used.
 
 ## Prisma Schema
 
-Here is how it should look like inside the `schema.prisma` file.
+Prisma will scaffold a file named `schema.prisma` inside the `prisma` folder that is populated with contents that looks like this.
 
 ```prisma[schema.prisma]
 // This is your Prisma schema file,
@@ -111,7 +112,7 @@ postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA
 
 Models is the data structure that describes an entity that we want to store in a database. It can be defined with the `model` keyword in Prisma.
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int @id @default(autoincrement())
 	name String
@@ -122,7 +123,7 @@ Prisma requires every model to have some form of identifier that acts as a prima
 
 As we can see, the fields within a Prisma model follows the sequence of name, data types and attributes.
 
-```
+```prisma
 model User {
 	<name> <datatype> @<attributes>
 }
@@ -158,7 +159,7 @@ There are 4 types of relationships that database entities can have, namely one-t
 
 - **One-to-many**: For a `User` to have multiple `Post` , we can define the schema as follows
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -175,7 +176,7 @@ model Post {
 
 - **2x One-to-many**: `User` can have multiple reference to the `Post`s. They might have a `writtenPosts` and a `favouritePosts`. Disambiguating multiple one-to-many relationships
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -195,7 +196,7 @@ model Post {
 
 - **Many-to-many**: One `Post` can have multiple `Category` and one `Category` can have multiple `Post`
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model Post {
 	id Int
 	title String
@@ -211,7 +212,7 @@ model Category {
 
 - **One-to-one**: One `User` have one set of `UserPreference`
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -249,7 +250,7 @@ The attributes that apply for the entire model instead of a single field.
 
 - `@@unique([])`: Provides a unique constraint for the composite fields
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -261,7 +262,7 @@ model User {
 
 - `@@index([])`: Creates an index field for specified fields, helps with sorting and performance.
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -274,7 +275,7 @@ model User {
 
 - `@@id([])`: Creates a composite ID with fields specified.
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	// no more id field
 	name String
@@ -286,7 +287,7 @@ model User {
 
 - `@@map([])`: Creates a mapping of the current model to the actual name in the database.
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -300,7 +301,7 @@ model User {
 
 Just a regular enum that we are familiar with. It represents _a fixed set_ of value, or variants that a field can take.
 
-```[schema.prisma]
+```prisma[schema.prisma]
 enum Role {
 	SUPERUSER,
 	BASIC,
@@ -310,7 +311,7 @@ enum Role {
 
 After that, we can use it inside the `model` as a data type easily.
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -332,7 +333,7 @@ npx prisma generate
 
 This should install the Prisma client if it is not yet installed and inject the custom models inside the schema into the client.
 
-```[package.json]
+```json[package.json]
 "dependencies": {
     "@prisma/client": "^4.4.0"
 }
@@ -375,7 +376,7 @@ new PrismaClient({
 
 Lets say we have a custom model `UserPreference` inside the `User` schema.
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -475,7 +476,7 @@ await prisma.user.createMany([
 
 Find the instance of object via the fields that marks as `unique`. For example, given we have the following model, we can use the `findUnique` to find the object via the `email` or `ssn` field.
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
@@ -497,7 +498,7 @@ When a block level unique constraints is specified across multiple fields, Prism
 
 For example,
 
-```[schema.prisma]
+```prisma[schema.prisma]
 model User {
 	id Int
 	name String
