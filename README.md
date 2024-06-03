@@ -60,7 +60,7 @@ A simplistic and boring site that I used to document all things technical that I
 
 The decision to develop a place to keep my notes is rather coincidental, whereby I am studying some online articles and books about Rust and came across [this note](https://notes.iveselov.info/programming/cheatsheet-rust-option-vs-haskell-maybe) by Ivan Veselov and his teams on [Gitbook](https://www.gitbook.com/), which immediately caught my attention and sparked the idea of developing an online "book" website that serves as the knowledge repository about some quick but important topics for me and others that might find it useful.
 
-> ⚠ Deprecation notice: This project will soon be obsolete. Part of it will be migrated to my [notes](https://github.com/data-miner00/notes) project.
+> ⚠ Deprecation notice: This project is obsolete. Part of it had been migrated to my [notes](https://github.com/data-miner00/notes) project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,18 +123,13 @@ Installation is fairly straightforward. Just clone the repo and run `yarn && yar
 - [x] Add menu footer
 - [x] Update article footer
 - [x] Add search function
-- [ ] Add try catch to asyncData
 - [x] Add image component
 - [x] Extract Main page and Article page into different component that can be customized
 - [x] Add mobile responsiveness
-- [ ] Add custom 404 page
-- [ ] Perform E2E tests
-- [ ] Add "To top" button
 - [x] Add tags
-- [ ] Add search icon tooltip
+- [x] Add search icon tooltip
 - [x] Add Mobile header bar with burger menu
 - [ ] Add accessibility and use semantic tags
-- [ ] Crypto graph component
 
 See the [open issues](https://github.com/data-miner00/book/issues) for a full list of proposed features (and known issues).
 
