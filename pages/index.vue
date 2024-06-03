@@ -14,10 +14,11 @@
       <!-- actual content -->
       <article style="color: rgb(59, 69, 78)" class="this">
         <blockquote class="warning">
-          I'm in the midst of migrating part of the project into
-          <a href="https://github.com/data-miner00/notes">a newer project</a> to
-          rectify out-of-date technologies and to revitalize the site. This
-          website will be deprecated soon.
+          This website is no longer being maintained. I've migrated most of the
+          articles to
+          <a href="https://github.com/data-miner00/notes">my new site</a> and
+          will continue over there instead. Expect outdated information and
+          bizzare grammars for the existing articles.
         </blockquote>
 
         <p>
